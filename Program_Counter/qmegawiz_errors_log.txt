@@ -1,0 +1,11 @@
+
+
+/home/guileb/Desktop/oac2trabfefa/lpm_and0.tdf
+
+May 28 01PM:53:42>: Megafunction LPM_AND is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+/home/guileb/Desktop/oac2trabfefa/lpm_dff2bit.tdf
+
+May 28 01PM:53:50>: Megafunction LPM_FF is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

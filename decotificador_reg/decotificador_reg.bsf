@@ -1,0 +1,261 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 256 592)
+	(text "decotificador_reg" (rect 5 0 110 14)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 560 26 572)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "escritareg[4..0]" (rect 0 0 87 14)(font "Intel Clear" (font_size 8)))
+		(text "escritareg[4..0]" (rect 21 27 108 41)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "seleciona_reg00" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg00" (rect 122 27 219 41)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 32)(pt 224 32))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "seleciona_reg01" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg01" (rect 123 43 219 57)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 48)(pt 224 48))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "seleciona_reg02" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg02" (rect 123 59 219 73)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 64)(pt 224 64))
+	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "seleciona_reg03" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg03" (rect 123 75 219 89)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 80)(pt 224 80))
+	)
+	(port
+		(pt 240 96)
+		(output)
+		(text "seleciona_reg04" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg04" (rect 122 91 219 105)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 96)(pt 224 96))
+	)
+	(port
+		(pt 240 112)
+		(output)
+		(text "seleciona_reg05" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg05" (rect 123 107 219 121)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 112)(pt 224 112))
+	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "seleciona_reg06" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg06" (rect 122 123 219 137)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 128)(pt 224 128))
+	)
+	(port
+		(pt 240 144)
+		(output)
+		(text "seleciona_reg07" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg07" (rect 123 139 219 153)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 144)(pt 224 144))
+	)
+	(port
+		(pt 240 160)
+		(output)
+		(text "seleciona_reg08" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg08" (rect 123 155 219 169)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 160)(pt 224 160))
+	)
+	(port
+		(pt 240 176)
+		(output)
+		(text "seleciona_reg09" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg09" (rect 123 171 219 185)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 176)(pt 224 176))
+	)
+	(port
+		(pt 240 192)
+		(output)
+		(text "seleciona_reg10" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg10" (rect 122 187 219 201)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 192)(pt 224 192))
+	)
+	(port
+		(pt 240 208)
+		(output)
+		(text "seleciona_reg11" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg11" (rect 123 203 219 217)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 208)(pt 224 208))
+	)
+	(port
+		(pt 240 224)
+		(output)
+		(text "seleciona_reg12" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg12" (rect 123 219 219 233)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 224)(pt 224 224))
+	)
+	(port
+		(pt 240 240)
+		(output)
+		(text "seleciona_reg13" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg13" (rect 123 235 219 249)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 240)(pt 224 240))
+	)
+	(port
+		(pt 240 256)
+		(output)
+		(text "seleciona_reg14" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg14" (rect 122 251 219 265)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 256)(pt 224 256))
+	)
+	(port
+		(pt 240 272)
+		(output)
+		(text "seleciona_reg15" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg15" (rect 123 267 219 281)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 272)(pt 224 272))
+	)
+	(port
+		(pt 240 288)
+		(output)
+		(text "seleciona_reg16" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg16" (rect 122 283 219 297)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 288)(pt 224 288))
+	)
+	(port
+		(pt 240 304)
+		(output)
+		(text "seleciona_reg17" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg17" (rect 123 299 219 313)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 304)(pt 224 304))
+	)
+	(port
+		(pt 240 320)
+		(output)
+		(text "seleciona_reg18" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg18" (rect 123 315 219 329)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 320)(pt 224 320))
+	)
+	(port
+		(pt 240 336)
+		(output)
+		(text "seleciona_reg19" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg19" (rect 123 331 219 345)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 336)(pt 224 336))
+	)
+	(port
+		(pt 240 352)
+		(output)
+		(text "seleciona_reg20" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg20" (rect 122 347 219 361)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 352)(pt 224 352))
+	)
+	(port
+		(pt 240 368)
+		(output)
+		(text "seleciona_reg21" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg21" (rect 123 363 219 377)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 368)(pt 224 368))
+	)
+	(port
+		(pt 240 384)
+		(output)
+		(text "seleciona_reg22" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg22" (rect 123 379 219 393)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 384)(pt 224 384))
+	)
+	(port
+		(pt 240 400)
+		(output)
+		(text "seleciona_reg23" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg23" (rect 123 395 219 409)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 400)(pt 224 400))
+	)
+	(port
+		(pt 240 416)
+		(output)
+		(text "seleciona_reg24" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg24" (rect 122 411 219 425)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 416)(pt 224 416))
+	)
+	(port
+		(pt 240 432)
+		(output)
+		(text "seleciona_reg25" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg25" (rect 123 427 219 441)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 432)(pt 224 432))
+	)
+	(port
+		(pt 240 448)
+		(output)
+		(text "seleciona_reg26" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg26" (rect 122 443 219 457)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 448)(pt 224 448))
+	)
+	(port
+		(pt 240 464)
+		(output)
+		(text "seleciona_reg27" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg27" (rect 123 459 219 473)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 464)(pt 224 464))
+	)
+	(port
+		(pt 240 480)
+		(output)
+		(text "seleciona_reg28" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg28" (rect 123 475 219 489)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 480)(pt 224 480))
+	)
+	(port
+		(pt 240 496)
+		(output)
+		(text "seleciona_reg29" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg29" (rect 123 491 219 505)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 496)(pt 224 496))
+	)
+	(port
+		(pt 240 512)
+		(output)
+		(text "seleciona_reg30" (rect 0 0 97 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg30" (rect 122 507 219 521)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 512)(pt 224 512))
+	)
+	(port
+		(pt 240 528)
+		(output)
+		(text "seleciona_reg31" (rect 0 0 96 14)(font "Intel Clear" (font_size 8)))
+		(text "seleciona_reg31" (rect 123 523 219 537)(font "Intel Clear" (font_size 8)))
+		(line (pt 240 528)(pt 224 528))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 560))
+	)
+)

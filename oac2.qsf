@@ -1,0 +1,156 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+# Date created = 22:08:30  May 27, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		oac2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE Auto
+set_global_assignment -name TOP_LEVEL_ENTITY oac2
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:08:30  MAY 27, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BSF_FILE Um/um.bsf
+set_global_assignment -name BDF_FILE Um/um.bdf
+set_global_assignment -name VHDL_FILE Mux41_lpm/mux41_lpm.vhd
+set_global_assignment -name QIP_FILE Mux41_lpm/mux41_lpm.qip
+set_global_assignment -name SOURCE_FILE Mux41_lpm/mux41_lpm.cmp
+set_global_assignment -name VHDL_FILE Mux21_1bit_lpm/mux21_1bit_lpm.vhd
+set_global_assignment -name QIP_FILE Mux21_1bit_lpm/mux21_1bit_lpm.qip
+set_global_assignment -name SOURCE_FILE Mux21_1bit_lpm/mux21_1bit_lpm.cmp
+set_global_assignment -name BDF_FILE Endereco_jump/Endereco_jump.bdf
+set_global_assignment -name BSF_FILE control_ula/control_ula.bsf
+set_global_assignment -name BDF_FILE control_ula/control_ula.bdf
+set_global_assignment -name BDF_FILE Forward_Unit/forwarding_unit.bdf
+set_global_assignment -name VHDL_FILE campo_registradores/mux32x8.vhd
+set_global_assignment -name QIP_FILE campo_registradores/mux32x8.qip
+set_global_assignment -name SOURCE_FILE campo_registradores/mux32x8.cmp
+set_global_assignment -name BDF_FILE campo_registradores/campo_registradores.bdf
+set_global_assignment -name BDF_FILE decotificador_reg/decotificador_reg.bdf
+set_global_assignment -name VERILOG_FILE ram_InstructionMemory/inst_mem_ram_inst.v
+set_global_assignment -name VERILOG_FILE ram_InstructionMemory/inst_mem_ram_bb.v
+set_global_assignment -name VERILOG_FILE ram_InstructionMemory/inst_mem_ram.v
+set_global_assignment -name QIP_FILE ram_InstructionMemory/inst_mem_ram.qip
+set_global_assignment -name SOURCE_FILE ram_InstructionMemory/inst_mem_ram.cmp
+set_global_assignment -name VHDL_FILE ram_DataMemory/data_mem_ram_inst.vhd
+set_global_assignment -name VHDL_FILE ram_DataMemory/data_mem_ram.vhd
+set_global_assignment -name QIP_FILE ram_DataMemory/data_mem_ram.qip
+set_global_assignment -name SOURCE_FILE ram_DataMemory/data_mem_ram.cmp
+set_global_assignment -name BDF_FILE Reg_ID_EX/reg_id_ex.bdf
+set_global_assignment -name BDF_FILE "reg_MEM-WB/reg_MEM-WB.bdf"
+set_global_assignment -name BDF_FILE "Reg_EX-MEM/reg_EX-MEM.bdf"
+set_global_assignment -name BDF_FILE Reg4/reg4.bdf
+set_global_assignment -name BDF_FILE Reg5/reg5.bdf
+set_global_assignment -name BDF_FILE shift2_left/shift2_left.bdf
+set_global_assignment -name VHDL_FILE shift2_left/lpm_clshift_2_left.vhd
+set_global_assignment -name QIP_FILE shift2_left/lpm_clshift_2_left.qip
+set_global_assignment -name SOURCE_FILE shift2_left/lpm_clshift_2_left.cmp
+set_global_assignment -name BDF_FILE clo_intruction/clo_instruction.bdf
+set_global_assignment -name VHDL_FILE lpm_mux/lpm_mux_alu_inst.vhd
+set_global_assignment -name VHDL_FILE lpm_mux/lpm_mux_alu.vhd
+set_global_assignment -name QIP_FILE lpm_mux/lpm_mux_alu.qip
+set_global_assignment -name SOURCE_FILE lpm_mux/lpm_mux_alu.cmp
+set_global_assignment -name VHDL_FILE lpm_mult/lpm_mult_alu_inst.vhd
+set_global_assignment -name VHDL_FILE lpm_mult/lpm_mult_alu.vhd
+set_global_assignment -name QIP_FILE lpm_mult/lpm_mult_alu.qip
+set_global_assignment -name SOURCE_FILE lpm_mult/lpm_mult_alu.cmp
+set_global_assignment -name VHDL_FILE lmp_div/lpm_div_alu_inst.vhd
+set_global_assignment -name VHDL_FILE lmp_div/lpm_div_alu.vhd
+set_global_assignment -name QIP_FILE lmp_div/lpm_div_alu.qip
+set_global_assignment -name SOURCE_FILE lmp_div/lpm_div_alu.cmp
+set_global_assignment -name VHDL_FILE lmp_clshift_arith/lpm_clshift_arith_inst.vhd
+set_global_assignment -name VHDL_FILE lmp_clshift_arith/lpm_clshift_arith.vhd
+set_global_assignment -name QIP_FILE lmp_clshift_arith/lpm_clshift_arith.qip
+set_global_assignment -name SOURCE_FILE lmp_clshift_arith/lpm_clshift_arith.cmp
+set_global_assignment -name VHDL_FILE lmp_clshift/lmp_clshift_ula_inst.vhd
+set_global_assignment -name VHDL_FILE lmp_clshift/lmp_clshift_ula.vhd
+set_global_assignment -name QIP_FILE lmp_clshift/lmp_clshift_ula.qip
+set_global_assignment -name SOURCE_FILE lmp_clshift/lmp_clshift_ula.cmp
+set_global_assignment -name VERILOG_FILE Mux21_3bits/mux21_3bits_bb.v
+set_global_assignment -name VERILOG_FILE Mux21_3bits/mux21_3bits.v
+set_global_assignment -name QIP_FILE Mux21_3bits/mux21_3bits.qip
+set_global_assignment -name VERILOG_FILE Mux21_2bits/mux21_2bits_bb.v
+set_global_assignment -name VERILOG_FILE Mux21_2bits/mux21_2bits.v
+set_global_assignment -name QIP_FILE Mux21_2bits/mux21_2bits.qip
+set_global_assignment -name VERILOG_FILE mux21_1bit/mux21_1bit_inst.v
+set_global_assignment -name VERILOG_FILE mux21_1bit/mux21_1bit_bb.v
+set_global_assignment -name VERILOG_FILE mux21_1bit/mux21_1bit.v
+set_global_assignment -name QIP_FILE mux21_1bit/mux21_1bit.qip
+set_global_assignment -name SOURCE_FILE mux21_1bit/mux21_1bit.cmp
+set_global_assignment -name BDF_FILE 1bitULA5funcoes/1bitALU5functionsOverflow.bdf
+set_global_assignment -name BDF_FILE 1bitULA5funcoes/1bitALU5functions.bdf
+set_global_assignment -name BDF_FILE Mux41/mux41.bdf
+set_global_assignment -name BDF_FILE InstructionMemory/instructionmemory.bdf
+set_global_assignment -name BDF_FILE Hazard_Unit/hazard_unit.bdf
+set_global_assignment -name BDF_FILE Fulladder/fulladder.bdf
+set_global_assignment -name BDF_FILE ControlePipe/controlepipe.bdf
+set_global_assignment -name BDF_FILE 32bitULA6funcoes/32bitULA6funcoes.bdf
+set_global_assignment -name VHDL_FILE compare_a_equals_b.vhd
+set_global_assignment -name QIP_FILE compare_a_equals_b.qip
+set_global_assignment -name SOURCE_FILE compare_a_equals_b.cmp
+set_global_assignment -name BDF_FILE Sign_Ext/sign_ext.bdf
+set_global_assignment -name BDF_FILE Reg32/reg32.bdf
+set_global_assignment -name BDF_FILE "Reg_IF_ID/reg_IF-ID.bdf"
+set_global_assignment -name BDF_FILE Quatro/quatro.bdf
+set_global_assignment -name BDF_FILE Program_Counter/program_counter.bdf
+set_global_assignment -name BDF_FILE oac2/oac2.bdf
+set_global_assignment -name BDF_FILE Mux21/mux21.bdf
+set_global_assignment -name BDF_FILE ControlePipe/controlepipe2.bdf
+set_global_assignment -name BDF_FILE Reg1/reg1.bdf
+set_global_assignment -name BDF_FILE Reg6/reg6.bdf
+set_global_assignment -name BDF_FILE DataMemory/datamemory.bdf
+set_global_assignment -name BDF_FILE Sign_Ext_zero/sign_ext_zero.bdf
+set_global_assignment -name BDF_FILE Sign_Ext_zero/sign_ext_helper.bdf
+set_global_assignment -name BDF_FILE Sign_Ext_zero/sign_ext_helper2.bdf
+set_global_assignment -name QIP_FILE Mux41_31bits/mux41_31bits.qip
+set_global_assignment -name QIP_FILE Mux21_31bits/mux21_31bits.qip
+set_global_assignment -name QIP_FILE Mux21_5bits/mux21_5bits.qip
+set_global_assignment -name BDF_FILE in2_output/in2_output.bdf
+set_global_assignment -name QIP_FILE shamtzero/shamtzero.qip
+set_global_assignment -name QIP_FILE Shift_lui/shift_lui.qip
+set_global_assignment -name BDF_FILE Shift_lui/lui_result.bdf
+set_global_assignment -name BDF_FILE Fulladder/fulladder_enable.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name QIP_FILE reg_ra_31.qip
+set_global_assignment -name QIP_FILE Ra_reg_31/Ra_reg_31.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE oac2.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

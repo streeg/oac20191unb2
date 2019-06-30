@@ -1,0 +1,28 @@
+
+
+/home/guileb/Desktop/oac2trabfefa/lpm_xor0.tdf
+
+Jun 01 02PM:11:57>: Megafunction LPM_XOR is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+/home/guileb/Desktop/oac2trabfefa/lpm_xor0.tdf
+
+Jun 01 02PM:11:58>: Megafunction LPM_XOR is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+/home/guileb/Desktop/oac2trabfefa/lpm_xor0.tdf
+
+Jun 01 02PM:12:02>: Megafunction LPM_XOR is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift/lmp_clshift_ula.v
+
+Jun 03 09PM:44:50>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+lmp_clshift_ula.vhd
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?

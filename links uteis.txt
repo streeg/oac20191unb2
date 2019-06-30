@@ -1,0 +1,8 @@
+Achei um 'tutorial' de como implementar uma ula http://www.csc.villanova.edu/~mdamian/Past/csc2400fa13/assign/ALU.html
+
+http://pdf.datasheetcatalog.com/datasheet/philips/N74F382N.pdf - link do datasheet de uma alu de 4 bits
+http://web.cse.ohio-state.edu/~teodorescu.1/download/teaching/cse675.au08/ - Alguns links uteis de um professor ensinando a fazer uniciclo/multiciclo
+http://web.cse.ohio-state.edu/~teodorescu.1/download/teaching/cse675.au08/Cse675.02.E.MemoryDesign_part1.pdf - design da memoria de instrucao
+http://web.cse.ohio-state.edu/~teodorescu.1/download/teaching/cse675.au08/Cse675.02.F.ALUDesign_part1.pdf - aula de ohio ensinando a fazer uma alu de 32 bits
+http://web.cse.ohio-state.edu/~teodorescu.1/download/teaching/cse675.au08/Cse675.02.F.ALUDesign_part2.pdf - segunda parte da aula de ohio ensinando a fazer uma alu de 32 bits
+https://alexander.soto.io/mips-processor - Processador mips pipeline vhdl

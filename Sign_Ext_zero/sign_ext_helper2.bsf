@@ -1,0 +1,261 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 216 592)
+	(text "sign_ext_helper2" (rect 5 0 106 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 555 24 572)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "sign_in0" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in0" (rect 21 27 70 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "sign_in1" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in1" (rect 21 43 70 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "sign_in2" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in2" (rect 21 59 70 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "sign_in3" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in3" (rect 21 75 70 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "sign_in4" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in4" (rect 21 91 70 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "sign_in5" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in5" (rect 21 107 70 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "sign_in6" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in6" (rect 21 123 70 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "sign_in7" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in7" (rect 21 139 70 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "sign_in8" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in8" (rect 21 155 70 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "sign_in9" (rect 0 0 49 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in9" (rect 21 171 70 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "sign_in10" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in10" (rect 21 187 78 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "sign_in11" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in11" (rect 21 203 78 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "sign_in12" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in12" (rect 21 219 78 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "sign_in13" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in13" (rect 21 235 78 254)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "sign_in14" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in14" (rect 21 251 78 270)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 256)(pt 16 256))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "sign_in15" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in15" (rect 21 267 78 286)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 272)(pt 16 272))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "sign_in16" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in16" (rect 21 283 78 302)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "sign_in17" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in17" (rect 21 299 78 318)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 304)(pt 16 304))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "sign_in18" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in18" (rect 21 315 78 334)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 320)(pt 16 320))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "sign_in19" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in19" (rect 21 331 78 350)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 336)(pt 16 336))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "sign_in20" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in20" (rect 21 347 78 366)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 352)(pt 16 352))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "sign_in21" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in21" (rect 21 363 78 382)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 368)(pt 16 368))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "sign_in22" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in22" (rect 21 379 78 398)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 384)(pt 16 384))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "sign_in23" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in23" (rect 21 395 78 414)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 400)(pt 16 400))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "sign_in24" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in24" (rect 21 411 78 430)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 416)(pt 16 416))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "sign_in25" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in25" (rect 21 427 78 446)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 432)(pt 16 432))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "sign_in26" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in26" (rect 21 443 78 462)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 448)(pt 16 448))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "sign_in27" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in27" (rect 21 459 78 478)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 464)(pt 16 464))
+	)
+	(port
+		(pt 0 480)
+		(input)
+		(text "sign_in28" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in28" (rect 21 475 78 494)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 480)(pt 16 480))
+	)
+	(port
+		(pt 0 496)
+		(input)
+		(text "sign_in29" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in29" (rect 21 491 78 510)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 496)(pt 16 496))
+	)
+	(port
+		(pt 0 512)
+		(input)
+		(text "sign_in30" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in30" (rect 21 507 78 526)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 512)(pt 16 512))
+	)
+	(port
+		(pt 0 528)
+		(input)
+		(text "sign_in31" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_in31" (rect 21 523 78 542)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 528)(pt 16 528))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "sign_out[31..0]" (rect 0 0 88 19)(font "Intel Clear" (font_size 8)))
+		(text "sign_out[31..0]" (rect 91 27 179 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 560))
+	)
+)
