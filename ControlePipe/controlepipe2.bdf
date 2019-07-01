@@ -198,7 +198,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 1872 3040 2048 3056)
+	(rect 1936 3056 2112 3072)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "OpALU0" (rect 90 0 131 12)(font "Arial" ))
 	(pt 0 8)
@@ -4926,69 +4926,6 @@ agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 1792 2992 1856 3104)
-	(text "OR6" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst81" (rect 3 101 31 118)(font "Intel Clear" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "IN3" (rect 2 39 19 51)(font "Courier New" (bold))(invisible))
-		(text "IN3" (rect 2 39 19 51)(font "Courier New" (bold))(invisible))
-		(line (pt 0 48)(pt 15 48))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 13 32))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "IN4" (rect 2 55 19 67)(font "Courier New" (bold))(invisible))
-		(text "IN4" (rect 2 55 19 67)(font "Courier New" (bold))(invisible))
-		(line (pt 0 64)(pt 15 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "IN5" (rect 2 71 19 83)(font "Courier New" (bold))(invisible))
-		(text "IN5" (rect 2 71 19 83)(font "Courier New" (bold))(invisible))
-		(line (pt 0 80)(pt 13 80))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "IN6" (rect 2 87 19 99)(font "Courier New" (bold))(invisible))
-		(text "IN6" (rect 2 87 19 99)(font "Courier New" (bold))(invisible))
-		(line (pt 0 96)(pt 13 96))
-	)
-	(port
-		(pt 64 56)
-		(output)
-		(text "OUT" (rect 48 47 65 59)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 47 65 59)(font "Courier New" (bold))(invisible))
-		(line (pt 48 56)(pt 64 56))
-	)
-	(drawing
-		(line (pt 13 99)(pt 13 67))
-		(line (pt 13 45)(pt 13 13))
-		(line (pt 14 68)(pt 25 68))
-		(line (pt 14 45)(pt 25 45))
-		(arc (pt 7 61)(pt 7 51)(rect -14 40 19 73))
-		(arc (pt 49 56)(pt 25 45)(rect -6 45 57 108))
-		(arc (pt 25 67)(pt 49 56)(rect -6 5 57 68))
-	)
-)
-(symbol
 	(rect 1976 1704 2008 1736)
 	(text "GND" (rect 6 8 16 29)(font "Arial" (font_size 6))(vertical))
 	(text "inst83" (rect -6 3 11 31)(font "Intel Clear" )(vertical)(invisible))
@@ -5037,6 +4974,121 @@ agreement for further details.
 		(line (pt 14 12)(pt 14 37))
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
+)
+(symbol
+	(rect 1696 1744 1744 1776)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst80" (rect 3 21 31 38)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect 1856 2992 1920 3136)
+	(text "AND8" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst81" (rect 3 133 31 150)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 18 16))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "IN3" (rect 2 39 19 51)(font "Courier New" (bold))(invisible))
+		(text "IN3" (rect 2 39 19 51)(font "Courier New" (bold))(invisible))
+		(line (pt 0 48)(pt 18 48))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 18 32))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "IN4" (rect 2 55 19 67)(font "Courier New" (bold))(invisible))
+		(text "IN4" (rect 2 55 19 67)(font "Courier New" (bold))(invisible))
+		(line (pt 0 64)(pt 18 64))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "IN7" (rect 2 103 19 115)(font "Courier New" (bold))(invisible))
+		(text "IN7" (rect 2 103 19 115)(font "Courier New" (bold))(invisible))
+		(line (pt 0 112)(pt 18 112))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "IN6" (rect 2 87 19 99)(font "Courier New" (bold))(invisible))
+		(text "IN6" (rect 2 87 19 99)(font "Courier New" (bold))(invisible))
+		(line (pt 0 96)(pt 18 96))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "IN8" (rect 2 119 19 131)(font "Courier New" (bold))(invisible))
+		(text "IN8" (rect 2 119 19 131)(font "Courier New" (bold))(invisible))
+		(line (pt 0 128)(pt 18 128))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "IN5" (rect 2 71 19 83)(font "Courier New" (bold))(invisible))
+		(text "IN5" (rect 2 71 19 83)(font "Courier New" (bold))(invisible))
+		(line (pt 0 80)(pt 18 80))
+	)
+	(port
+		(pt 64 72)
+		(output)
+		(text "OUT" (rect 48 63 65 75)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 63 65 75)(font "Courier New" (bold))(invisible))
+		(line (pt 46 72)(pt 64 72))
+	)
+	(drawing
+		(line (pt 18 131)(pt 18 13))
+		(line (pt 18 59)(pt 33 59))
+		(line (pt 18 86)(pt 33 86))
+		(arc (pt 33 85)(pt 33 59)(rect 20 59 47 86))
+	)
+)
+(symbol
+	(rect 1808 3144 1840 3160)
+	(text "VCC" (rect 7 6 27 16)(font "Arial" (font_size 6)))
+	(text "inst82" (rect 3 -6 31 11)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 -3 24 9)(font "Courier New" (bold))(invisible))
+		(line (pt 16 0)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+	(flipx)
 )
 (connector
 	(pt 1648 8416)
@@ -5567,8 +5619,8 @@ agreement for further details.
 	(pt 1728 3632)
 )
 (connector
-	(pt 1856 3048)
-	(pt 1872 3048)
+	(pt 1920 3064)
+	(pt 1936 3064)
 )
 (connector
 	(pt 1704 3224)
@@ -5577,10 +5629,6 @@ agreement for further details.
 (connector
 	(pt 1776 3224)
 	(pt 1776 3072)
-)
-(connector
-	(pt 1776 3072)
-	(pt 1792 3072)
 )
 (connector
 	(pt 1728 3632)
@@ -5593,10 +5641,6 @@ agreement for further details.
 (connector
 	(pt 1784 3240)
 	(pt 1784 3088)
-)
-(connector
-	(pt 1784 3088)
-	(pt 1792 3088)
 )
 (connector
 	(pt 1240 3072)
@@ -5677,10 +5721,6 @@ agreement for further details.
 (connector
 	(pt 1536 3256)
 	(pt 1624 3256)
-)
-(connector
-	(pt 1688 1760)
-	(pt 1736 1760)
 )
 (connector
 	(pt 1632 2168)
@@ -7219,8 +7259,8 @@ agreement for further details.
 	(pt 1560 5528)
 )
 (connector
-	(pt 1736 1760)
-	(pt 1736 1704)
+	(pt 1760 1760)
+	(pt 1760 1704)
 )
 (connector
 	(pt 1776 1744)
@@ -7237,10 +7277,6 @@ agreement for further details.
 (connector
 	(pt 1800 2608)
 	(pt 1800 1784)
-)
-(connector
-	(pt 1736 1704)
-	(pt 2032 1704)
 )
 (connector
 	(pt 1784 1768)
@@ -9386,10 +9422,6 @@ agreement for further details.
 	(pt 2152 1528)
 )
 (connector
-	(pt 1792 3008)
-	(pt 1784 3008)
-)
-(connector
 	(pt 1784 3008)
 	(pt 1784 2896)
 )
@@ -9479,16 +9511,8 @@ agreement for further details.
 	(pt 1768 2976)
 )
 (connector
-	(pt 1768 3024)
-	(pt 1792 3024)
-)
-(connector
 	(pt 1752 3040)
 	(pt 1752 3112)
-)
-(connector
-	(pt 1752 3040)
-	(pt 1792 3040)
 )
 (connector
 	(pt 1688 3216)
@@ -9497,10 +9521,6 @@ agreement for further details.
 (connector
 	(pt 1760 3216)
 	(pt 1760 3056)
-)
-(connector
-	(pt 1760 3056)
-	(pt 1792 3056)
 )
 (connector
 	(pt 2032 1720)
@@ -9537,6 +9557,60 @@ agreement for further details.
 (connector
 	(pt 1800 1536)
 	(pt 1800 1544)
+)
+(connector
+	(pt 1744 1760)
+	(pt 1760 1760)
+)
+(connector
+	(pt 1688 1760)
+	(pt 1696 1760)
+)
+(connector
+	(text "andi_op" (rect 1771 1688 1808 1705)(font "Intel Clear" ))
+	(pt 1760 1704)
+	(pt 2032 1704)
+)
+(connector
+	(pt 1856 3008)
+	(pt 1784 3008)
+)
+(connector
+	(pt 1856 3024)
+	(pt 1768 3024)
+)
+(connector
+	(pt 1856 3040)
+	(pt 1752 3040)
+)
+(connector
+	(pt 1856 3056)
+	(pt 1760 3056)
+)
+(connector
+	(pt 1856 3072)
+	(pt 1776 3072)
+)
+(connector
+	(pt 1856 3088)
+	(pt 1784 3088)
+)
+(connector
+	(pt 1800 3104)
+	(pt 1800 3160)
+)
+(connector
+	(text "andi_op" (rect 1801 3088 1838 3105)(font "Intel Clear" ))
+	(pt 1856 3104)
+	(pt 1800 3104)
+)
+(connector
+	(pt 1856 3120)
+	(pt 1824 3120)
+)
+(connector
+	(pt 1824 3120)
+	(pt 1824 3144)
 )
 (junction (pt 1472 8632))
 (junction (pt 1560 8648))
@@ -9981,7 +10055,7 @@ agreement for further details.
 (text "LUI" (rect 1712 4368 1729 4382)(font "Arial" (font_size 8)))
 (text "beq" (rect 1640 2904 1661 2918)(font "Arial" (font_size 8)))
 (text "bne" (rect 1640 3040 1661 3054)(font "Arial" (font_size 8)))
-(text "OpALU0" (rect 2024 3008 2072 3022)(font "Arial" (font_size 8)))
+(text "OpALU0" (rect 2096 3008 2144 3022)(font "Arial" (font_size 8)))
 (text "SRA" (rect 1632 3280 1657 3294)(font "Arial" (font_size 8)))
 (text "LUI" (rect 1648 3560 1665 3574)(font "Arial" (font_size 8)))
 (text "andi" (rect 1648 1688 1671 1702)(font "Arial" (font_size 8)))
