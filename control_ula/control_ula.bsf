@@ -97,23 +97,16 @@ agreement for further details.
 	(port
 		(pt 224 128)
 		(output)
-		(text "clo_op" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
-		(text "clo_op" (rect 165 123 203 142)(font "Intel Clear" (font_size 8)))
+		(text "EnableOverflow" (rect 0 0 93 19)(font "Intel Clear" (font_size 8)))
+		(text "EnableOverflow" (rect 110 123 203 142)(font "Intel Clear" (font_size 8)))
 		(line (pt 224 128)(pt 208 128))
 	)
 	(port
 		(pt 224 144)
 		(output)
-		(text "EnableOverflow" (rect 0 0 93 19)(font "Intel Clear" (font_size 8)))
-		(text "EnableOverflow" (rect 110 139 203 158)(font "Intel Clear" (font_size 8)))
-		(line (pt 224 144)(pt 208 144))
-	)
-	(port
-		(pt 224 160)
-		(output)
 		(text "exception_funct" (rect 0 0 93 19)(font "Intel Clear" (font_size 8)))
-		(text "exception_funct" (rect 110 155 203 174)(font "Intel Clear" (font_size 8)))
-		(line (pt 224 160)(pt 208 160))
+		(text "exception_funct" (rect 110 139 203 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 224 144)(pt 208 144))
 	)
 	(drawing
 		(rectangle (rect 16 16 208 176))

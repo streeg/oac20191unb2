@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "06/30/2019 20:36:02"
+-- Generated on "07/01/2019 11:58:10"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          oac2
 -- 
@@ -36,10 +36,15 @@ ARCHITECTURE oac2_arch OF oac2_vhd_vec_tst IS
 -- signals                                                   
 SIGNAL ALUcontrol_to_ULA : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL CLK : STD_LOGIC;
+SIGNAL clo_op_to_ULA : STD_LOGIC;
 SIGNAL clockinstructionmemory : STD_LOGIC;
 SIGNAL code : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL control : STD_LOGIC_VECTOR(16 DOWNTO 0);
 SIGNAL DataCLK : STD_LOGIC;
+SIGNAL direction_to_ULA : STD_LOGIC;
+SIGNAL EnableOverflow_to_ULA : STD_LOGIC;
+SIGNAL EscreveReg_mem_to_fw : STD_LOGIC;
+SIGNAL EscreveReg_wb_to_fw : STD_LOGIC;
 SIGNAL EX_MEM_Enable : STD_LOGIC;
 SIGNAL Flush : STD_LOGIC;
 SIGNAL fw_A_to_mux : STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -48,17 +53,27 @@ SIGNAL ID_EX_Enable : STD_LOGIC;
 SIGNAL IF_ID_Enable : STD_LOGIC;
 SIGNAL instrlidas : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL MEM_WB_Enable : STD_LOGIC;
+SIGNAL mult_or_div_to_ULA : STD_LOGIC;
+SIGNAL nor_op_to_ULA : STD_LOGIC;
 SIGNAL PC_Enable : STD_LOGIC;
+SIGNAL Result_ALU_mem : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL result_end_pipe : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL resultALU : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL shift_arith_to_ULA : STD_LOGIC;
+SIGNAL shift_to_ULA : STD_LOGIC;
 COMPONENT oac2
 	PORT (
 	ALUcontrol_to_ULA : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
 	CLK : IN STD_LOGIC;
+	clo_op_to_ULA : OUT STD_LOGIC;
 	clockinstructionmemory : IN STD_LOGIC;
 	code : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	control : OUT STD_LOGIC_VECTOR(16 DOWNTO 0);
 	DataCLK : IN STD_LOGIC;
+	direction_to_ULA : OUT STD_LOGIC;
+	EnableOverflow_to_ULA : OUT STD_LOGIC;
+	EscreveReg_mem_to_fw : OUT STD_LOGIC;
+	EscreveReg_wb_to_fw : OUT STD_LOGIC;
 	EX_MEM_Enable : OUT STD_LOGIC;
 	Flush : OUT STD_LOGIC;
 	fw_A_to_mux : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -67,9 +82,14 @@ COMPONENT oac2
 	IF_ID_Enable : OUT STD_LOGIC;
 	instrlidas : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	MEM_WB_Enable : OUT STD_LOGIC;
+	mult_or_div_to_ULA : OUT STD_LOGIC;
+	nor_op_to_ULA : OUT STD_LOGIC;
 	PC_Enable : OUT STD_LOGIC;
+	Result_ALU_mem : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	result_end_pipe : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-	resultALU : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+	resultALU : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	shift_arith_to_ULA : OUT STD_LOGIC;
+	shift_to_ULA : OUT STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
@@ -78,10 +98,15 @@ BEGIN
 -- list connections between master ports and signals
 	ALUcontrol_to_ULA => ALUcontrol_to_ULA,
 	CLK => CLK,
+	clo_op_to_ULA => clo_op_to_ULA,
 	clockinstructionmemory => clockinstructionmemory,
 	code => code,
 	control => control,
 	DataCLK => DataCLK,
+	direction_to_ULA => direction_to_ULA,
+	EnableOverflow_to_ULA => EnableOverflow_to_ULA,
+	EscreveReg_mem_to_fw => EscreveReg_mem_to_fw,
+	EscreveReg_wb_to_fw => EscreveReg_wb_to_fw,
 	EX_MEM_Enable => EX_MEM_Enable,
 	Flush => Flush,
 	fw_A_to_mux => fw_A_to_mux,
@@ -90,9 +115,14 @@ BEGIN
 	IF_ID_Enable => IF_ID_Enable,
 	instrlidas => instrlidas,
 	MEM_WB_Enable => MEM_WB_Enable,
+	mult_or_div_to_ULA => mult_or_div_to_ULA,
+	nor_op_to_ULA => nor_op_to_ULA,
 	PC_Enable => PC_Enable,
+	Result_ALU_mem => Result_ALU_mem,
 	result_end_pipe => result_end_pipe,
-	resultALU => resultALU
+	resultALU => resultALU,
+	shift_arith_to_ULA => shift_arith_to_ULA,
+	shift_to_ULA => shift_to_ULA
 	);
 
 -- CLK

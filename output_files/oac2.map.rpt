@@ -1,5 +1,5 @@
 Analysis & Synthesis report for oac2
-Sun Jun 30 20:34:47 2019
+Mon Jul 01 11:56:32 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -401,16 +401,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 30 20:34:47 2019       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 01 11:56:32 2019       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; oac2                                        ;
 ; Top-level Entity Name              ; oac2                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,720                                       ;
-;     Total combinational functions  ; 2,600                                       ;
-;     Dedicated logic registers      ; 1,330                                       ;
-; Total registers                    ; 1330                                        ;
-; Total pins                         ; 162                                         ;
+; Total logic elements               ; 3,742                                       ;
+;     Total combinational functions  ; 2,616                                       ;
+;     Dedicated logic registers      ; 1,336                                       ;
+; Total registers                    ; 1336                                        ;
+; Total pins                         ; 203                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 655,360                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -577,6 +577,7 @@ agreement for further details.
 ; Shift_lui/lui_result.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Shift_lui/lui_result.bdf                            ;         ;
 ; Fulladder/fulladder_enable.bdf                ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Fulladder/fulladder_enable.bdf                      ;         ;
 ; Ra_reg_31/Ra_reg_31.vhd                       ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd                             ;         ;
+; Clo_id/clo_id.bdf                             ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Clo_id/clo_id.bdf                                   ;         ;
 ; lpm_compare.tdf                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_compare.tdf       ;         ;
 ; comptree.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/comptree.inc          ;         ;
 ; altshift.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
@@ -591,7 +592,7 @@ agreement for further details.
 ; altram.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_t2u1.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/altsyncram_t2u1.tdf                              ;         ;
-; pipelineinst.mif                              ; yes             ; Auto-Found Memory Initialization File  ; C:/oac_lab2/oac20191unb2/pipelineinst.mif                                    ;         ;
+; PipelineInst.mif                              ; yes             ; Auto-Found Memory Initialization File  ; C:/oac_lab2/oac20191unb2/PipelineInst.mif                                    ;         ;
 ; lpm_mux.tdf                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
 ; muxlut.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
 ; bypassff.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
@@ -634,31 +635,31 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,720     ;
+; Estimated Total logic elements              ; 3,742     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2600      ;
+; Total combinational functions               ; 2616      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2006      ;
-;     -- 3 input functions                    ; 548       ;
-;     -- <=2 input functions                  ; 46        ;
+;     -- 4 input functions                    ; 2010      ;
+;     -- 3 input functions                    ; 565       ;
+;     -- <=2 input functions                  ; 41        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2600      ;
+;     -- normal mode                          ; 2616      ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
-; Total registers                             ; 1330      ;
-;     -- Dedicated logic registers            ; 1330      ;
+; Total registers                             ; 1336      ;
+;     -- Dedicated logic registers            ; 1336      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 162       ;
+; I/O pins                                    ; 203       ;
 ; Total memory bits                           ; 655360    ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 1360      ;
-; Total fan-out                               ; 15353     ;
-; Average fan-out                             ; 3.53      ;
+; Maximum fan-out                             ; 1366      ;
+; Total fan-out                               ; 15504     ;
+; Average fan-out                             ; 3.48      ;
 +---------------------------------------------+-----------+
 
 
@@ -667,7 +668,7 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                               ; Entity Name               ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
-; |oac2                                        ; 2600 (2)            ; 1330 (0)                  ; 655360      ; 0            ; 0       ; 0         ; 162  ; 0            ; |oac2                                                                                                                             ; oac2                      ; work         ;
+; |oac2                                        ; 2616 (2)            ; 1336 (0)                  ; 655360      ; 0            ; 0       ; 0         ; 203  ; 0            ; |oac2                                                                                                                             ; oac2                      ; work         ;
 ;    |32bitULA6funcoes:inst20|                 ; 564 (11)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20                                                                                                     ; 32bitULA6funcoes          ; work         ;
 ;       |1bitALU5functions:inst10|             ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|1bitALU5functions:inst10                                                                            ; 1bitALU5functions         ; work         ;
 ;          |fulladder:add0|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|1bitALU5functions:inst10|fulladder:add0                                                             ; fulladder                 ; work         ;
@@ -832,11 +833,12 @@ agreement for further details.
 ;          |mux41_lpm:inst3|                   ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|1bitALU5functionsOverflow:inst|mux41_lpm:inst3                                                      ; mux41_lpm                 ; work         ;
 ;             |lpm_mux:LPM_MUX_component|      ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|lpm_mux:LPM_MUX_component                            ; lpm_mux                   ; work         ;
 ;                |mux_l7e:auto_generated|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|lpm_mux:LPM_MUX_component|mux_l7e:auto_generated     ; mux_l7e                   ; work         ;
-;       |clo_instruction:inst8|                ; 36 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8                                                                               ; clo_instruction           ; work         ;
+;       |clo_instruction:inst8|                ; 38 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8                                                                               ; clo_instruction           ; work         ;
 ;          |fulladder_enable:inst103|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst103                                                      ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst106|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst106                                                      ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst22|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst22                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst28|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst28                                                       ; fulladder_enable          ; work         ;
+;          |fulladder_enable:inst31|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst31                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst34|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst34                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst37|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst37                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst43|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst43                                                       ; fulladder_enable          ; work         ;
@@ -851,15 +853,16 @@ agreement for further details.
 ;          |fulladder_enable:inst70|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst70                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst73|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst73                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst76|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst76                                                       ; fulladder_enable          ; work         ;
-;          |fulladder_enable:inst79|           ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst79                                                       ; fulladder_enable          ; work         ;
+;          |fulladder_enable:inst79|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst79                                                       ; fulladder_enable          ; work         ;
+;          |fulladder_enable:inst82|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst82                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst85|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst85                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst88|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst88                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst91|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst91                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst94|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst94                                                       ; fulladder_enable          ; work         ;
 ;          |fulladder_enable:inst97|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|clo_instruction:inst8|fulladder_enable:inst97                                                       ; fulladder_enable          ; work         ;
-;       |lmp_clshift_ula:inst40|               ; 250 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|lmp_clshift_ula:inst40                                                                              ; lmp_clshift_ula           ; work         ;
-;          |lpm_clshift:LPM_CLSHIFT_component| ; 250 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component                                            ; lpm_clshift               ; work         ;
-;             |lpm_clshift_vjc:auto_generated| ; 250 (250)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated             ; lpm_clshift_vjc           ; work         ;
+;       |lmp_clshift_ula:inst40|               ; 248 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|lmp_clshift_ula:inst40                                                                              ; lmp_clshift_ula           ; work         ;
+;          |lpm_clshift:LPM_CLSHIFT_component| ; 248 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component                                            ; lpm_clshift               ; work         ;
+;             |lpm_clshift_vjc:auto_generated| ; 248 (248)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated             ; lpm_clshift_vjc           ; work         ;
 ;       |lpm_clshift_arith:inst50|             ; 101 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|lpm_clshift_arith:inst50                                                                            ; lpm_clshift_arith         ; work         ;
 ;          |lpm_clshift:LPM_CLSHIFT_component| ; 101 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|lpm_clshift_arith:inst50|lpm_clshift:LPM_CLSHIFT_component                                          ; lpm_clshift               ; work         ;
 ;             |lpm_clshift_euc:auto_generated| ; 101 (101)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|lpm_clshift_arith:inst50|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_euc:auto_generated           ; lpm_clshift_euc           ; work         ;
@@ -910,14 +913,14 @@ agreement for further details.
 ;          |fulladder:add0|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:instpoiiuyh|1bitALU5functions:inst47|fulladder:add0                                                        ; fulladder                 ; work         ;
 ;       |1bitALU5functions:inst48|             ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:instpoiiuyh|1bitALU5functions:inst48                                                                       ; 1bitALU5functions         ; work         ;
 ;          |fulladder:add0|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:instpoiiuyh|1bitALU5functions:inst48|fulladder:add0                                                        ; fulladder                 ; work         ;
-;    |campo_registradores:inst24|              ; 1562 (0)            ; 992 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24                                                                                                  ; campo_registradores       ; work         ;
+;    |campo_registradores:inst24|              ; 1572 (0)            ; 992 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24                                                                                                  ; campo_registradores       ; work         ;
 ;       |decotificador_reg:inst|               ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|decotificador_reg:inst                                                                           ; decotificador_reg         ; work         ;
-;       |mux32x8:inst1|                        ; 759 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst1                                                                                    ; mux32x8                   ; work         ;
-;          |lpm_mux:LPM_MUX_component|         ; 759 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst1|lpm_mux:LPM_MUX_component                                                          ; lpm_mux                   ; work         ;
-;             |mux_tae:auto_generated|         ; 759 (759)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst1|lpm_mux:LPM_MUX_component|mux_tae:auto_generated                                   ; mux_tae                   ; work         ;
-;       |mux32x8:inst57|                       ; 762 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst57                                                                                   ; mux32x8                   ; work         ;
-;          |lpm_mux:LPM_MUX_component|         ; 762 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst57|lpm_mux:LPM_MUX_component                                                         ; lpm_mux                   ; work         ;
-;             |mux_tae:auto_generated|         ; 762 (762)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst57|lpm_mux:LPM_MUX_component|mux_tae:auto_generated                                  ; mux_tae                   ; work         ;
+;       |mux32x8:inst1|                        ; 768 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst1                                                                                    ; mux32x8                   ; work         ;
+;          |lpm_mux:LPM_MUX_component|         ; 768 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst1|lpm_mux:LPM_MUX_component                                                          ; lpm_mux                   ; work         ;
+;             |mux_tae:auto_generated|         ; 768 (768)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst1|lpm_mux:LPM_MUX_component|mux_tae:auto_generated                                   ; mux_tae                   ; work         ;
+;       |mux32x8:inst57|                       ; 763 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst57                                                                                   ; mux32x8                   ; work         ;
+;          |lpm_mux:LPM_MUX_component|         ; 763 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst57|lpm_mux:LPM_MUX_component                                                         ; lpm_mux                   ; work         ;
+;             |mux_tae:auto_generated|         ; 763 (763)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst57|lpm_mux:LPM_MUX_component|mux_tae:auto_generated                                  ; mux_tae                   ; work         ;
 ;       |reg32:inst1ahduahda|                  ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|reg32:inst1ahduahda                                                                              ; reg32                     ; work         ;
 ;       |reg32:inst1huhuhw|                    ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|reg32:inst1huhuhw                                                                                ; reg32                     ; work         ;
 ;       |reg32:inst1loloa|                     ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|reg32:inst1loloa                                                                                 ; reg32                     ; work         ;
@@ -949,8 +952,9 @@ agreement for further details.
 ;       |reg32:instquhutys|                    ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|reg32:instquhutys                                                                                ; reg32                     ; work         ;
 ;       |reg32:instwuqhesn|                    ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|reg32:instwuqhesn                                                                                ; reg32                     ; work         ;
 ;       |reg32:instyyywqyws|                   ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|reg32:instyyywqyws                                                                               ; reg32                     ; work         ;
-;    |control_ula:inst37|                      ; 26 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|control_ula:inst37                                                                                                          ; control_ula               ; work         ;
-;    |controlepipe2:inst1|                     ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|controlepipe2:inst1                                                                                                         ; controlepipe2             ; work         ;
+;    |clo_id:inst5|                            ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|clo_id:inst5                                                                                                                ; clo_id                    ; work         ;
+;    |control_ula:inst37|                      ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|control_ula:inst37                                                                                                          ; control_ula               ; work         ;
+;    |controlepipe2:inst1|                     ; 30 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|controlepipe2:inst1                                                                                                         ; controlepipe2             ; work         ;
 ;    |datamemory:inst25|                       ; 36 (0)              ; 2 (0)                     ; 524288      ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|datamemory:inst25                                                                                                           ; datamemory                ; work         ;
 ;       |data_mem_ram:inst|                    ; 36 (0)              ; 2 (0)                     ; 524288      ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|datamemory:inst25|data_mem_ram:inst                                                                                         ; data_mem_ram              ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 36 (0)              ; 2 (0)                     ; 524288      ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component                                                         ; altsyncram                ; work         ;
@@ -970,18 +974,18 @@ agreement for further details.
 ;    |mux21_31bits:inst32|                     ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst32                                                                                                         ; mux21_31bits              ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst32|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
 ;          |mux_69e:auto_generated|            ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst32|lpm_mux:LPM_MUX_component|mux_69e:auto_generated                                                        ; mux_69e                   ; work         ;
-;    |mux21_31bits:inst36|                     ; 141 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst36                                                                                                         ; mux21_31bits              ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 141 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst36|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
-;          |mux_69e:auto_generated|            ; 141 (141)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst36|lpm_mux:LPM_MUX_component|mux_69e:auto_generated                                                        ; mux_69e                   ; work         ;
+;    |mux21_31bits:inst36|                     ; 136 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst36                                                                                                         ; mux21_31bits              ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 136 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst36|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
+;          |mux_69e:auto_generated|            ; 136 (136)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst36|lpm_mux:LPM_MUX_component|mux_69e:auto_generated                                                        ; mux_69e                   ; work         ;
 ;    |mux21_31bits:inst51|                     ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst51                                                                                                         ; mux21_31bits              ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst51|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
 ;          |mux_69e:auto_generated|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst51|lpm_mux:LPM_MUX_component|mux_69e:auto_generated                                                        ; mux_69e                   ; work         ;
 ;    |mux21_5bits:inst33|                      ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_5bits:inst33                                                                                                          ; mux21_5bits               ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_5bits:inst33|lpm_mux:LPM_MUX_component                                                                                ; lpm_mux                   ; work         ;
 ;          |mux_m7e:auto_generated|            ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_5bits:inst33|lpm_mux:LPM_MUX_component|mux_m7e:auto_generated                                                         ; mux_m7e                   ; work         ;
-;    |mux41_31bits:inst30|                     ; 65 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30                                                                                                         ; mux41_31bits              ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 65 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
-;          |mux_tsc:auto_generated|            ; 65 (65)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated                                                        ; mux_tsc                   ; work         ;
+;    |mux41_31bits:inst30|                     ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30                                                                                                         ; mux41_31bits              ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
+;          |mux_tsc:auto_generated|            ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated                                                        ; mux_tsc                   ; work         ;
 ;    |program_counter:inst|                    ; 10 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|program_counter:inst                                                                                                        ; program_counter           ; work         ;
 ;       |reg32:inst|                           ; 10 (10)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|program_counter:inst|reg32:inst                                                                                             ; reg32                     ; work         ;
 ;    |reg_EX-MEM:inst21|                       ; 0 (0)               ; 97 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_EX-MEM:inst21                                                                                                           ; reg_EX-MEM                ; work         ;
@@ -1005,7 +1009,7 @@ agreement for further details.
 ;       |reg32:inst10|                         ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_MEM-WB:inst22|reg32:inst10                                                                                              ; reg32                     ; work         ;
 ;       |reg32:opa|                            ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_MEM-WB:inst22|reg32:opa                                                                                                 ; reg32                     ; work         ;
 ;       |reg5:inst12|                          ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_MEM-WB:inst22|reg5:inst12                                                                                               ; reg5                      ; work         ;
-;    |reg_id_ex:inst19|                        ; 0 (0)               ; 112 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_id_ex:inst19                                                                                                            ; reg_id_ex                 ; work         ;
+;    |reg_id_ex:inst19|                        ; 0 (0)               ; 118 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_id_ex:inst19                                                                                                            ; reg_id_ex                 ; work         ;
 ;       |reg1:asdassss|                        ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_id_ex:inst19|reg1:asdassss                                                                                              ; reg1                      ; work         ;
 ;       |reg1:inst10|                          ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_id_ex:inst19|reg1:inst10                                                                                                ; reg1                      ; work         ;
 ;       |reg1:inst1|                           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_id_ex:inst19|reg1:inst1                                                                                                 ; reg1                      ; work         ;
@@ -1022,6 +1026,7 @@ agreement for further details.
 ;       |reg32:tt|                             ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_id_ex:inst19|reg32:tt                                                                                                   ; reg32                     ; work         ;
 ;       |reg5:inst132|                         ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_id_ex:inst19|reg5:inst132                                                                                               ; reg5                      ; work         ;
 ;       |reg5:instttttttttttt|                 ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_id_ex:inst19|reg5:instttttttttttt                                                                                       ; reg5                      ; work         ;
+;       |reg6:12312|                           ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_id_ex:inst19|reg6:12312                                                                                                 ; reg6                      ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2396,7 +2401,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1330  ;
+; Total registers                              ; 1336  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 10    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -2413,9 +2418,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |oac2|program_counter:inst|reg32:inst|b3                                                                          ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |oac2|mux41_31bits:inst30|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated|result_node[27]                        ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |oac2|mux21_31bits:inst29|lpm_mux:LPM_MUX_component|mux_69e:auto_generated|result_node[7]                         ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |oac2|mux21_31bits:inst29|lpm_mux:LPM_MUX_component|mux_69e:auto_generated|result_node[2]                         ;
 ; 7:1                ; 15 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |oac2|mux21_31bits:inst36|lpm_mux:LPM_MUX_component|mux_69e:auto_generated|result_node[16]                        ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |oac2|32bitULA6funcoes:inst20|lpm_mux_alu:inst63|lpm_mux:LPM_MUX_component|mux_69e:auto_generated|result_node[12] ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |oac2|32bitULA6funcoes:inst20|lpm_mux_alu:inst63|lpm_mux:LPM_MUX_component|mux_69e:auto_generated|result_node[13] ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |oac2|32bitULA6funcoes:inst20|lpm_mux_alu:inst63|lpm_mux:LPM_MUX_component|mux_69e:auto_generated|result_node[7]  ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |oac2|32bitULA6funcoes:inst20|lpm_mux_alu:inst63|lpm_mux:LPM_MUX_component|mux_69e:auto_generated|result_node[3]  ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |oac2|32bitULA6funcoes:inst20|lpm_mux_alu:inst63|lpm_mux:LPM_MUX_component|mux_69e:auto_generated|result_node[1]  ;
@@ -9244,22 +9249,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 162                         ;
-; cycloneiii_ff         ; 1330                        ;
+; boundary_port         ; 203                         ;
+; cycloneiii_ff         ; 1336                        ;
 ;     ENA               ; 995                         ;
 ;     ENA SLD           ; 10                          ;
-;     plain             ; 325                         ;
-; cycloneiii_lcell_comb ; 2602                        ;
-;     normal            ; 2602                        ;
+;     plain             ; 331                         ;
+; cycloneiii_lcell_comb ; 2618                        ;
+;     normal            ; 2618                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 44                          ;
-;         3 data inputs ; 548                         ;
-;         4 data inputs ; 2006                        ;
+;         2 data inputs ; 39                          ;
+;         3 data inputs ; 565                         ;
+;         4 data inputs ; 2010                        ;
 ; cycloneiii_ram_block  ; 96                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 42.00                       ;
-; Average LUT depth     ; 9.19                        ;
+; Average LUT depth     ; 9.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -9268,7 +9273,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:21     ;
+; Top            ; 00:00:27     ;
 +----------------+--------------+
 
 
@@ -9278,7 +9283,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Jun 30 20:33:47 2019
+    Info: Processing started: Mon Jul 01 11:55:21 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off oac2 -c oac2
 Warning (125092): Tcl Script File reg_ra_31.qip not found
     Info (125063): set_global_assignment -name QIP_FILE reg_ra_31.qip
@@ -9431,7 +9436,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file fulladd
 Info (12021): Found 2 design units, including 1 entities, in source file ra_reg_31/ra_reg_31.vhd
     Info (12022): Found design unit 1: ra_reg_31-SYN File: C:/oac_lab2/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 51
     Info (12023): Found entity 1: Ra_reg_31 File: C:/oac_lab2/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file clo_id/clo_id.bdf
+    Info (12023): Found entity 1: clo_id
 Info (12127): Elaborating entity "oac2" for the top level hierarchy
+Warning (275011): Block or symbol "forwarding_unit" of instance "inst27" overlaps another block or symbol
 Warning (275009): Pin "clockinstructionmemory" not connected
 Warning (275008): Primitive "NOT" of instance "inst41" not used
 Info (12128): Elaborating entity "hazard_unit" for hierarchy "hazard_unit:inst12"
@@ -9491,6 +9499,8 @@ Info (12133): Instantiated megafunction "instructionmemory:inst2|inst_mem_ram:in
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_t2u1.tdf
     Info (12023): Found entity 1: altsyncram_t2u1 File: C:/oac_lab2/oac20191unb2/db/altsyncram_t2u1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_t2u1" for hierarchy "instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_t2u1:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Warning (113028): 4093 out of 4096 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/oac_lab2/oac20191unb2/PipelineInst.mif Line: 1
+    Warning (113027): Addresses ranging from 3 to 4095 are not initialized File: C:/oac_lab2/oac20191unb2/PipelineInst.mif Line: 1
 Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst"
 Info (12128): Elaborating entity "reg32" for hierarchy "program_counter:inst|reg32:inst"
 Info (12128): Elaborating entity "mux21_31bits" for hierarchy "mux21_31bits:inst52"
@@ -9512,6 +9522,7 @@ Info (12128): Elaborating entity "reg5" for hierarchy "reg_EX-MEM:inst21|reg5:in
 Info (12128): Elaborating entity "reg_id_ex" for hierarchy "reg_id_ex:inst19"
 Info (12128): Elaborating entity "reg6" for hierarchy "reg_id_ex:inst19|reg6:1314214"
 Info (12128): Elaborating entity "controlepipe2" for hierarchy "controlepipe2:inst1"
+Warning (275011): Block or symbol "AND6" of instance "inst17" overlaps another block or symbol
 Info (12128): Elaborating entity "reg_IF-ID" for hierarchy "reg_IF-ID:instjjjjjj"
 Info (12128): Elaborating entity "32bitULA6funcoes" for hierarchy "32bitULA6funcoes:inst3"
 Info (12128): Elaborating entity "1bitALU5functionsOverflow" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst"
@@ -9724,6 +9735,12 @@ Info (12128): Elaborating entity "sign_ext_zero" for hierarchy "sign_ext_zero:in
 Warning (275008): Primitive "GND" of instance "inst17" not used
 Info (12128): Elaborating entity "mux21" for hierarchy "mux21:inst45"
 Info (12128): Elaborating entity "control_ula" for hierarchy "control_ula:inst37"
+Info (12128): Elaborating entity "clo_id" for hierarchy "clo_id:inst5"
+Warning (275008): Primitive "NOT" of instance "inst10" not used
+Warning (275008): Primitive "NOT" of instance "inst11" not used
+Warning (275008): Primitive "NOT" of instance "inst12" not used
+Warning (275008): Primitive "NOT" of instance "inst70" not used
+Warning (275008): Primitive "NOT" of instance "inst9" not used
 Info (12128): Elaborating entity "mux41_31bits" for hierarchy "mux41_31bits:inst30"
 Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux41_31bits:inst30|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 70
 Info (12130): Elaborated megafunction instantiation "mux41_31bits:inst30|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 70
@@ -9826,15 +9843,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clockinstructionmemory"
-Info (21057): Implemented 4063 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4126 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 159 output pins
-    Info (21061): Implemented 3805 logic cells
+    Info (21059): Implemented 200 output pins
+    Info (21061): Implemented 3827 logic cells
     Info (21064): Implemented 96 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 84 warnings
     Info: Peak virtual memory: 4958 megabytes
-    Info: Processing ended: Sun Jun 30 20:34:48 2019
-    Info: Elapsed time: 00:01:01
-    Info: Total CPU time (on all processors): 00:01:19
+    Info: Processing ended: Mon Jul 01 11:56:32 2019
+    Info: Elapsed time: 00:01:11
+    Info: Total CPU time (on all processors): 00:01:30
 
 
