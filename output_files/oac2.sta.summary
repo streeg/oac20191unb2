@@ -3,75 +3,75 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -15.753
-TNS   : -5718.714
+Slack : -113.010
+TNS   : -13116.575
 
 Type  : Slow 1200mV 85C Model Setup 'DataCLK'
-Slack : -2.687
-TNS   : -663.123
+Slack : -2.559
+TNS   : -655.906
 
 Type  : Slow 1200mV 85C Model Hold 'DataCLK'
-Slack : 0.358
+Slack : 0.293
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.372
+Slack : 0.336
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1352.000
+TNS   : -1416.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DataCLK'
 Slack : -3.000
 TNS   : -770.248
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -13.987
-TNS   : -5035.466
+Slack : -100.776
+TNS   : -11594.996
 
 Type  : Slow 1200mV 0C Model Setup 'DataCLK'
-Slack : -2.301
-TNS   : -569.881
-
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.339
-TNS   : 0.000
+Slack : -2.212
+TNS   : -560.079
 
 Type  : Slow 1200mV 0C Model Hold 'DataCLK'
-Slack : 0.340
+Slack : 0.277
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.303
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1352.000
+TNS   : -1416.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DataCLK'
 Slack : -3.000
 TNS   : -770.248
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -8.380
-TNS   : -2894.330
+Slack : -63.910
+TNS   : -7151.447
 
 Type  : Fast 1200mV 0C Model Setup 'DataCLK'
-Slack : -1.205
-TNS   : -255.310
+Slack : -1.144
+TNS   : -252.030
 
 Type  : Fast 1200mV 0C Model Hold 'DataCLK'
-Slack : 0.174
+Slack : 0.131
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.193
+Slack : 0.176
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1428.825
+TNS   : -1499.561
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DataCLK'
 Slack : -3.000
-TNS   : -398.325
+TNS   : -398.446
 
 ------------------------------------------------------------

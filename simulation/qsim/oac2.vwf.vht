@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "07/01/2019 15:33:21"
+-- Generated on "07/01/2019 16:01:27"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          oac2
 -- 
@@ -49,10 +49,12 @@ SIGNAL EX_MEM_Enable : STD_LOGIC;
 SIGNAL Flush : STD_LOGIC;
 SIGNAL fw_A_to_mux : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL fw_B_to_mux : STD_LOGIC_VECTOR(1 DOWNTO 0);
+SIGNAL Hi_mem : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL ID_control : STD_LOGIC_VECTOR(16 DOWNTO 0);
 SIGNAL ID_EX_Enable : STD_LOGIC;
 SIGNAL IF_ID_Enable : STD_LOGIC;
 SIGNAL instrlidas : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL Low_mem : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL MEM_WB_Enable : STD_LOGIC;
 SIGNAL mult_or_div_to_ULA : STD_LOGIC;
 SIGNAL nor_op_to_ULA : STD_LOGIC;
@@ -79,10 +81,12 @@ COMPONENT oac2
 	Flush : OUT STD_LOGIC;
 	fw_A_to_mux : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
 	fw_B_to_mux : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+	Hi_mem : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	ID_control : OUT STD_LOGIC_VECTOR(16 DOWNTO 0);
 	ID_EX_Enable : OUT STD_LOGIC;
 	IF_ID_Enable : OUT STD_LOGIC;
 	instrlidas : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	Low_mem : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	MEM_WB_Enable : OUT STD_LOGIC;
 	mult_or_div_to_ULA : OUT STD_LOGIC;
 	nor_op_to_ULA : OUT STD_LOGIC;
@@ -113,10 +117,12 @@ BEGIN
 	Flush => Flush,
 	fw_A_to_mux => fw_A_to_mux,
 	fw_B_to_mux => fw_B_to_mux,
+	Hi_mem => Hi_mem,
 	ID_control => ID_control,
 	ID_EX_Enable => ID_EX_Enable,
 	IF_ID_Enable => IF_ID_Enable,
 	instrlidas => instrlidas,
+	Low_mem => Low_mem,
 	MEM_WB_Enable => MEM_WB_Enable,
 	mult_or_div_to_ULA => mult_or_div_to_ULA,
 	nor_op_to_ULA => nor_op_to_ULA,
