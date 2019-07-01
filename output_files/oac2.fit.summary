@@ -1,15 +1,15 @@
-Fitter Status : Successful - Mon Jul 01 16:01:12 2019
+Fitter Status : Successful - Mon Jul 01 18:00:21 2019
 Quartus Prime Version : 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 Revision Name : oac2
 Top-level Entity Name : oac2
 Family : Cyclone IV E
 Device : EP4CE40F29C6
 Timing Models : Final
-Total logic elements : 4,014 / 39,600 ( 10 % )
-    Total combinational functions : 3,854 / 39,600 ( 10 % )
-    Dedicated logic registers : 1,415 / 39,600 ( 4 % )
-Total registers : 1415
-Total pins : 330 / 533 ( 62 % )
+Total logic elements : 4,231 / 39,600 ( 11 % )
+    Total combinational functions : 4,073 / 39,600 ( 10 % )
+    Dedicated logic registers : 1,414 / 39,600 ( 4 % )
+Total registers : 1414
+Total pins : 426 / 533 ( 80 % )
 Total virtual pins : 0
 Total memory bits : 655,360 / 1,161,216 ( 56 % )
 Embedded Multiplier 9-bit elements : 8 / 232 ( 3 % )

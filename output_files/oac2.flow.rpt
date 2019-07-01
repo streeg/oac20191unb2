@@ -1,5 +1,5 @@
 Flow report for oac2
-Mon Jul 01 16:01:33 2019
+Mon Jul 01 18:01:04 2019
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jul 01 16:01:33 2019       ;
+; Flow Status                        ; Successful - Mon Jul 01 18:01:04 2019       ;
 ; Quartus Prime Version              ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
 ; Revision Name                      ; oac2                                        ;
 ; Top-level Entity Name              ; oac2                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4,014 / 39,600 ( 10 % )                     ;
-;     Total combinational functions  ; 3,854 / 39,600 ( 10 % )                     ;
-;     Dedicated logic registers      ; 1,415 / 39,600 ( 4 % )                      ;
-; Total registers                    ; 1415                                        ;
-; Total pins                         ; 330 / 533 ( 62 % )                          ;
+; Total logic elements               ; 4,231 / 39,600 ( 11 % )                     ;
+;     Total combinational functions  ; 4,073 / 39,600 ( 10 % )                     ;
+;     Dedicated logic registers      ; 1,414 / 39,600 ( 4 % )                      ;
+; Total registers                    ; 1414                                        ;
+; Total pins                         ; 426 / 533 ( 80 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 655,360 / 1,161,216 ( 56 % )                ;
 ; Embedded Multiplier 9-bit elements ; 8 / 232 ( 3 % )                             ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/01/2019 15:59:33 ;
+; Start date & time ; 07/01/2019 17:58:12 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; oac2                ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+------------------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                          ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+------------------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 247207025774753.156200757309308                ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 247207025774753.156201469207156                ; --            ; --          ; --         ;
 ; MISC_FILE                           ; Mux41_lpm/mux41_lpm.bsf                        ; --            ; --          ; --         ;
 ; MISC_FILE                           ; Mux41_lpm/mux41_lpm.inc                        ; --            ; --          ; --         ;
 ; MISC_FILE                           ; Mux41_lpm/mux41_lpm.cmp                        ; --            ; --          ; --         ;
@@ -147,6 +147,10 @@ agreement for further details.
 ; MISC_FILE                           ; ConstantControl/constcontrol_bb.v              ; --            ; --          ; --         ;
 ; MISC_FILE                           ; Mux21_17bits-Control/mux21_17bits_control.bsf  ; --            ; --          ; --         ;
 ; MISC_FILE                           ; Mux21_17bits-Control/mux21_17bits_control_bb.v ; --            ; --          ; --         ;
+; MISC_FILE                           ; lpm_mult/lpm_mult_alu_signed.bsf               ; --            ; --          ; --         ;
+; MISC_FILE                           ; lpm_mult/lpm_mult_alu_signed_bb.v              ; --            ; --          ; --         ;
+; MISC_FILE                           ; lmp_div/lpm_div_alu_signed.bsf                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; lmp_div/lpm_div_alu_signed_bb.v                ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family)         ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)         ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)         ; --            ; --          ; Top        ;
@@ -161,13 +165,13 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:36     ; 1.0                     ; 4937 MB             ; 00:00:46                           ;
-; Fitter                    ; 00:01:00     ; 1.1                     ; 5633 MB             ; 00:01:26                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4711 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.4                     ; 4863 MB             ; 00:00:06                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4662 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4723 MB             ; 00:00:05                           ;
-; Total                     ; 00:01:51     ; --                      ; --                  ; 00:02:26                           ;
+; Analysis & Synthesis      ; 00:00:47     ; 1.0                     ; 4948 MB             ; 00:00:50                           ;
+; Fitter                    ; 00:01:18     ; 1.1                     ; 5625 MB             ; 00:01:48                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4711 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:14     ; 3.2                     ; 5049 MB             ; 00:00:15                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4723 MB             ; 00:00:05                           ;
+; Total                     ; 00:02:28     ; --                      ; --                  ; 00:03:01                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

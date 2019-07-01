@@ -1,5 +1,5 @@
 Assembler report for oac2
-Mon Jul 01 16:01:16 2019
+Mon Jul 01 18:00:26 2019
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Jul 01 16:01:16 2019 ;
+; Assembler Status      ; Successful - Mon Jul 01 18:00:26 2019 ;
 ; Revision Name         ; oac2                                  ;
 ; Top-level Entity Name ; oac2                                  ;
 ; Family                ; Cyclone IV E                          ;
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                                                                     ;
 +----------------+-----------------------------------------------------------------------------+
 ; Device         ; EP4CE40F29C6                                                                ;
-; JTAG usercode  ; 0x005276D1                                                                  ;
-; Checksum       ; 0x005276D1                                                                  ;
+; JTAG usercode  ; 0x0054ADAF                                                                  ;
+; Checksum       ; 0x0054ADAF                                                                  ;
 +----------------+-----------------------------------------------------------------------------+
 
 
@@ -79,7 +79,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
-    Info: Processing started: Mon Jul 01 16:01:14 2019
+    Info: Processing started: Mon Jul 01 18:00:23 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off oac2 -c oac2
 Warning (125092): Tcl Script File reg_ra_31.qip not found
     Info (125063): set_global_assignment -name QIP_FILE reg_ra_31.qip
@@ -88,8 +88,8 @@ Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4711 megabytes
-    Info: Processing ended: Mon Jul 01 16:01:16 2019
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Mon Jul 01 18:00:26 2019
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

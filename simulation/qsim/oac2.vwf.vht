@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "07/01/2019 16:01:27"
+-- Generated on "07/01/2019 18:00:58"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          oac2
 -- 
@@ -38,6 +38,8 @@ SIGNAL ALUcontrol_to_ULA : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL CLK : STD_LOGIC;
 SIGNAL clo_op_to_ULA : STD_LOGIC;
 SIGNAL code : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL dado_high : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL dado_low : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL DadosRS : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL DadosRT : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL DataCLK : STD_LOGIC;
@@ -62,6 +64,7 @@ SIGNAL PC_Enable : STD_LOGIC;
 SIGNAL Result_ALU_mem : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL result_end_pipe : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL resultALU : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL Rt_mem : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL shift_arith_to_ULA : STD_LOGIC;
 SIGNAL shift_to_ULA : STD_LOGIC;
 COMPONENT oac2
@@ -70,6 +73,8 @@ COMPONENT oac2
 	CLK : IN STD_LOGIC;
 	clo_op_to_ULA : OUT STD_LOGIC;
 	code : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	dado_high : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	dado_low : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	DadosRS : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	DadosRT : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	DataCLK : IN STD_LOGIC;
@@ -94,6 +99,7 @@ COMPONENT oac2
 	Result_ALU_mem : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	result_end_pipe : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	resultALU : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	Rt_mem : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	shift_arith_to_ULA : OUT STD_LOGIC;
 	shift_to_ULA : OUT STD_LOGIC
 	);
@@ -106,6 +112,8 @@ BEGIN
 	CLK => CLK,
 	clo_op_to_ULA => clo_op_to_ULA,
 	code => code,
+	dado_high => dado_high,
+	dado_low => dado_low,
 	DadosRS => DadosRS,
 	DadosRT => DadosRT,
 	DataCLK => DataCLK,
@@ -130,6 +138,7 @@ BEGIN
 	Result_ALU_mem => Result_ALU_mem,
 	result_end_pipe => result_end_pipe,
 	resultALU => resultALU,
+	Rt_mem => Rt_mem,
 	shift_arith_to_ULA => shift_arith_to_ULA,
 	shift_to_ULA => shift_to_ULA
 	);

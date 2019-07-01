@@ -680,10 +680,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "nor_op_to_ULA",
-					"strict" : false
-				},
-				{
 					"name" : "shift_arith_to_ULA",
 					"strict" : false
 				},
@@ -1012,10 +1008,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "ID_control[8]",
-					"strict" : false
-				},
-				{
 					"name" : "ID_control[7]",
 					"strict" : false
 				},
@@ -1301,6 +1293,134 @@
 				},
 				{
 					"name" : "resultALU[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[31]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[30]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[29]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[28]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[27]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[26]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[25]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[24]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[23]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[22]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[21]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rt_mem[0]",
 					"strict" : false
 				},
 				{
