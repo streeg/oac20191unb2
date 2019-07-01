@@ -174,7 +174,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 1296 336 1472 352)
+	(rect 1360 336 1536 352)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "IF_ID_Enable" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
@@ -190,7 +190,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 1296 672 1472 688)
+	(rect 1320 672 1496 688)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ID_EX_Enable" (rect 90 0 159 12)(font "Arial" ))
 	(pt 0 8)
@@ -206,7 +206,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 1304 1080 1483 1096)
+	(rect 1336 1080 1515 1096)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "EX_MEM_enable" (rect 90 0 170 12)(font "Arial" ))
 	(pt 0 8)
@@ -222,7 +222,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 1304 1152 1486 1168)
+	(rect 1344 1152 1526 1168)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "MEM_WB_Enable" (rect 90 0 177 17)(font "Intel Clear" ))
 	(pt 0 8)
@@ -238,7 +238,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 1304 1272 1480 1288)
+	(rect 1344 1272 1520 1288)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "PC_Enable" (rect 90 0 144 12)(font "Arial" ))
 	(pt 0 8)
@@ -1623,6 +1623,26 @@ agreement for further details.
 	(pt 224 416)
 	(pt 224 520)
 	(bus)
+)
+(connector
+	(pt 1304 680)
+	(pt 1320 680)
+)
+(connector
+	(pt 1304 1088)
+	(pt 1336 1088)
+)
+(connector
+	(pt 1304 1160)
+	(pt 1344 1160)
+)
+(connector
+	(pt 1304 1280)
+	(pt 1344 1280)
+)
+(connector
+	(pt 1304 344)
+	(pt 1360 344)
 )
 (junction (pt 352 296))
 (junction (pt 448 312))

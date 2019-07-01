@@ -1,6 +1,6 @@
 Analysis & Synthesis report for oac2
-Mon Jul 01 11:56:32 2019
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Mon Jul 01 12:35:59 2019
+Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 
 
 ---------------------
@@ -21,12 +21,12 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
  14. Source assignments for instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_t2u1:auto_generated
  15. Source assignments for datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_59s3:auto_generated
- 16. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst30|lpm_compare:LPM_COMPARE_component
- 17. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst26|lpm_compare:LPM_COMPARE_component
- 18. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component
+ 16. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component
+ 17. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst9|lpm_compare:LPM_COMPARE_component
+ 18. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst16|lpm_compare:LPM_COMPARE_component
  19. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst15|lpm_compare:LPM_COMPARE_component
- 20. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst16|lpm_compare:LPM_COMPARE_component
- 21. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst9|lpm_compare:LPM_COMPARE_component
+ 20. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst30|lpm_compare:LPM_COMPARE_component
+ 21. Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst26|lpm_compare:LPM_COMPARE_component
  22. Parameter Settings for User Entity Instance: instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component
  23. Parameter Settings for User Entity Instance: mux21_31bits:inst52|LPM_MUX:LPM_MUX_component
  24. Parameter Settings for User Entity Instance: 32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|LPM_MUX:LPM_MUX_component
@@ -381,7 +381,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -401,13 +401,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 01 11:56:32 2019       ;
-; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 01 12:35:59 2019       ;
+; Quartus Prime Version              ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
 ; Revision Name                      ; oac2                                        ;
 ; Top-level Entity Name              ; oac2                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,742                                       ;
-;     Total combinational functions  ; 2,616                                       ;
+; Total logic elements               ; 3,745                                       ;
+;     Total combinational functions  ; 2,619                                       ;
 ;     Dedicated logic registers      ; 1,336                                       ;
 ; Total registers                    ; 1336                                        ;
 ; Total pins                         ; 203                                         ;
@@ -509,125 +509,127 @@ agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
-+-----------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path              ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
-+-----------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
-; Um/um.bdf                                     ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Um/um.bdf                                           ;         ;
-; Mux41_lpm/mux41_lpm.vhd                       ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/Mux41_lpm/mux41_lpm.vhd                             ;         ;
-; Mux21_1bit_lpm/mux21_1bit_lpm.vhd             ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd                   ;         ;
-; Endereco_jump/Endereco_jump.bdf               ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Endereco_jump/Endereco_jump.bdf                     ;         ;
-; control_ula/control_ula.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/control_ula/control_ula.bdf                         ;         ;
-; Forward_Unit/forwarding_unit.bdf              ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Forward_Unit/forwarding_unit.bdf                    ;         ;
-; campo_registradores/mux32x8.vhd               ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/campo_registradores/mux32x8.vhd                     ;         ;
-; campo_registradores/campo_registradores.bdf   ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/campo_registradores/campo_registradores.bdf         ;         ;
-; decotificador_reg/decotificador_reg.bdf       ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/decotificador_reg/decotificador_reg.bdf             ;         ;
-; ram_InstructionMemory/inst_mem_ram.v          ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v                ;         ;
-; ram_DataMemory/data_mem_ram.vhd               ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/ram_DataMemory/data_mem_ram.vhd                     ;         ;
-; Reg_ID_EX/reg_id_ex.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Reg_ID_EX/reg_id_ex.bdf                             ;         ;
-; reg_MEM-WB/reg_MEM-WB.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/reg_MEM-WB/reg_MEM-WB.bdf                           ;         ;
-; Reg_EX-MEM/reg_EX-MEM.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Reg_EX-MEM/reg_EX-MEM.bdf                           ;         ;
-; Reg5/reg5.bdf                                 ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Reg5/reg5.bdf                                       ;         ;
-; shift2_left/shift2_left.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/shift2_left/shift2_left.bdf                         ;         ;
-; shift2_left/lpm_clshift_2_left.vhd            ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd                  ;         ;
-; clo_intruction/clo_instruction.bdf            ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/clo_intruction/clo_instruction.bdf                  ;         ;
-; lpm_mux/lpm_mux_alu.vhd                       ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/lpm_mux/lpm_mux_alu.vhd                             ;         ;
-; lpm_mult/lpm_mult_alu.vhd                     ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/lpm_mult/lpm_mult_alu.vhd                           ;         ;
-; lmp_div/lpm_div_alu.vhd                       ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/lmp_div/lpm_div_alu.vhd                             ;         ;
-; lmp_clshift_arith/lpm_clshift_arith.vhd       ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd             ;         ;
-; lmp_clshift/lmp_clshift_ula.vhd               ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd                     ;         ;
-; 1bitULA5funcoes/1bitALU5functionsOverflow.bdf ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/1bitULA5funcoes/1bitALU5functionsOverflow.bdf       ;         ;
-; 1bitULA5funcoes/1bitALU5functions.bdf         ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/1bitULA5funcoes/1bitALU5functions.bdf               ;         ;
-; InstructionMemory/instructionmemory.bdf       ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/InstructionMemory/instructionmemory.bdf             ;         ;
-; Hazard_Unit/hazard_unit.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Hazard_Unit/hazard_unit.bdf                         ;         ;
-; Fulladder/fulladder.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Fulladder/fulladder.bdf                             ;         ;
-; 32bitULA6funcoes/32bitULA6funcoes.bdf         ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/32bitULA6funcoes/32bitULA6funcoes.bdf               ;         ;
-; compare_a_equals_b.vhd                        ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/compare_a_equals_b.vhd                              ;         ;
-; Sign_Ext/sign_ext.bdf                         ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Sign_Ext/sign_ext.bdf                               ;         ;
-; Reg32/reg32.bdf                               ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Reg32/reg32.bdf                                     ;         ;
-; Reg_IF_ID/reg_IF-ID.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Reg_IF_ID/reg_IF-ID.bdf                             ;         ;
-; Program_Counter/program_counter.bdf           ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Program_Counter/program_counter.bdf                 ;         ;
-; oac2/oac2.bdf                                 ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/oac2/oac2.bdf                                       ;         ;
-; Mux21/mux21.bdf                               ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Mux21/mux21.bdf                                     ;         ;
-; ControlePipe/controlepipe2.bdf                ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/ControlePipe/controlepipe2.bdf                      ;         ;
-; Reg1/reg1.bdf                                 ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Reg1/reg1.bdf                                       ;         ;
-; Reg6/reg6.bdf                                 ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Reg6/reg6.bdf                                       ;         ;
-; DataMemory/datamemory.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/DataMemory/datamemory.bdf                           ;         ;
-; Sign_Ext_zero/sign_ext_zero.bdf               ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Sign_Ext_zero/sign_ext_zero.bdf                     ;         ;
-; Sign_Ext_zero/sign_ext_helper.bdf             ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Sign_Ext_zero/sign_ext_helper.bdf                   ;         ;
-; Sign_Ext_zero/sign_ext_helper2.bdf            ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Sign_Ext_zero/sign_ext_helper2.bdf                  ;         ;
-; Mux41_31bits/mux41_31bits.v                   ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/Mux41_31bits/mux41_31bits.v                         ;         ;
-; Mux21_31bits/mux21_31bits.vhd                 ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/Mux21_31bits/mux21_31bits.vhd                       ;         ;
-; Mux21_5bits/mux21_5bits.vhd                   ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/Mux21_5bits/mux21_5bits.vhd                         ;         ;
-; in2_output/in2_output.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/in2_output/in2_output.bdf                           ;         ;
-; shamtzero/shamtzero.v                         ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/shamtzero/shamtzero.v                               ;         ;
-; Shift_lui/shift_lui.vhd                       ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/Shift_lui/shift_lui.vhd                             ;         ;
-; Shift_lui/lui_result.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Shift_lui/lui_result.bdf                            ;         ;
-; Fulladder/fulladder_enable.bdf                ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Fulladder/fulladder_enable.bdf                      ;         ;
-; Ra_reg_31/Ra_reg_31.vhd                       ; yes             ; User Wizard-Generated File             ; C:/oac_lab2/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd                             ;         ;
-; Clo_id/clo_id.bdf                             ; yes             ; User Block Diagram/Schematic File      ; C:/oac_lab2/oac20191unb2/Clo_id/clo_id.bdf                                   ;         ;
-; lpm_compare.tdf                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_compare.tdf       ;         ;
-; comptree.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/comptree.inc          ;         ;
-; altshift.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altshift.inc          ;         ;
-; aglobal161.inc                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc        ;         ;
-; db/cmpr_slg.tdf                               ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/cmpr_slg.tdf                                     ;         ;
-; altsyncram.tdf                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; a_rdenreg.inc                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_t2u1.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/altsyncram_t2u1.tdf                              ;         ;
-; PipelineInst.mif                              ; yes             ; Auto-Found Memory Initialization File  ; C:/oac_lab2/oac20191unb2/PipelineInst.mif                                    ;         ;
-; lpm_mux.tdf                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf           ;         ;
-; muxlut.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/muxlut.inc            ;         ;
-; bypassff.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/bypassff.inc          ;         ;
-; db/mux_69e.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/mux_69e.tdf                                      ;         ;
-; db/mux_l7e.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/mux_l7e.tdf                                      ;         ;
-; db/mux_i7e.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/mux_i7e.tdf                                      ;         ;
-; lpm_divide.tdf                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_divide.tdf        ;         ;
-; abs_divider.inc                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/abs_divider.inc       ;         ;
-; sign_div_unsign.inc                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sign_div_unsign.inc   ;         ;
-; db/lpm_divide_03q.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/lpm_divide_03q.tdf                               ;         ;
-; db/sign_div_unsign_9nh.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/sign_div_unsign_9nh.tdf                          ;         ;
-; db/alt_u_div_6af.tdf                          ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/alt_u_div_6af.tdf                                ;         ;
-; db/add_sub_7pc.tdf                            ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/add_sub_7pc.tdf                                  ;         ;
-; db/add_sub_8pc.tdf                            ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/add_sub_8pc.tdf                                  ;         ;
-; lpm_mult.tdf                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mult.tdf          ;         ;
-; lpm_add_sub.inc                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_add_sub.inc       ;         ;
-; multcore.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/multcore.inc          ;         ;
-; db/mult_pfn.tdf                               ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf                                     ;         ;
-; lpm_clshift.tdf                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_clshift.tdf       ;         ;
-; db/lpm_clshift_vjc.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/lpm_clshift_vjc.tdf                              ;         ;
-; db/lpm_clshift_euc.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/lpm_clshift_euc.tdf                              ;         ;
-; lpm_constant.tdf                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_constant.tdf      ;         ;
-; db/mux_tae.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/mux_tae.tdf                                      ;         ;
-; db/altsyncram_59s3.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/altsyncram_59s3.tdf                              ;         ;
-; pipelinedata.mif                              ; yes             ; Auto-Found Memory Initialization File  ; C:/oac_lab2/oac20191unb2/pipelinedata.mif                                    ;         ;
-; db/decode_jsa.tdf                             ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/decode_jsa.tdf                                   ;         ;
-; db/mux_gob.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/mux_gob.tdf                                      ;         ;
-; db/mux_m7e.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/mux_m7e.tdf                                      ;         ;
-; db/mux_tsc.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/mux_tsc.tdf                                      ;         ;
-; db/lpm_clshift_rkb.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/lpm_clshift_rkb.tdf                              ;         ;
-; db/lpm_clshift_ukb.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/lpm_clshift_ukb.tdf                              ;         ;
-; db/lpm_constant_0j4.tdf                       ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/lpm_constant_0j4.tdf                             ;         ;
-; busmux.tdf                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/busmux.tdf            ;         ;
-; db/mux_osc.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/oac_lab2/oac20191unb2/db/mux_osc.tdf                                      ;         ;
-+-----------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                          ;
++-----------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path              ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                               ; Library ;
++-----------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------+---------+
+; Um/um.bdf                                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Um/um.bdf                                     ;         ;
+; Mux41_lpm/mux41_lpm.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_lpm/mux41_lpm.vhd                       ;         ;
+; Mux21_1bit_lpm/mux21_1bit_lpm.vhd             ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd             ;         ;
+; Endereco_jump/Endereco_jump.bdf               ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Endereco_jump/Endereco_jump.bdf               ;         ;
+; control_ula/control_ula.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/control_ula/control_ula.bdf                   ;         ;
+; Forward_Unit/forwarding_unit.bdf              ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Forward_Unit/forwarding_unit.bdf              ;         ;
+; campo_registradores/mux32x8.vhd               ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/campo_registradores/mux32x8.vhd               ;         ;
+; campo_registradores/campo_registradores.bdf   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/campo_registradores/campo_registradores.bdf   ;         ;
+; decotificador_reg/decotificador_reg.bdf       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/decotificador_reg/decotificador_reg.bdf       ;         ;
+; ram_InstructionMemory/inst_mem_ram.v          ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v          ;         ;
+; ram_DataMemory/data_mem_ram.vhd               ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_DataMemory/data_mem_ram.vhd               ;         ;
+; Reg_ID_EX/reg_id_ex.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Reg_ID_EX/reg_id_ex.bdf                       ;         ;
+; reg_MEM-WB/reg_MEM-WB.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/reg_MEM-WB/reg_MEM-WB.bdf                     ;         ;
+; Reg_EX-MEM/reg_EX-MEM.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Reg_EX-MEM/reg_EX-MEM.bdf                     ;         ;
+; Reg5/reg5.bdf                                 ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Reg5/reg5.bdf                                 ;         ;
+; shift2_left/shift2_left.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/shift2_left/shift2_left.bdf                   ;         ;
+; shift2_left/lpm_clshift_2_left.vhd            ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd            ;         ;
+; clo_intruction/clo_instruction.bdf            ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/clo_intruction/clo_instruction.bdf            ;         ;
+; lpm_mux/lpm_mux_alu.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/lpm_mux/lpm_mux_alu.vhd                       ;         ;
+; lpm_mult/lpm_mult_alu.vhd                     ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/lpm_mult/lpm_mult_alu.vhd                     ;         ;
+; lmp_div/lpm_div_alu.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_div/lpm_div_alu.vhd                       ;         ;
+; lmp_clshift_arith/lpm_clshift_arith.vhd       ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd       ;         ;
+; lmp_clshift/lmp_clshift_ula.vhd               ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd               ;         ;
+; 1bitULA5funcoes/1bitALU5functionsOverflow.bdf ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/1bitULA5funcoes/1bitALU5functionsOverflow.bdf ;         ;
+; 1bitULA5funcoes/1bitALU5functions.bdf         ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/1bitULA5funcoes/1bitALU5functions.bdf         ;         ;
+; InstructionMemory/instructionmemory.bdf       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/InstructionMemory/instructionmemory.bdf       ;         ;
+; Hazard_Unit/hazard_unit.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Hazard_Unit/hazard_unit.bdf                   ;         ;
+; Fulladder/fulladder.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Fulladder/fulladder.bdf                       ;         ;
+; 32bitULA6funcoes/32bitULA6funcoes.bdf         ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/32bitULA6funcoes/32bitULA6funcoes.bdf         ;         ;
+; compare_a_equals_b.vhd                        ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/compare_a_equals_b.vhd                        ;         ;
+; Sign_Ext/sign_ext.bdf                         ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Sign_Ext/sign_ext.bdf                         ;         ;
+; Reg32/reg32.bdf                               ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Reg32/reg32.bdf                               ;         ;
+; Reg_IF_ID/reg_IF-ID.bdf                       ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Reg_IF_ID/reg_IF-ID.bdf                       ;         ;
+; Program_Counter/program_counter.bdf           ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Program_Counter/program_counter.bdf           ;         ;
+; oac2/oac2.bdf                                 ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/oac2/oac2.bdf                                 ;         ;
+; Mux21/mux21.bdf                               ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21/mux21.bdf                               ;         ;
+; ControlePipe/controlepipe2.bdf                ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/ControlePipe/controlepipe2.bdf                ;         ;
+; Reg1/reg1.bdf                                 ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Reg1/reg1.bdf                                 ;         ;
+; Reg6/reg6.bdf                                 ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Reg6/reg6.bdf                                 ;         ;
+; DataMemory/datamemory.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/DataMemory/datamemory.bdf                     ;         ;
+; Sign_Ext_zero/sign_ext_zero.bdf               ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Sign_Ext_zero/sign_ext_zero.bdf               ;         ;
+; Sign_Ext_zero/sign_ext_helper.bdf             ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Sign_Ext_zero/sign_ext_helper.bdf             ;         ;
+; Sign_Ext_zero/sign_ext_helper2.bdf            ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Sign_Ext_zero/sign_ext_helper2.bdf            ;         ;
+; Mux41_31bits/mux41_31bits.v                   ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_31bits/mux41_31bits.v                   ;         ;
+; Mux21_31bits/mux21_31bits.vhd                 ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_31bits/mux21_31bits.vhd                 ;         ;
+; Mux21_5bits/mux21_5bits.vhd                   ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_5bits/mux21_5bits.vhd                   ;         ;
+; in2_output/in2_output.bdf                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/in2_output/in2_output.bdf                     ;         ;
+; shamtzero/shamtzero.v                         ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/shamtzero/shamtzero.v                         ;         ;
+; Shift_lui/shift_lui.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Shift_lui/shift_lui.vhd                       ;         ;
+; Shift_lui/lui_result.bdf                      ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Shift_lui/lui_result.bdf                      ;         ;
+; Fulladder/fulladder_enable.bdf                ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Fulladder/fulladder_enable.bdf                ;         ;
+; Ra_reg_31/Ra_reg_31.vhd                       ; yes             ; User Wizard-Generated File             ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd                       ;         ;
+; Clo_id/clo_id.bdf                             ; yes             ; User Block Diagram/Schematic File      ; C:/Users/Admin/Documents/GitHub/oac20191unb2/Clo_id/clo_id.bdf                             ;         ;
+; lpm_compare.tdf                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_compare.tdf                     ;         ;
+; comptree.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/comptree.inc                        ;         ;
+; altshift.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altshift.inc                        ;         ;
+; aglobal161.inc                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc                      ;         ;
+; db/cmpr_slg.tdf                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/cmpr_slg.tdf                               ;         ;
+; altsyncram.tdf                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf                      ;         ;
+; stratix_ram_block.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/stratix_ram_block.inc               ;         ;
+; lpm_mux.inc                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.inc                         ;         ;
+; lpm_decode.inc                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_decode.inc                      ;         ;
+; a_rdenreg.inc                                 ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_rdenreg.inc                       ;         ;
+; altrom.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altrom.inc                          ;         ;
+; altram.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altram.inc                          ;         ;
+; altdpram.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altdpram.inc                        ;         ;
+; db/altsyncram_t2u1.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/altsyncram_t2u1.tdf                        ;         ;
+; pipelineinst.mif                              ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Admin/Documents/GitHub/oac20191unb2/pipelineinst.mif                              ;         ;
+; lpm_mux.tdf                                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf                         ;         ;
+; muxlut.inc                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/muxlut.inc                          ;         ;
+; bypassff.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/bypassff.inc                        ;         ;
+; db/mux_69e.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_69e.tdf                                ;         ;
+; db/mux_l7e.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_l7e.tdf                                ;         ;
+; db/mux_i7e.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_i7e.tdf                                ;         ;
+; lpm_divide.tdf                                ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_divide.tdf                      ;         ;
+; abs_divider.inc                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/abs_divider.inc                     ;         ;
+; sign_div_unsign.inc                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sign_div_unsign.inc                 ;         ;
+; db/lpm_divide_03q.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_divide_03q.tdf                         ;         ;
+; db/sign_div_unsign_9nh.tdf                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/sign_div_unsign_9nh.tdf                    ;         ;
+; db/alt_u_div_6af.tdf                          ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/alt_u_div_6af.tdf                          ;         ;
+; db/add_sub_7pc.tdf                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/add_sub_7pc.tdf                            ;         ;
+; db/add_sub_8pc.tdf                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/add_sub_8pc.tdf                            ;         ;
+; lpm_mult.tdf                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mult.tdf                        ;         ;
+; lpm_add_sub.inc                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_add_sub.inc                     ;         ;
+; multcore.inc                                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/multcore.inc                        ;         ;
+; db/mult_pfn.tdf                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf                               ;         ;
+; lpm_clshift.tdf                               ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_clshift.tdf                     ;         ;
+; db/lpm_clshift_vjc.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_clshift_vjc.tdf                        ;         ;
+; db/lpm_clshift_euc.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_clshift_euc.tdf                        ;         ;
+; lpm_constant.tdf                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_constant.tdf                    ;         ;
+; db/mux_tae.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_tae.tdf                                ;         ;
+; db/altsyncram_59s3.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/altsyncram_59s3.tdf                        ;         ;
+; pipelinedata.mif                              ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Admin/Documents/GitHub/oac20191unb2/pipelinedata.mif                              ;         ;
+; db/decode_jsa.tdf                             ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/decode_jsa.tdf                             ;         ;
+; db/mux_gob.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_gob.tdf                                ;         ;
+; db/mux_m7e.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_m7e.tdf                                ;         ;
+; db/mux_tsc.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_tsc.tdf                                ;         ;
+; db/lpm_clshift_rkb.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_clshift_rkb.tdf                        ;         ;
+; db/lpm_clshift_ukb.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_clshift_ukb.tdf                        ;         ;
+; db/lpm_constant_0j4.tdf                       ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_constant_0j4.tdf                       ;         ;
+; busmux.tdf                                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/busmux.tdf                          ;         ;
+; db/mux_osc.tdf                                ; yes             ; Auto-Generated Megafunction            ; C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_osc.tdf                                ;         ;
++-----------------------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -635,16 +637,16 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,742     ;
+; Estimated Total logic elements              ; 3,745     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2616      ;
+; Total combinational functions               ; 2619      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2010      ;
-;     -- 3 input functions                    ; 565       ;
-;     -- <=2 input functions                  ; 41        ;
+;     -- 4 input functions                    ; 2003      ;
+;     -- 3 input functions                    ; 574       ;
+;     -- <=2 input functions                  ; 42        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2616      ;
+;     -- normal mode                          ; 2619      ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
 ; Total registers                             ; 1336      ;
@@ -658,8 +660,8 @@ agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 1366      ;
-; Total fan-out                               ; 15504     ;
-; Average fan-out                             ; 3.48      ;
+; Total fan-out                               ; 15669     ;
+; Average fan-out                             ; 3.52      ;
 +---------------------------------------------+-----------+
 
 
@@ -668,7 +670,7 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                               ; Entity Name               ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
-; |oac2                                        ; 2616 (2)            ; 1336 (0)                  ; 655360      ; 0            ; 0       ; 0         ; 203  ; 0            ; |oac2                                                                                                                             ; oac2                      ; work         ;
+; |oac2                                        ; 2619 (2)            ; 1336 (0)                  ; 655360      ; 0            ; 0       ; 0         ; 203  ; 0            ; |oac2                                                                                                                             ; oac2                      ; work         ;
 ;    |32bitULA6funcoes:inst20|                 ; 564 (11)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20                                                                                                     ; 32bitULA6funcoes          ; work         ;
 ;       |1bitALU5functions:inst10|             ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|1bitALU5functions:inst10                                                                            ; 1bitALU5functions         ; work         ;
 ;          |fulladder:add0|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:inst20|1bitALU5functions:inst10|fulladder:add0                                                             ; fulladder                 ; work         ;
@@ -913,8 +915,8 @@ agreement for further details.
 ;          |fulladder:add0|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:instpoiiuyh|1bitALU5functions:inst47|fulladder:add0                                                        ; fulladder                 ; work         ;
 ;       |1bitALU5functions:inst48|             ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:instpoiiuyh|1bitALU5functions:inst48                                                                       ; 1bitALU5functions         ; work         ;
 ;          |fulladder:add0|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|32bitULA6funcoes:instpoiiuyh|1bitALU5functions:inst48|fulladder:add0                                                        ; fulladder                 ; work         ;
-;    |campo_registradores:inst24|              ; 1572 (0)            ; 992 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24                                                                                                  ; campo_registradores       ; work         ;
-;       |decotificador_reg:inst|               ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|decotificador_reg:inst                                                                           ; decotificador_reg         ; work         ;
+;    |campo_registradores:inst24|              ; 1571 (0)            ; 992 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24                                                                                                  ; campo_registradores       ; work         ;
+;       |decotificador_reg:inst|               ; 40 (40)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|decotificador_reg:inst                                                                           ; decotificador_reg         ; work         ;
 ;       |mux32x8:inst1|                        ; 768 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst1                                                                                    ; mux32x8                   ; work         ;
 ;          |lpm_mux:LPM_MUX_component|         ; 768 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst1|lpm_mux:LPM_MUX_component                                                          ; lpm_mux                   ; work         ;
 ;             |mux_tae:auto_generated|         ; 768 (768)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|campo_registradores:inst24|mux32x8:inst1|lpm_mux:LPM_MUX_component|mux_tae:auto_generated                                   ; mux_tae                   ; work         ;
@@ -963,14 +965,14 @@ agreement for further details.
 ;                |decode_jsa:rden_decode_b|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_59s3:auto_generated|decode_jsa:rden_decode_b ; decode_jsa                ; work         ;
 ;                |mux_gob:mux3|                ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_59s3:auto_generated|mux_gob:mux3             ; mux_gob                   ; work         ;
 ;    |forwarding_unit:inst27|                  ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|forwarding_unit:inst27                                                                                                      ; forwarding_unit           ; work         ;
-;    |hazard_unit:inst12|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|hazard_unit:inst12                                                                                                          ; hazard_unit               ; work         ;
+;    |hazard_unit:inst12|                      ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|hazard_unit:inst12                                                                                                          ; hazard_unit               ; work         ;
 ;    |instructionmemory:inst2|                 ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|instructionmemory:inst2                                                                                                     ; instructionmemory         ; work         ;
 ;       |inst_mem_ram:inst|                    ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|instructionmemory:inst2|inst_mem_ram:inst                                                                                   ; inst_mem_ram              ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component                                                   ; altsyncram                ; work         ;
 ;             |altsyncram_t2u1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_t2u1:auto_generated                    ; altsyncram_t2u1           ; work         ;
-;    |mux21_31bits:inst29|                     ; 67 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst29                                                                                                         ; mux21_31bits              ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 67 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst29|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
-;          |mux_69e:auto_generated|            ; 67 (67)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst29|lpm_mux:LPM_MUX_component|mux_69e:auto_generated                                                        ; mux_69e                   ; work         ;
+;    |mux21_31bits:inst29|                     ; 68 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst29                                                                                                         ; mux21_31bits              ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 68 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst29|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
+;          |mux_69e:auto_generated|            ; 68 (68)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst29|lpm_mux:LPM_MUX_component|mux_69e:auto_generated                                                        ; mux_69e                   ; work         ;
 ;    |mux21_31bits:inst32|                     ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst32                                                                                                         ; mux21_31bits              ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst32|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
 ;          |mux_69e:auto_generated|            ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_31bits:inst32|lpm_mux:LPM_MUX_component|mux_69e:auto_generated                                                        ; mux_69e                   ; work         ;
@@ -983,9 +985,9 @@ agreement for further details.
 ;    |mux21_5bits:inst33|                      ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_5bits:inst33                                                                                                          ; mux21_5bits               ; work         ;
 ;       |lpm_mux:LPM_MUX_component|            ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_5bits:inst33|lpm_mux:LPM_MUX_component                                                                                ; lpm_mux                   ; work         ;
 ;          |mux_m7e:auto_generated|            ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux21_5bits:inst33|lpm_mux:LPM_MUX_component|mux_m7e:auto_generated                                                         ; mux_m7e                   ; work         ;
-;    |mux41_31bits:inst30|                     ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30                                                                                                         ; mux41_31bits              ; work         ;
-;       |lpm_mux:LPM_MUX_component|            ; 64 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
-;          |mux_tsc:auto_generated|            ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated                                                        ; mux_tsc                   ; work         ;
+;    |mux41_31bits:inst30|                     ; 65 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30                                                                                                         ; mux41_31bits              ; work         ;
+;       |lpm_mux:LPM_MUX_component|            ; 65 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30|lpm_mux:LPM_MUX_component                                                                               ; lpm_mux                   ; work         ;
+;          |mux_tsc:auto_generated|            ; 65 (65)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|mux41_31bits:inst30|lpm_mux:LPM_MUX_component|mux_tsc:auto_generated                                                        ; mux_tsc                   ; work         ;
 ;    |program_counter:inst|                    ; 10 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|program_counter:inst                                                                                                        ; program_counter           ; work         ;
 ;       |reg32:inst|                           ; 10 (10)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|program_counter:inst|reg32:inst                                                                                             ; reg32                     ; work         ;
 ;    |reg_EX-MEM:inst21|                       ; 0 (0)               ; 97 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |oac2|reg_EX-MEM:inst21                                                                                                           ; reg_EX-MEM                ; work         ;
@@ -2406,7 +2408,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 10    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1005  ;
+; Number of registers using Clock Enable       ; 1167  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -2446,55 +2448,55 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst30|lpm_compare:LPM_COMPARE_component ;
-+------------------------+--------------+-------------------------------------------------------------------------------------+
-; Parameter Name         ; Value        ; Type                                                                                ;
-+------------------------+--------------+-------------------------------------------------------------------------------------+
-; lpm_width              ; 5            ; Signed Integer                                                                      ;
-; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                                             ;
-; LPM_PIPELINE           ; 0            ; Untyped                                                                             ;
-; CHAIN_SIZE             ; 8            ; Untyped                                                                             ;
-; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                                             ;
-; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                             ;
-; CASCADE_CHAIN          ; MANUAL       ; Untyped                                                                             ;
-; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                  ;
-; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                                                                ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                             ;
-; CBXI_PARAMETER         ; cmpr_slg     ; Untyped                                                                             ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                        ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                      ;
-+------------------------+--------------+-------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst26|lpm_compare:LPM_COMPARE_component ;
-+------------------------+--------------+-------------------------------------------------------------------------------------+
-; Parameter Name         ; Value        ; Type                                                                                ;
-+------------------------+--------------+-------------------------------------------------------------------------------------+
-; lpm_width              ; 5            ; Signed Integer                                                                      ;
-; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                                             ;
-; LPM_PIPELINE           ; 0            ; Untyped                                                                             ;
-; CHAIN_SIZE             ; 8            ; Untyped                                                                             ;
-; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                                             ;
-; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                             ;
-; CASCADE_CHAIN          ; MANUAL       ; Untyped                                                                             ;
-; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                  ;
-; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                                                                ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                             ;
-; CBXI_PARAMETER         ; cmpr_slg     ; Untyped                                                                             ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                          ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                        ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                        ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                      ;
-+------------------------+--------------+-------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component ;
++------------------------+--------------+-------------------------------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                                                ;
++------------------------+--------------+-------------------------------------------------------------------------------------+
+; lpm_width              ; 5            ; Signed Integer                                                                      ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                                             ;
+; LPM_PIPELINE           ; 0            ; Untyped                                                                             ;
+; CHAIN_SIZE             ; 8            ; Untyped                                                                             ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                                             ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                             ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped                                                                             ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                  ;
+; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                                                                ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                             ;
+; CBXI_PARAMETER         ; cmpr_slg     ; Untyped                                                                             ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                        ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                      ;
++------------------------+--------------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst9|lpm_compare:LPM_COMPARE_component ;
++------------------------+--------------+------------------------------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                                               ;
++------------------------+--------------+------------------------------------------------------------------------------------+
+; lpm_width              ; 5            ; Signed Integer                                                                     ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                                            ;
+; LPM_PIPELINE           ; 0            ; Untyped                                                                            ;
+; CHAIN_SIZE             ; 8            ; Untyped                                                                            ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                                            ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                            ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped                                                                            ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                 ;
+; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                                                               ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                            ;
+; CBXI_PARAMETER         ; cmpr_slg     ; Untyped                                                                            ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                       ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                     ;
++------------------------+--------------+------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst16|lpm_compare:LPM_COMPARE_component ;
 +------------------------+--------------+-------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value        ; Type                                                                                ;
 +------------------------+--------------+-------------------------------------------------------------------------------------+
@@ -2542,7 +2544,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst16|lpm_compare:LPM_COMPARE_component ;
+; Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst30|lpm_compare:LPM_COMPARE_component ;
 +------------------------+--------------+-------------------------------------------------------------------------------------+
 ; Parameter Name         ; Value        ; Type                                                                                ;
 +------------------------+--------------+-------------------------------------------------------------------------------------+
@@ -2565,27 +2567,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst9|lpm_compare:LPM_COMPARE_component ;
-+------------------------+--------------+------------------------------------------------------------------------------------+
-; Parameter Name         ; Value        ; Type                                                                               ;
-+------------------------+--------------+------------------------------------------------------------------------------------+
-; lpm_width              ; 5            ; Signed Integer                                                                     ;
-; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                                            ;
-; LPM_PIPELINE           ; 0            ; Untyped                                                                            ;
-; CHAIN_SIZE             ; 8            ; Untyped                                                                            ;
-; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                                            ;
-; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                            ;
-; CASCADE_CHAIN          ; MANUAL       ; Untyped                                                                            ;
-; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                 ;
-; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                                                               ;
-; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                            ;
-; CBXI_PARAMETER         ; cmpr_slg     ; Untyped                                                                            ;
-; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                       ;
-; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                     ;
-+------------------------+--------------+------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: hazard_unit:inst12|compare_a_equals_b:inst26|lpm_compare:LPM_COMPARE_component ;
++------------------------+--------------+-------------------------------------------------------------------------------------+
+; Parameter Name         ; Value        ; Type                                                                                ;
++------------------------+--------------+-------------------------------------------------------------------------------------+
+; lpm_width              ; 5            ; Signed Integer                                                                      ;
+; LPM_REPRESENTATION     ; UNSIGNED     ; Untyped                                                                             ;
+; LPM_PIPELINE           ; 0            ; Untyped                                                                             ;
+; CHAIN_SIZE             ; 8            ; Untyped                                                                             ;
+; ONE_INPUT_IS_CONSTANT  ; NO           ; Untyped                                                                             ;
+; CARRY_CHAIN            ; MANUAL       ; Untyped                                                                             ;
+; CASCADE_CHAIN          ; MANUAL       ; Untyped                                                                             ;
+; CARRY_CHAIN_LENGTH     ; 48           ; CARRY_CHAIN_LENGTH                                                                  ;
+; CASCADE_CHAIN_LENGTH   ; 2            ; CASCADE_CHAIN_LENGTH                                                                ;
+; DEVICE_FAMILY          ; Cyclone IV E ; Untyped                                                                             ;
+; CBXI_PARAMETER         ; cmpr_slg     ; Untyped                                                                             ;
+; AUTO_CARRY_CHAINS      ; ON           ; AUTO_CARRY                                                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF          ; IGNORE_CARRY                                                                        ;
+; AUTO_CASCADE_CHAINS    ; ON           ; AUTO_CASCADE                                                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF          ; IGNORE_CASCADE                                                                      ;
++------------------------+--------------+-------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -9251,20 +9253,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 203                         ;
 ; cycloneiii_ff         ; 1336                        ;
-;     ENA               ; 995                         ;
+;     ENA               ; 1157                        ;
 ;     ENA SLD           ; 10                          ;
-;     plain             ; 331                         ;
-; cycloneiii_lcell_comb ; 2618                        ;
-;     normal            ; 2618                        ;
+;     plain             ; 169                         ;
+; cycloneiii_lcell_comb ; 2621                        ;
+;     normal            ; 2621                        ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 39                          ;
-;         3 data inputs ; 565                         ;
-;         4 data inputs ; 2010                        ;
+;         2 data inputs ; 40                          ;
+;         3 data inputs ; 574                         ;
+;         4 data inputs ; 2003                        ;
 ; cycloneiii_ram_block  ; 96                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 42.00                       ;
-; Average LUT depth     ; 9.22                        ;
+; Average LUT depth     ; 9.24                        ;
 +-----------------------+-----------------------------+
 
 
@@ -9273,7 +9275,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:27     ;
+; Top            ; 00:00:15     ;
 +----------------+--------------+
 
 
@@ -9282,21 +9284,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Mon Jul 01 11:55:21 2019
+    Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+    Info: Processing started: Mon Jul 01 12:35:25 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off oac2 -c oac2
 Warning (125092): Tcl Script File reg_ra_31.qip not found
     Info (125063): set_global_assignment -name QIP_FILE reg_ra_31.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file um/um.bdf
     Info (12023): Found entity 1: um
 Info (12021): Found 2 design units, including 1 entities, in source file mux41_lpm/mux41_lpm.vhd
-    Info (12022): Found design unit 1: mux41_lpm-SYN File: C:/oac_lab2/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 56
-    Info (12023): Found entity 1: mux41_lpm File: C:/oac_lab2/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 43
+    Info (12022): Found design unit 1: mux41_lpm-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 56
+    Info (12023): Found entity 1: mux41_lpm File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file mux21_1bit_lpm/mux21_1bit_lpm.vhd
-    Info (12022): Found design unit 1: mux21_1bit_lpm-SYN File: C:/oac_lab2/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 54
-    Info (12023): Found entity 1: mux21_1bit_lpm File: C:/oac_lab2/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 43
+    Info (12022): Found design unit 1: mux21_1bit_lpm-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 54
+    Info (12023): Found entity 1: mux21_1bit_lpm File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file endereco_jump/endereco_jump.bdf
     Info (12023): Found entity 1: Endereco_jump
 Info (12021): Found 1 design units, including 1 entities, in source file control_ula/control_ula.bdf
@@ -9304,8 +9306,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
 Info (12021): Found 1 design units, including 1 entities, in source file forward_unit/forwarding_unit.bdf
     Info (12023): Found entity 1: forwarding_unit
 Info (12021): Found 2 design units, including 1 entities, in source file campo_registradores/mux32x8.vhd
-    Info (12022): Found design unit 1: mux32x8-SYN File: C:/oac_lab2/oac20191unb2/campo_registradores/mux32x8.vhd Line: 84
-    Info (12023): Found entity 1: mux32x8 File: C:/oac_lab2/oac20191unb2/campo_registradores/mux32x8.vhd Line: 43
+    Info (12022): Found design unit 1: mux32x8-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/campo_registradores/mux32x8.vhd Line: 84
+    Info (12023): Found entity 1: mux32x8 File: C:/Users/Admin/Documents/GitHub/oac20191unb2/campo_registradores/mux32x8.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file campo_registradores/campo_registradores.bdf
     Info (12023): Found entity 1: campo_registradores
 Info (12021): Found 1 design units, including 1 entities, in source file decotificador_reg/decotificador_reg.bdf
@@ -9313,11 +9315,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file decotif
 Warning (12019): Can't analyze file -- file ram_InstructionMemory/inst_mem_ram_inst.v is missing
 Warning (12019): Can't analyze file -- file ram_InstructionMemory/inst_mem_ram_bb.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file ram_instructionmemory/inst_mem_ram.v
-    Info (12023): Found entity 1: inst_mem_ram File: C:/oac_lab2/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v Line: 40
+    Info (12023): Found entity 1: inst_mem_ram File: C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v Line: 40
 Warning (12019): Can't analyze file -- file ram_DataMemory/data_mem_ram_inst.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file ram_datamemory/data_mem_ram.vhd
-    Info (12022): Found design unit 1: data_mem_ram-SYN File: C:/oac_lab2/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 57
-    Info (12023): Found entity 1: data_mem_ram File: C:/oac_lab2/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 43
+    Info (12022): Found design unit 1: data_mem_ram-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 57
+    Info (12023): Found entity 1: data_mem_ram File: C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file reg_id_ex/reg_id_ex.bdf
     Info (12023): Found entity 1: reg_id_ex
 Info (12021): Found 1 design units, including 1 entities, in source file reg_mem-wb/reg_mem-wb.bdf
@@ -9331,41 +9333,41 @@ Info (12021): Found 1 design units, including 1 entities, in source file reg5/re
 Info (12021): Found 1 design units, including 1 entities, in source file shift2_left/shift2_left.bdf
     Info (12023): Found entity 1: shift2_left
 Info (12021): Found 2 design units, including 1 entities, in source file shift2_left/lpm_clshift_2_left.vhd
-    Info (12022): Found design unit 1: lpm_clshift_2_left-SYN File: C:/oac_lab2/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 53
-    Info (12023): Found entity 1: lpm_clshift_2_left File: C:/oac_lab2/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 43
+    Info (12022): Found design unit 1: lpm_clshift_2_left-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 53
+    Info (12023): Found entity 1: lpm_clshift_2_left File: C:/Users/Admin/Documents/GitHub/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file clo_intruction/clo_instruction.bdf
     Info (12023): Found entity 1: clo_instruction
 Warning (12019): Can't analyze file -- file lpm_mux/lpm_mux_alu_inst.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_mux/lpm_mux_alu.vhd
-    Info (12022): Found design unit 1: lpm_mux_alu-SYN File: C:/oac_lab2/oac20191unb2/lpm_mux/lpm_mux_alu.vhd Line: 54
-    Info (12023): Found entity 1: lpm_mux_alu File: C:/oac_lab2/oac20191unb2/lpm_mux/lpm_mux_alu.vhd Line: 43
+    Info (12022): Found design unit 1: lpm_mux_alu-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lpm_mux/lpm_mux_alu.vhd Line: 54
+    Info (12023): Found entity 1: lpm_mux_alu File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lpm_mux/lpm_mux_alu.vhd Line: 43
 Warning (12019): Can't analyze file -- file lpm_mult/lpm_mult_alu_inst.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_mult/lpm_mult_alu.vhd
-    Info (12022): Found design unit 1: lpm_mult_alu-SYN File: C:/oac_lab2/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 53
-    Info (12023): Found entity 1: lpm_mult_alu File: C:/oac_lab2/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 43
+    Info (12022): Found design unit 1: lpm_mult_alu-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 53
+    Info (12023): Found entity 1: lpm_mult_alu File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 43
 Warning (12019): Can't analyze file -- file lmp_div/lpm_div_alu_inst.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file lmp_div/lpm_div_alu.vhd
-    Info (12022): Found design unit 1: lpm_div_alu-SYN File: C:/oac_lab2/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 54
-    Info (12023): Found entity 1: lpm_div_alu File: C:/oac_lab2/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 43
+    Info (12022): Found design unit 1: lpm_div_alu-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 54
+    Info (12023): Found entity 1: lpm_div_alu File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 43
 Warning (12019): Can't analyze file -- file lmp_clshift_arith/lpm_clshift_arith_inst.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file lmp_clshift_arith/lpm_clshift_arith.vhd
-    Info (12022): Found design unit 1: lpm_clshift_arith-SYN File: C:/oac_lab2/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 53
-    Info (12023): Found entity 1: lpm_clshift_arith File: C:/oac_lab2/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 43
+    Info (12022): Found design unit 1: lpm_clshift_arith-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 53
+    Info (12023): Found entity 1: lpm_clshift_arith File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 43
 Warning (12019): Can't analyze file -- file lmp_clshift/lmp_clshift_ula_inst.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file lmp_clshift/lmp_clshift_ula.vhd
-    Info (12022): Found design unit 1: lmp_clshift_ula-SYN File: C:/oac_lab2/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 54
-    Info (12023): Found entity 1: lmp_clshift_ula File: C:/oac_lab2/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 43
+    Info (12022): Found design unit 1: lmp_clshift_ula-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 54
+    Info (12023): Found entity 1: lmp_clshift_ula File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 43
 Warning (12019): Can't analyze file -- file lmp_clshift/lmp_clshift_ula.v is missing
 Warning (12019): Can't analyze file -- file Mux21_3bits/mux21_3bits_bb.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file mux21_3bits/mux21_3bits.v
-    Info (12023): Found entity 1: mux21_3bits File: C:/oac_lab2/oac20191unb2/Mux21_3bits/mux21_3bits.v Line: 40
+    Info (12023): Found entity 1: mux21_3bits File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_3bits/mux21_3bits.v Line: 40
 Warning (12019): Can't analyze file -- file Mux21_2bits/mux21_2bits_bb.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file mux21_2bits/mux21_2bits.v
-    Info (12023): Found entity 1: mux21_2bits File: C:/oac_lab2/oac20191unb2/Mux21_2bits/mux21_2bits.v Line: 40
+    Info (12023): Found entity 1: mux21_2bits File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_2bits/mux21_2bits.v Line: 40
 Warning (12019): Can't analyze file -- file mux21_1bit/mux21_1bit_inst.v is missing
 Warning (12019): Can't analyze file -- file mux21_1bit/mux21_1bit_bb.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file mux21_1bit/mux21_1bit.v
-    Info (12023): Found entity 1: mux21_1bit File: C:/oac_lab2/oac20191unb2/mux21_1bit/mux21_1bit.v Line: 40
+    Info (12023): Found entity 1: mux21_1bit File: C:/Users/Admin/Documents/GitHub/oac20191unb2/mux21_1bit/mux21_1bit.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file 1bitula5funcoes/1bitalu5functionsoverflow.bdf
     Info (12023): Found entity 1: 1bitALU5functionsOverflow
 Info (12021): Found 1 design units, including 1 entities, in source file 1bitula5funcoes/1bitalu5functions.bdf
@@ -9384,8 +9386,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
 Info (12021): Found 1 design units, including 1 entities, in source file 32bitula6funcoes/32bitula6funcoes.bdf
     Info (12023): Found entity 1: 32bitULA6funcoes
 Info (12021): Found 2 design units, including 1 entities, in source file compare_a_equals_b.vhd
-    Info (12022): Found design unit 1: compare_a_equals_b-SYN File: C:/oac_lab2/oac20191unb2/compare_a_equals_b.vhd Line: 53
-    Info (12023): Found entity 1: compare_a_equals_b File: C:/oac_lab2/oac20191unb2/compare_a_equals_b.vhd Line: 43
+    Info (12022): Found design unit 1: compare_a_equals_b-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/compare_a_equals_b.vhd Line: 53
+    Info (12023): Found entity 1: compare_a_equals_b File: C:/Users/Admin/Documents/GitHub/oac20191unb2/compare_a_equals_b.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file sign_ext/sign_ext.bdf
     Info (12023): Found entity 1: sign_ext
 Info (12021): Found 1 design units, including 1 entities, in source file reg32/reg32.bdf
@@ -9415,27 +9417,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file sign_ex
 Info (12021): Found 1 design units, including 1 entities, in source file sign_ext_zero/sign_ext_helper2.bdf
     Info (12023): Found entity 1: sign_ext_helper2
 Info (12021): Found 1 design units, including 1 entities, in source file mux41_31bits/mux41_31bits.v
-    Info (12023): Found entity 1: mux41_31bits File: C:/oac_lab2/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 40
+    Info (12023): Found entity 1: mux41_31bits File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 40
 Info (12021): Found 2 design units, including 1 entities, in source file mux21_31bits/mux21_31bits.vhd
-    Info (12022): Found design unit 1: mux21_31bits-SYN File: C:/oac_lab2/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 54
-    Info (12023): Found entity 1: mux21_31bits File: C:/oac_lab2/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 43
+    Info (12022): Found design unit 1: mux21_31bits-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 54
+    Info (12023): Found entity 1: mux21_31bits File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file mux21_5bits/mux21_5bits.vhd
-    Info (12022): Found design unit 1: mux21_5bits-SYN File: C:/oac_lab2/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 54
-    Info (12023): Found entity 1: mux21_5bits File: C:/oac_lab2/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 43
+    Info (12022): Found design unit 1: mux21_5bits-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 54
+    Info (12023): Found entity 1: mux21_5bits File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file in2_output/in2_output.bdf
     Info (12023): Found entity 1: in2_output
 Info (12021): Found 1 design units, including 1 entities, in source file shamtzero/shamtzero.v
-    Info (12023): Found entity 1: shamtzero File: C:/oac_lab2/oac20191unb2/shamtzero/shamtzero.v Line: 40
+    Info (12023): Found entity 1: shamtzero File: C:/Users/Admin/Documents/GitHub/oac20191unb2/shamtzero/shamtzero.v Line: 40
 Info (12021): Found 2 design units, including 1 entities, in source file shift_lui/shift_lui.vhd
-    Info (12022): Found design unit 1: shift_lui-SYN File: C:/oac_lab2/oac20191unb2/Shift_lui/shift_lui.vhd Line: 53
-    Info (12023): Found entity 1: shift_lui File: C:/oac_lab2/oac20191unb2/Shift_lui/shift_lui.vhd Line: 43
+    Info (12022): Found design unit 1: shift_lui-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Shift_lui/shift_lui.vhd Line: 53
+    Info (12023): Found entity 1: shift_lui File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Shift_lui/shift_lui.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file shift_lui/lui_result.bdf
     Info (12023): Found entity 1: lui_result
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder/fulladder_enable.bdf
     Info (12023): Found entity 1: fulladder_enable
 Info (12021): Found 2 design units, including 1 entities, in source file ra_reg_31/ra_reg_31.vhd
-    Info (12022): Found design unit 1: ra_reg_31-SYN File: C:/oac_lab2/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 51
-    Info (12023): Found entity 1: Ra_reg_31 File: C:/oac_lab2/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 43
+    Info (12022): Found design unit 1: ra_reg_31-SYN File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 51
+    Info (12023): Found entity 1: Ra_reg_31 File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file clo_id/clo_id.bdf
     Info (12023): Found entity 1: clo_id
 Info (12127): Elaborating entity "oac2" for the top level hierarchy
@@ -9443,38 +9445,22 @@ Warning (275011): Block or symbol "forwarding_unit" of instance "inst27" overlap
 Warning (275009): Pin "clockinstructionmemory" not connected
 Warning (275008): Primitive "NOT" of instance "inst41" not used
 Info (12128): Elaborating entity "hazard_unit" for hierarchy "hazard_unit:inst12"
-Warning (275011): Block or symbol "AND2" of instance "inst2" overlaps another block or symbol
-Warning (275011): Block or symbol "AND2" of instance "inst11" overlaps another block or symbol
 Warning (275011): Block or symbol "VCC" of instance "inst12" overlaps another block or symbol
-Warning (275043): Pin "IF_ID_Enable" is missing source
-Warning (275043): Pin "ID_EX_Enable" is missing source
-Warning (275009): Pin "IF_ID_Jump" not connected
-Warning (275008): Primitive "AND2" of instance "inst11" not used
-Warning (275008): Primitive "VCC" of instance "inst12" not used
-Warning (275008): Primitive "NOR4" of instance "inst13" not used
-Warning (275008): Primitive "AND2" of instance "inst14" not used
-Warning (275008): Primitive "OR2" of instance "inst17" not used
-Warning (275008): Primitive "AND2" of instance "inst2" not used
-Warning (275008): Primitive "VCC" of instance "inst3" not used
-Warning (275008): Primitive "NOR6" of instance "inst4" not used
-Warning (275008): Primitive "GND" of instance "inst5" not used
-Warning (275008): Primitive "AND2" of instance "inst6" not used
-Warning (275008): Primitive "OR2" of instance "inst7" not used
-Info (12128): Elaborating entity "compare_a_equals_b" for hierarchy "hazard_unit:inst12|compare_a_equals_b:inst30"
-Info (12128): Elaborating entity "lpm_compare" for hierarchy "hazard_unit:inst12|compare_a_equals_b:inst30|lpm_compare:LPM_COMPARE_component" File: C:/oac_lab2/oac20191unb2/compare_a_equals_b.vhd Line: 75
-Info (12130): Elaborated megafunction instantiation "hazard_unit:inst12|compare_a_equals_b:inst30|lpm_compare:LPM_COMPARE_component" File: C:/oac_lab2/oac20191unb2/compare_a_equals_b.vhd Line: 75
-Info (12133): Instantiated megafunction "hazard_unit:inst12|compare_a_equals_b:inst30|lpm_compare:LPM_COMPARE_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/compare_a_equals_b.vhd Line: 75
+Info (12128): Elaborating entity "compare_a_equals_b" for hierarchy "hazard_unit:inst12|compare_a_equals_b:inst10"
+Info (12128): Elaborating entity "lpm_compare" for hierarchy "hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/compare_a_equals_b.vhd Line: 75
+Info (12130): Elaborated megafunction instantiation "hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/compare_a_equals_b.vhd Line: 75
+Info (12133): Instantiated megafunction "hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/compare_a_equals_b.vhd Line: 75
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_COMPARE"
     Info (12134): Parameter "lpm_width" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_slg.tdf
-    Info (12023): Found entity 1: cmpr_slg File: C:/oac_lab2/oac20191unb2/db/cmpr_slg.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_slg" for hierarchy "hazard_unit:inst12|compare_a_equals_b:inst30|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
+    Info (12023): Found entity 1: cmpr_slg File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/cmpr_slg.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_slg" for hierarchy "hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
 Info (12128): Elaborating entity "instructionmemory" for hierarchy "instructionmemory:inst2"
 Info (12128): Elaborating entity "inst_mem_ram" for hierarchy "instructionmemory:inst2|inst_mem_ram:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component" File: C:/oac_lab2/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v Line: 92
-Info (12130): Elaborated megafunction instantiation "instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component" File: C:/oac_lab2/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v Line: 92
-Info (12133): Instantiated megafunction "instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v Line: 92
+Info (12128): Elaborating entity "altsyncram" for hierarchy "instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v Line: 92
+Info (12130): Elaborated megafunction instantiation "instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v Line: 92
+Info (12133): Instantiated megafunction "instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_InstructionMemory/inst_mem_ram.v Line: 92
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
@@ -9497,16 +9483,14 @@ Info (12133): Instantiated megafunction "instructionmemory:inst2|inst_mem_ram:in
     Info (12134): Parameter "width_b" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_t2u1.tdf
-    Info (12023): Found entity 1: altsyncram_t2u1 File: C:/oac_lab2/oac20191unb2/db/altsyncram_t2u1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_t2u1 File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/altsyncram_t2u1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_t2u1" for hierarchy "instructionmemory:inst2|inst_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_t2u1:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (113028): 4093 out of 4096 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/oac_lab2/oac20191unb2/PipelineInst.mif Line: 1
-    Warning (113027): Addresses ranging from 3 to 4095 are not initialized File: C:/oac_lab2/oac20191unb2/PipelineInst.mif Line: 1
 Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst"
 Info (12128): Elaborating entity "reg32" for hierarchy "program_counter:inst|reg32:inst"
 Info (12128): Elaborating entity "mux21_31bits" for hierarchy "mux21_31bits:inst52"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux21_31bits:inst52|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 136
-Info (12130): Elaborated megafunction instantiation "mux21_31bits:inst52|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 136
-Info (12133): Instantiated megafunction "mux21_31bits:inst52|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 136
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux21_31bits:inst52|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 136
+Info (12130): Elaborated megafunction instantiation "mux21_31bits:inst52|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 136
+Info (12133): Instantiated megafunction "mux21_31bits:inst52|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_31bits/mux21_31bits.vhd Line: 136
     Info (12134): Parameter "LPM_WIDTH" = "32"
     Info (12134): Parameter "LPM_SIZE" = "2"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
@@ -9514,7 +9498,7 @@ Info (12133): Instantiated megafunction "mux21_31bits:inst52|LPM_MUX:LPM_MUX_com
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_69e.tdf
-    Info (12023): Found entity 1: mux_69e File: C:/oac_lab2/oac20191unb2/db/mux_69e.tdf Line: 23
+    Info (12023): Found entity 1: mux_69e File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_69e.tdf Line: 23
 Info (12128): Elaborating entity "mux_69e" for hierarchy "mux21_31bits:inst52|LPM_MUX:LPM_MUX_component|mux_69e:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "reg_EX-MEM" for hierarchy "reg_EX-MEM:inst21"
 Info (12128): Elaborating entity "reg1" for hierarchy "reg_EX-MEM:inst21|reg1:inst2"
@@ -9527,9 +9511,9 @@ Info (12128): Elaborating entity "reg_IF-ID" for hierarchy "reg_IF-ID:instjjjjjj
 Info (12128): Elaborating entity "32bitULA6funcoes" for hierarchy "32bitULA6funcoes:inst3"
 Info (12128): Elaborating entity "1bitALU5functionsOverflow" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst"
 Info (12128): Elaborating entity "mux41_lpm" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux41_lpm:inst3"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 80
-Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 80
-Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 80
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 80
+Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 80
+Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_lpm/mux41_lpm.vhd Line: 80
     Info (12134): Parameter "LPM_WIDTH" = "1"
     Info (12134): Parameter "LPM_SIZE" = "4"
     Info (12134): Parameter "LPM_WIDTHS" = "2"
@@ -9537,13 +9521,13 @@ Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|1bitALU5function
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_l7e.tdf
-    Info (12023): Found entity 1: mux_l7e File: C:/oac_lab2/oac20191unb2/db/mux_l7e.tdf Line: 23
+    Info (12023): Found entity 1: mux_l7e File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_l7e.tdf Line: 23
 Info (12128): Elaborating entity "mux_l7e" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux41_lpm:inst3|LPM_MUX:LPM_MUX_component|mux_l7e:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "fulladder" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|fulladder:add0"
 Info (12128): Elaborating entity "mux21_1bit_lpm" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux21_1bit_lpm:inst4"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux21_1bit_lpm:inst4|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 76
-Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux21_1bit_lpm:inst4|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 76
-Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux21_1bit_lpm:inst4|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 76
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux21_1bit_lpm:inst4|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 76
+Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux21_1bit_lpm:inst4|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 76
+Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux21_1bit_lpm:inst4|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_1bit_lpm/mux21_1bit_lpm.vhd Line: 76
     Info (12134): Parameter "LPM_WIDTH" = "1"
     Info (12134): Parameter "LPM_SIZE" = "2"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
@@ -9551,14 +9535,14 @@ Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|1bitALU5function
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_i7e.tdf
-    Info (12023): Found entity 1: mux_i7e File: C:/oac_lab2/oac20191unb2/db/mux_i7e.tdf Line: 23
+    Info (12023): Found entity 1: mux_i7e File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_i7e.tdf Line: 23
 Info (12128): Elaborating entity "mux_i7e" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functionsOverflow:inst|mux21_1bit_lpm:inst4|LPM_MUX:LPM_MUX_component|mux_i7e:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "1bitALU5functions" for hierarchy "32bitULA6funcoes:inst3|1bitALU5functions:inst2"
 Info (12128): Elaborating entity "lpm_mux_alu" for hierarchy "32bitULA6funcoes:inst3|lpm_mux_alu:inst57"
 Info (12128): Elaborating entity "lpm_div_alu" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56"
-Info (12128): Elaborating entity "lpm_divide" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component" File: C:/oac_lab2/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 82
-Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component" File: C:/oac_lab2/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 82
-Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 82
+Info (12128): Elaborating entity "lpm_divide" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 82
+Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 82
+Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_div/lpm_div_alu.vhd Line: 82
     Info (12134): Parameter "lpm_drepresentation" = "UNSIGNED"
     Info (12134): Parameter "lpm_hint" = "LPM_REMAINDERPOSITIVE=TRUE"
     Info (12134): Parameter "lpm_nrepresentation" = "UNSIGNED"
@@ -9566,24 +9550,24 @@ Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lpm_div_alu:inst
     Info (12134): Parameter "lpm_widthd" = "32"
     Info (12134): Parameter "lpm_widthn" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_03q.tdf
-    Info (12023): Found entity 1: lpm_divide_03q File: C:/oac_lab2/oac20191unb2/db/lpm_divide_03q.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_03q File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_divide_03q.tdf Line: 25
 Info (12128): Elaborating entity "lpm_divide_03q" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component|lpm_divide_03q:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_divide.tdf Line: 148
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/oac_lab2/oac20191unb2/db/sign_div_unsign_9nh.tdf Line: 25
-Info (12128): Elaborating entity "sign_div_unsign_9nh" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component|lpm_divide_03q:auto_generated|sign_div_unsign_9nh:divider" File: C:/oac_lab2/oac20191unb2/db/lpm_divide_03q.tdf Line: 33
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/sign_div_unsign_9nh.tdf Line: 25
+Info (12128): Elaborating entity "sign_div_unsign_9nh" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component|lpm_divide_03q:auto_generated|sign_div_unsign_9nh:divider" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_divide_03q.tdf Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6af.tdf
-    Info (12023): Found entity 1: alt_u_div_6af File: C:/oac_lab2/oac20191unb2/db/alt_u_div_6af.tdf Line: 27
-Info (12128): Elaborating entity "alt_u_div_6af" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component|lpm_divide_03q:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider" File: C:/oac_lab2/oac20191unb2/db/sign_div_unsign_9nh.tdf Line: 33
+    Info (12023): Found entity 1: alt_u_div_6af File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/alt_u_div_6af.tdf Line: 27
+Info (12128): Elaborating entity "alt_u_div_6af" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component|lpm_divide_03q:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/sign_div_unsign_9nh.tdf Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/oac_lab2/oac20191unb2/db/add_sub_7pc.tdf Line: 23
-Info (12128): Elaborating entity "add_sub_7pc" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component|lpm_divide_03q:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_7pc:add_sub_0" File: C:/oac_lab2/oac20191unb2/db/alt_u_div_6af.tdf Line: 35
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/add_sub_7pc.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_7pc" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component|lpm_divide_03q:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_7pc:add_sub_0" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/alt_u_div_6af.tdf Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/oac_lab2/oac20191unb2/db/add_sub_8pc.tdf Line: 23
-Info (12128): Elaborating entity "add_sub_8pc" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component|lpm_divide_03q:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_8pc:add_sub_1" File: C:/oac_lab2/oac20191unb2/db/alt_u_div_6af.tdf Line: 36
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/add_sub_8pc.tdf Line: 23
+Info (12128): Elaborating entity "add_sub_8pc" for hierarchy "32bitULA6funcoes:inst3|lpm_div_alu:inst56|lpm_divide:LPM_DIVIDE_component|lpm_divide_03q:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_8pc:add_sub_1" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/alt_u_div_6af.tdf Line: 36
 Info (12128): Elaborating entity "lpm_mult_alu" for hierarchy "32bitULA6funcoes:inst3|lpm_mult_alu:inst55"
-Info (12128): Elaborating entity "lpm_mult" for hierarchy "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component" File: C:/oac_lab2/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 78
-Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component" File: C:/oac_lab2/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 78
-Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 78
+Info (12128): Elaborating entity "lpm_mult" for hierarchy "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 78
+Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 78
+Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lpm_mult/lpm_mult_alu.vhd Line: 78
     Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
     Info (12134): Parameter "lpm_representation" = "UNSIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_MULT"
@@ -9591,37 +9575,37 @@ Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lpm_mult_alu:ins
     Info (12134): Parameter "lpm_widthb" = "32"
     Info (12134): Parameter "lpm_widthp" = "64"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_pfn.tdf
-    Info (12023): Found entity 1: mult_pfn File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 31
+    Info (12023): Found entity 1: mult_pfn File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 31
 Info (12128): Elaborating entity "mult_pfn" for hierarchy "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 377
 Info (12128): Elaborating entity "lmp_clshift_ula" for hierarchy "32bitULA6funcoes:inst3|lmp_clshift_ula:inst40"
-Info (12128): Elaborating entity "lpm_clshift" for hierarchy "32bitULA6funcoes:inst3|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component" File: C:/oac_lab2/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 78
-Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component" File: C:/oac_lab2/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 78
-Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 78
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "32bitULA6funcoes:inst3|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 78
+Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 78
+Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift/lmp_clshift_ula.vhd Line: 78
     Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
     Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widthdist" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_vjc.tdf
-    Info (12023): Found entity 1: lpm_clshift_vjc File: C:/oac_lab2/oac20191unb2/db/lpm_clshift_vjc.tdf Line: 23
+    Info (12023): Found entity 1: lpm_clshift_vjc File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_clshift_vjc.tdf Line: 23
 Info (12128): Elaborating entity "lpm_clshift_vjc" for hierarchy "32bitULA6funcoes:inst3|lmp_clshift_ula:inst40|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_vjc:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
 Info (12128): Elaborating entity "lpm_clshift_arith" for hierarchy "32bitULA6funcoes:inst3|lpm_clshift_arith:inst50"
-Info (12128): Elaborating entity "lpm_clshift" for hierarchy "32bitULA6funcoes:inst3|lpm_clshift_arith:inst50|lpm_clshift:LPM_CLSHIFT_component" File: C:/oac_lab2/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 79
-Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|lpm_clshift_arith:inst50|lpm_clshift:LPM_CLSHIFT_component" File: C:/oac_lab2/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 79
-Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lpm_clshift_arith:inst50|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 79
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "32bitULA6funcoes:inst3|lpm_clshift_arith:inst50|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 79
+Info (12130): Elaborated megafunction instantiation "32bitULA6funcoes:inst3|lpm_clshift_arith:inst50|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 79
+Info (12133): Instantiated megafunction "32bitULA6funcoes:inst3|lpm_clshift_arith:inst50|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/lmp_clshift_arith/lpm_clshift_arith.vhd Line: 79
     Info (12134): Parameter "lpm_shifttype" = "ARITHMETIC"
     Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widthdist" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_euc.tdf
-    Info (12023): Found entity 1: lpm_clshift_euc File: C:/oac_lab2/oac20191unb2/db/lpm_clshift_euc.tdf Line: 23
+    Info (12023): Found entity 1: lpm_clshift_euc File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_clshift_euc.tdf Line: 23
 Info (12128): Elaborating entity "lpm_clshift_euc" for hierarchy "32bitULA6funcoes:inst3|lpm_clshift_arith:inst50|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_euc:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
 Info (12128): Elaborating entity "clo_instruction" for hierarchy "32bitULA6funcoes:inst3|clo_instruction:inst8"
 Info (12128): Elaborating entity "fulladder_enable" for hierarchy "32bitULA6funcoes:inst3|clo_instruction:inst8|fulladder_enable:inst19"
 Info (12128): Elaborating entity "um" for hierarchy "um:inst4"
 Info (12128): Elaborating entity "shamtzero" for hierarchy "shamtzero:inst47"
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "shamtzero:inst47|lpm_constant:LPM_CONSTANT_component" File: C:/oac_lab2/oac20191unb2/shamtzero/shamtzero.v Line: 49
-Info (12130): Elaborated megafunction instantiation "shamtzero:inst47|lpm_constant:LPM_CONSTANT_component" File: C:/oac_lab2/oac20191unb2/shamtzero/shamtzero.v Line: 49
-Info (12133): Instantiated megafunction "shamtzero:inst47|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/shamtzero/shamtzero.v Line: 49
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "shamtzero:inst47|lpm_constant:LPM_CONSTANT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/shamtzero/shamtzero.v Line: 49
+Info (12130): Elaborated megafunction instantiation "shamtzero:inst47|lpm_constant:LPM_CONSTANT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/shamtzero/shamtzero.v Line: 49
+Info (12133): Instantiated megafunction "shamtzero:inst47|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/shamtzero/shamtzero.v Line: 49
     Info (12134): Parameter "lpm_cvalue" = "0"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
@@ -9629,9 +9613,9 @@ Info (12133): Instantiated megafunction "shamtzero:inst47|lpm_constant:LPM_CONST
 Info (12128): Elaborating entity "in2_output" for hierarchy "in2_output:inst34"
 Info (12128): Elaborating entity "campo_registradores" for hierarchy "campo_registradores:inst24"
 Info (12128): Elaborating entity "mux32x8" for hierarchy "campo_registradores:inst24|mux32x8:inst1"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "campo_registradores:inst24|mux32x8:inst1|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/campo_registradores/mux32x8.vhd Line: 1182
-Info (12130): Elaborated megafunction instantiation "campo_registradores:inst24|mux32x8:inst1|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/campo_registradores/mux32x8.vhd Line: 1182
-Info (12133): Instantiated megafunction "campo_registradores:inst24|mux32x8:inst1|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/campo_registradores/mux32x8.vhd Line: 1182
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "campo_registradores:inst24|mux32x8:inst1|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/campo_registradores/mux32x8.vhd Line: 1182
+Info (12130): Elaborated megafunction instantiation "campo_registradores:inst24|mux32x8:inst1|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/campo_registradores/mux32x8.vhd Line: 1182
+Info (12133): Instantiated megafunction "campo_registradores:inst24|mux32x8:inst1|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/campo_registradores/mux32x8.vhd Line: 1182
     Info (12134): Parameter "LPM_WIDTH" = "32"
     Info (12134): Parameter "LPM_SIZE" = "32"
     Info (12134): Parameter "LPM_WIDTHS" = "5"
@@ -9639,15 +9623,15 @@ Info (12133): Instantiated megafunction "campo_registradores:inst24|mux32x8:inst
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tae.tdf
-    Info (12023): Found entity 1: mux_tae File: C:/oac_lab2/oac20191unb2/db/mux_tae.tdf Line: 23
+    Info (12023): Found entity 1: mux_tae File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_tae.tdf Line: 23
 Info (12128): Elaborating entity "mux_tae" for hierarchy "campo_registradores:inst24|mux32x8:inst1|LPM_MUX:LPM_MUX_component|mux_tae:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "decotificador_reg" for hierarchy "campo_registradores:inst24|decotificador_reg:inst"
 Info (12128): Elaborating entity "reg_MEM-WB" for hierarchy "reg_MEM-WB:inst22"
 Info (12128): Elaborating entity "datamemory" for hierarchy "datamemory:inst25"
 Info (12128): Elaborating entity "data_mem_ram" for hierarchy "datamemory:inst25|data_mem_ram:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component" File: C:/oac_lab2/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 64
-Info (12130): Elaborated megafunction instantiation "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component" File: C:/oac_lab2/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 64
-Info (12133): Instantiated megafunction "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 64
+Info (12128): Elaborating entity "altsyncram" for hierarchy "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 64
+Info (12130): Elaborated megafunction instantiation "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 64
+Info (12133): Instantiated megafunction "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/ram_DataMemory/data_mem_ram.vhd Line: 64
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
@@ -9699,18 +9683,18 @@ Info (12133): Instantiated megafunction "datamemory:inst25|data_mem_ram:inst|alt
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_59s3.tdf
-    Info (12023): Found entity 1: altsyncram_59s3 File: C:/oac_lab2/oac20191unb2/db/altsyncram_59s3.tdf Line: 32
+    Info (12023): Found entity 1: altsyncram_59s3 File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/altsyncram_59s3.tdf Line: 32
 Info (12128): Elaborating entity "altsyncram_59s3" for hierarchy "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_59s3:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_jsa.tdf
-    Info (12023): Found entity 1: decode_jsa File: C:/oac_lab2/oac20191unb2/db/decode_jsa.tdf Line: 23
-Info (12128): Elaborating entity "decode_jsa" for hierarchy "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_59s3:auto_generated|decode_jsa:decode2" File: C:/oac_lab2/oac20191unb2/db/altsyncram_59s3.tdf Line: 45
+    Info (12023): Found entity 1: decode_jsa File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/decode_jsa.tdf Line: 23
+Info (12128): Elaborating entity "decode_jsa" for hierarchy "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_59s3:auto_generated|decode_jsa:decode2" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/altsyncram_59s3.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_gob.tdf
-    Info (12023): Found entity 1: mux_gob File: C:/oac_lab2/oac20191unb2/db/mux_gob.tdf Line: 23
-Info (12128): Elaborating entity "mux_gob" for hierarchy "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_59s3:auto_generated|mux_gob:mux3" File: C:/oac_lab2/oac20191unb2/db/altsyncram_59s3.tdf Line: 48
+    Info (12023): Found entity 1: mux_gob File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_gob.tdf Line: 23
+Info (12128): Elaborating entity "mux_gob" for hierarchy "datamemory:inst25|data_mem_ram:inst|altsyncram:altsyncram_component|altsyncram_59s3:auto_generated|mux_gob:mux3" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/altsyncram_59s3.tdf Line: 48
 Info (12128): Elaborating entity "mux21_5bits" for hierarchy "mux21_5bits:inst42"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux21_5bits:inst42|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 82
-Info (12130): Elaborated megafunction instantiation "mux21_5bits:inst42|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 82
-Info (12133): Instantiated megafunction "mux21_5bits:inst42|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 82
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux21_5bits:inst42|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 82
+Info (12130): Elaborated megafunction instantiation "mux21_5bits:inst42|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 82
+Info (12133): Instantiated megafunction "mux21_5bits:inst42|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux21_5bits/mux21_5bits.vhd Line: 82
     Info (12134): Parameter "LPM_WIDTH" = "5"
     Info (12134): Parameter "LPM_SIZE" = "2"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
@@ -9718,12 +9702,12 @@ Info (12133): Instantiated megafunction "mux21_5bits:inst42|LPM_MUX:LPM_MUX_comp
     Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_m7e.tdf
-    Info (12023): Found entity 1: mux_m7e File: C:/oac_lab2/oac20191unb2/db/mux_m7e.tdf Line: 23
+    Info (12023): Found entity 1: mux_m7e File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_m7e.tdf Line: 23
 Info (12128): Elaborating entity "mux_m7e" for hierarchy "mux21_5bits:inst42|LPM_MUX:LPM_MUX_component|mux_m7e:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "Ra_reg_31" for hierarchy "Ra_reg_31:instuuyd"
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "Ra_reg_31:instuuyd|lpm_constant:LPM_CONSTANT_component" File: C:/oac_lab2/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 72
-Info (12130): Elaborated megafunction instantiation "Ra_reg_31:instuuyd|lpm_constant:LPM_CONSTANT_component" File: C:/oac_lab2/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 72
-Info (12133): Instantiated megafunction "Ra_reg_31:instuuyd|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 72
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "Ra_reg_31:instuuyd|lpm_constant:LPM_CONSTANT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 72
+Info (12130): Elaborated megafunction instantiation "Ra_reg_31:instuuyd|lpm_constant:LPM_CONSTANT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 72
+Info (12133): Instantiated megafunction "Ra_reg_31:instuuyd|lpm_constant:LPM_CONSTANT_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Ra_reg_31/Ra_reg_31.vhd Line: 72
     Info (12134): Parameter "lpm_cvalue" = "1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
@@ -9742,41 +9726,41 @@ Warning (275008): Primitive "NOT" of instance "inst12" not used
 Warning (275008): Primitive "NOT" of instance "inst70" not used
 Warning (275008): Primitive "NOT" of instance "inst9" not used
 Info (12128): Elaborating entity "mux41_31bits" for hierarchy "mux41_31bits:inst30"
-Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux41_31bits:inst30|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 70
-Info (12130): Elaborated megafunction instantiation "mux41_31bits:inst30|LPM_MUX:LPM_MUX_component" File: C:/oac_lab2/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 70
-Info (12133): Instantiated megafunction "mux41_31bits:inst30|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 70
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "mux41_31bits:inst30|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 70
+Info (12130): Elaborated megafunction instantiation "mux41_31bits:inst30|LPM_MUX:LPM_MUX_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 70
+Info (12133): Instantiated megafunction "mux41_31bits:inst30|LPM_MUX:LPM_MUX_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Mux41_31bits/mux41_31bits.v Line: 70
     Info (12134): Parameter "lpm_size" = "3"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widths" = "2"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tsc.tdf
-    Info (12023): Found entity 1: mux_tsc File: C:/oac_lab2/oac20191unb2/db/mux_tsc.tdf Line: 23
+    Info (12023): Found entity 1: mux_tsc File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_tsc.tdf Line: 23
 Info (12128): Elaborating entity "mux_tsc" for hierarchy "mux41_31bits:inst30|LPM_MUX:LPM_MUX_component|mux_tsc:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "forwarding_unit" for hierarchy "forwarding_unit:inst27"
 Info (12128): Elaborating entity "shift2_left" for hierarchy "shift2_left:instahsgdags"
 Info (12128): Elaborating entity "lpm_clshift_2_left" for hierarchy "shift2_left:instahsgdags|lpm_clshift_2_left:inst"
-Info (12128): Elaborating entity "lpm_clshift" for hierarchy "shift2_left:instahsgdags|lpm_clshift_2_left:inst|lpm_clshift:LPM_CLSHIFT_component" File: C:/oac_lab2/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 79
-Info (12130): Elaborated megafunction instantiation "shift2_left:instahsgdags|lpm_clshift_2_left:inst|lpm_clshift:LPM_CLSHIFT_component" File: C:/oac_lab2/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 79
-Info (12133): Instantiated megafunction "shift2_left:instahsgdags|lpm_clshift_2_left:inst|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 79
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "shift2_left:instahsgdags|lpm_clshift_2_left:inst|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 79
+Info (12130): Elaborated megafunction instantiation "shift2_left:instahsgdags|lpm_clshift_2_left:inst|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 79
+Info (12133): Instantiated megafunction "shift2_left:instahsgdags|lpm_clshift_2_left:inst|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/shift2_left/lpm_clshift_2_left.vhd Line: 79
     Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
     Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widthdist" = "2"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_rkb.tdf
-    Info (12023): Found entity 1: lpm_clshift_rkb File: C:/oac_lab2/oac20191unb2/db/lpm_clshift_rkb.tdf Line: 23
+    Info (12023): Found entity 1: lpm_clshift_rkb File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_clshift_rkb.tdf Line: 23
 Info (12128): Elaborating entity "lpm_clshift_rkb" for hierarchy "shift2_left:instahsgdags|lpm_clshift_2_left:inst|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_rkb:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
 Info (12128): Elaborating entity "Endereco_jump" for hierarchy "Endereco_jump:inst40"
 Info (12128): Elaborating entity "lui_result" for hierarchy "lui_result:inst43"
 Info (12128): Elaborating entity "shift_lui" for hierarchy "lui_result:inst43|shift_lui:inst9"
-Info (12128): Elaborating entity "lpm_clshift" for hierarchy "lui_result:inst43|shift_lui:inst9|lpm_clshift:LPM_CLSHIFT_component" File: C:/oac_lab2/oac20191unb2/Shift_lui/shift_lui.vhd Line: 79
-Info (12130): Elaborated megafunction instantiation "lui_result:inst43|shift_lui:inst9|lpm_clshift:LPM_CLSHIFT_component" File: C:/oac_lab2/oac20191unb2/Shift_lui/shift_lui.vhd Line: 79
-Info (12133): Instantiated megafunction "lui_result:inst43|shift_lui:inst9|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/oac_lab2/oac20191unb2/Shift_lui/shift_lui.vhd Line: 79
+Info (12128): Elaborating entity "lpm_clshift" for hierarchy "lui_result:inst43|shift_lui:inst9|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Shift_lui/shift_lui.vhd Line: 79
+Info (12130): Elaborated megafunction instantiation "lui_result:inst43|shift_lui:inst9|lpm_clshift:LPM_CLSHIFT_component" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Shift_lui/shift_lui.vhd Line: 79
+Info (12133): Instantiated megafunction "lui_result:inst43|shift_lui:inst9|lpm_clshift:LPM_CLSHIFT_component" with the following parameter: File: C:/Users/Admin/Documents/GitHub/oac20191unb2/Shift_lui/shift_lui.vhd Line: 79
     Info (12134): Parameter "lpm_shifttype" = "LOGICAL"
     Info (12134): Parameter "lpm_type" = "LPM_CLSHIFT"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widthdist" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_clshift_ukb.tdf
-    Info (12023): Found entity 1: lpm_clshift_ukb File: C:/oac_lab2/oac20191unb2/db/lpm_clshift_ukb.tdf Line: 23
+    Info (12023): Found entity 1: lpm_clshift_ukb File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_clshift_ukb.tdf Line: 23
 Info (12128): Elaborating entity "lpm_clshift_ukb" for hierarchy "lui_result:inst43|shift_lui:inst9|lpm_clshift:LPM_CLSHIFT_component|lpm_clshift_ukb:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_clshift.tdf Line: 54
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant:inst8"
 Info (12130): Elaborated megafunction instantiation "lpm_constant:inst8"
@@ -9784,7 +9768,7 @@ Info (12133): Instantiated megafunction "lpm_constant:inst8" with the following 
     Info (12134): Parameter "LPM_CVALUE" = "0"
     Info (12134): Parameter "LPM_WIDTH" = "32"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_constant_0j4.tdf
-    Info (12023): Found entity 1: lpm_constant_0j4 File: C:/oac_lab2/oac20191unb2/db/lpm_constant_0j4.tdf Line: 23
+    Info (12023): Found entity 1: lpm_constant_0j4 File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/lpm_constant_0j4.tdf Line: 23
 Info (12128): Elaborating entity "lpm_constant_0j4" for hierarchy "lpm_constant:inst8|lpm_constant_0j4:ag" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_constant.tdf Line: 46
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant:inst16"
 Info (12130): Elaborated megafunction instantiation "lpm_constant:inst16"
@@ -9798,34 +9782,34 @@ Info (12133): Instantiated megafunction "BUSMUX:inst38" with the following param
 Info (12128): Elaborating entity "LPM_MUX" for hierarchy "BUSMUX:inst38|LPM_MUX:$00000" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12131): Elaborated megafunction instantiation "BUSMUX:inst38|LPM_MUX:$00000", which is child of megafunction instantiation "BUSMUX:inst38" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/busmux.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_osc.tdf
-    Info (12023): Found entity 1: mux_osc File: C:/oac_lab2/oac20191unb2/db/mux_osc.tdf Line: 23
+    Info (12023): Found entity 1: mux_osc File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mux_osc.tdf Line: 23
 Info (12128): Elaborating entity "mux_osc" for hierarchy "BUSMUX:inst38|LPM_MUX:$00000|mux_osc:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following DSP element node(s):
-        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult1" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 40
-        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult3" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 49
-        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult5" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 58
-        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult7" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 67
-        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|w513w[0]" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 76
-        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out4" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 81
-        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out6" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 86
-        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out8" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 91
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult1" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 40
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult3" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 49
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult5" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 58
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult7" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 67
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|w513w[0]" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 76
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out4" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 81
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out6" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 86
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out8" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 91
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult1" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 40
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult3" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 49
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult5" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 58
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult7" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 67
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|w513w[0]" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 76
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out4" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 81
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out6" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 86
-        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out8" File: C:/oac_lab2/oac20191unb2/db/mult_pfn.tdf Line: 91
+        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult1" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 40
+        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult3" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 49
+        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult5" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 58
+        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult7" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 67
+        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|w513w[0]" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 76
+        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out4" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 81
+        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out6" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 86
+        Warning (14320): Synthesized away node "32bitULA6funcoes:instpoiiuyh|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out8" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 91
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult1" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 40
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult3" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 49
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult5" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 58
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult7" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 67
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|w513w[0]" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 76
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out4" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 81
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out6" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 86
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst20|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out8" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 91
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult1" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 40
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult3" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 49
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult5" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 58
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult7" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 67
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|w513w[0]" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 76
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out4" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 81
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out6" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 86
+        Warning (14320): Synthesized away node "32bitULA6funcoes:inst3|lpm_mult_alu:inst55|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out8" File: C:/Users/Admin/Documents/GitHub/oac20191unb2/db/mult_pfn.tdf Line: 91
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "EX_MEM_Enable" is stuck at VCC
     Warning (13410): Pin "control[16]" is stuck at GND
@@ -9833,8 +9817,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "control[14]" is stuck at GND
     Warning (13410): Pin "control[13]" is stuck at GND
     Warning (13410): Pin "control[12]" is stuck at GND
-    Warning (13410): Pin "IF_ID_Enable" is stuck at GND
-    Warning (13410): Pin "ID_EX_Enable" is stuck at GND
     Warning (13410): Pin "MEM_WB_Enable" is stuck at VCC
     Warning (13410): Pin "ALUcontrol_to_ULA[3]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
@@ -9843,15 +9825,15 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clockinstructionmemory"
-Info (21057): Implemented 4126 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4129 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 200 output pins
-    Info (21061): Implemented 3827 logic cells
+    Info (21061): Implemented 3830 logic cells
     Info (21064): Implemented 96 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 84 warnings
-    Info: Peak virtual memory: 4958 megabytes
-    Info: Processing ended: Mon Jul 01 11:56:32 2019
-    Info: Elapsed time: 00:01:11
-    Info: Total CPU time (on all processors): 00:01:30
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 64 warnings
+    Info: Peak virtual memory: 4923 megabytes
+    Info: Processing ended: Mon Jul 01 12:35:59 2019
+    Info: Elapsed time: 00:00:34
+    Info: Total CPU time (on all processors): 00:00:44
 
 

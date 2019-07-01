@@ -3,19 +3,19 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -16.315
-TNS   : -5159.503
+Slack : -16.155
+TNS   : -5602.114
 
 Type  : Slow 1200mV 85C Model Setup 'DataCLK'
-Slack : -2.524
-TNS   : -611.806
-
-Type  : Slow 1200mV 85C Model Hold 'DataCLK'
-Slack : 0.312
-TNS   : 0.000
+Slack : -2.794
+TNS   : -641.908
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.358
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DataCLK'
+Slack : 0.457
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
@@ -27,19 +27,19 @@ Slack : -3.000
 TNS   : -700.680
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -14.512
-TNS   : -4485.406
+Slack : -14.382
+TNS   : -4926.451
 
 Type  : Slow 1200mV 0C Model Setup 'DataCLK'
-Slack : -2.174
-TNS   : -515.915
-
-Type  : Slow 1200mV 0C Model Hold 'DataCLK'
-Slack : 0.293
-TNS   : 0.000
+Slack : -2.396
+TNS   : -546.601
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.318
+Slack : 0.301
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DataCLK'
+Slack : 0.434
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
@@ -51,27 +51,27 @@ Slack : -3.000
 TNS   : -700.680
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -8.712
-TNS   : -2517.431
+Slack : -8.658
+TNS   : -2761.605
 
 Type  : Fast 1200mV 0C Model Setup 'DataCLK'
-Slack : -1.123
-TNS   : -232.958
-
-Type  : Fast 1200mV 0C Model Hold 'DataCLK'
-Slack : 0.148
-TNS   : 0.000
+Slack : -1.304
+TNS   : -253.204
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.192
+Slack : 0.175
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DataCLK'
+Slack : 0.216
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1447.365
+TNS   : -1446.665
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DataCLK'
 Slack : -3.000
-TNS   : -362.749
+TNS   : -362.951
 
 ------------------------------------------------------------

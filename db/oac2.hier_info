@@ -213,75 +213,279 @@ clockinstructionmemory => ~NO_FANOUT~
 |oac2|hazard_unit:inst12
 Flush <= ID_EX_Branch.DB_MAX_OUTPUT_PORT_TYPE
 ID_EX_Branch => Flush.DATAIN
-IF_ID_Enable <= <GND>
-ID_EX_Enable <= <GND>
-EX_MEM_enable <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+ID_EX_Branch => inst4.IN3
+ID_EX_Branch => inst13.IN3
+IF_ID_Enable <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 a_erro_Mdados => inst.IN0
+IF_ID_Jump => inst4.IN1
 a_erro_Minstr => inst1.IN0
-MEM_WB_Enable <= inst20.DB_MAX_OUTPUT_PORT_TYPE
-PC_Enable <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+ID_EX_LeMem => inst6.IN0
+ID_EX_LeMem => inst14.IN0
 ID_EX_LeMem => inst28.IN0
+ID_EX_RT[0] => compare_a_equals_b:inst10.dataa[0]
+ID_EX_RT[0] => compare_a_equals_b:inst9.dataa[0]
+ID_EX_RT[0] => compare_a_equals_b:inst16.dataa[0]
+ID_EX_RT[0] => compare_a_equals_b:inst15.dataa[0]
 ID_EX_RT[0] => compare_a_equals_b:inst30.dataa[0]
 ID_EX_RT[0] => compare_a_equals_b:inst26.dataa[0]
-ID_EX_RT[0] => compare_a_equals_b:inst10.dataa[0]
-ID_EX_RT[0] => compare_a_equals_b:inst15.dataa[0]
-ID_EX_RT[0] => compare_a_equals_b:inst16.dataa[0]
-ID_EX_RT[0] => compare_a_equals_b:inst9.dataa[0]
+ID_EX_RT[1] => compare_a_equals_b:inst10.dataa[1]
+ID_EX_RT[1] => compare_a_equals_b:inst9.dataa[1]
+ID_EX_RT[1] => compare_a_equals_b:inst16.dataa[1]
+ID_EX_RT[1] => compare_a_equals_b:inst15.dataa[1]
 ID_EX_RT[1] => compare_a_equals_b:inst30.dataa[1]
 ID_EX_RT[1] => compare_a_equals_b:inst26.dataa[1]
-ID_EX_RT[1] => compare_a_equals_b:inst10.dataa[1]
-ID_EX_RT[1] => compare_a_equals_b:inst15.dataa[1]
-ID_EX_RT[1] => compare_a_equals_b:inst16.dataa[1]
-ID_EX_RT[1] => compare_a_equals_b:inst9.dataa[1]
+ID_EX_RT[2] => compare_a_equals_b:inst10.dataa[2]
+ID_EX_RT[2] => compare_a_equals_b:inst9.dataa[2]
+ID_EX_RT[2] => compare_a_equals_b:inst16.dataa[2]
+ID_EX_RT[2] => compare_a_equals_b:inst15.dataa[2]
 ID_EX_RT[2] => compare_a_equals_b:inst30.dataa[2]
 ID_EX_RT[2] => compare_a_equals_b:inst26.dataa[2]
-ID_EX_RT[2] => compare_a_equals_b:inst10.dataa[2]
-ID_EX_RT[2] => compare_a_equals_b:inst15.dataa[2]
-ID_EX_RT[2] => compare_a_equals_b:inst16.dataa[2]
-ID_EX_RT[2] => compare_a_equals_b:inst9.dataa[2]
+ID_EX_RT[3] => compare_a_equals_b:inst10.dataa[3]
+ID_EX_RT[3] => compare_a_equals_b:inst9.dataa[3]
+ID_EX_RT[3] => compare_a_equals_b:inst16.dataa[3]
+ID_EX_RT[3] => compare_a_equals_b:inst15.dataa[3]
 ID_EX_RT[3] => compare_a_equals_b:inst30.dataa[3]
 ID_EX_RT[3] => compare_a_equals_b:inst26.dataa[3]
-ID_EX_RT[3] => compare_a_equals_b:inst10.dataa[3]
-ID_EX_RT[3] => compare_a_equals_b:inst15.dataa[3]
-ID_EX_RT[3] => compare_a_equals_b:inst16.dataa[3]
-ID_EX_RT[3] => compare_a_equals_b:inst9.dataa[3]
+ID_EX_RT[4] => compare_a_equals_b:inst10.dataa[4]
+ID_EX_RT[4] => compare_a_equals_b:inst9.dataa[4]
+ID_EX_RT[4] => compare_a_equals_b:inst16.dataa[4]
+ID_EX_RT[4] => compare_a_equals_b:inst15.dataa[4]
 ID_EX_RT[4] => compare_a_equals_b:inst30.dataa[4]
 ID_EX_RT[4] => compare_a_equals_b:inst26.dataa[4]
-ID_EX_RT[4] => compare_a_equals_b:inst10.dataa[4]
-ID_EX_RT[4] => compare_a_equals_b:inst15.dataa[4]
-ID_EX_RT[4] => compare_a_equals_b:inst16.dataa[4]
-ID_EX_RT[4] => compare_a_equals_b:inst9.dataa[4]
-IF_ID_RT[0] => compare_a_equals_b:inst30.datab[0]
 IF_ID_RT[0] => compare_a_equals_b:inst10.datab[0]
 IF_ID_RT[0] => compare_a_equals_b:inst16.datab[0]
-IF_ID_RT[1] => compare_a_equals_b:inst30.datab[1]
+IF_ID_RT[0] => compare_a_equals_b:inst30.datab[0]
 IF_ID_RT[1] => compare_a_equals_b:inst10.datab[1]
 IF_ID_RT[1] => compare_a_equals_b:inst16.datab[1]
-IF_ID_RT[2] => compare_a_equals_b:inst30.datab[2]
+IF_ID_RT[1] => compare_a_equals_b:inst30.datab[1]
 IF_ID_RT[2] => compare_a_equals_b:inst10.datab[2]
 IF_ID_RT[2] => compare_a_equals_b:inst16.datab[2]
-IF_ID_RT[3] => compare_a_equals_b:inst30.datab[3]
+IF_ID_RT[2] => compare_a_equals_b:inst30.datab[2]
 IF_ID_RT[3] => compare_a_equals_b:inst10.datab[3]
 IF_ID_RT[3] => compare_a_equals_b:inst16.datab[3]
-IF_ID_RT[4] => compare_a_equals_b:inst30.datab[4]
+IF_ID_RT[3] => compare_a_equals_b:inst30.datab[3]
 IF_ID_RT[4] => compare_a_equals_b:inst10.datab[4]
 IF_ID_RT[4] => compare_a_equals_b:inst16.datab[4]
-IF_ID_RS[0] => compare_a_equals_b:inst26.datab[0]
-IF_ID_RS[0] => compare_a_equals_b:inst15.datab[0]
+IF_ID_RT[4] => compare_a_equals_b:inst30.datab[4]
 IF_ID_RS[0] => compare_a_equals_b:inst9.datab[0]
-IF_ID_RS[1] => compare_a_equals_b:inst26.datab[1]
-IF_ID_RS[1] => compare_a_equals_b:inst15.datab[1]
+IF_ID_RS[0] => compare_a_equals_b:inst15.datab[0]
+IF_ID_RS[0] => compare_a_equals_b:inst26.datab[0]
 IF_ID_RS[1] => compare_a_equals_b:inst9.datab[1]
-IF_ID_RS[2] => compare_a_equals_b:inst26.datab[2]
-IF_ID_RS[2] => compare_a_equals_b:inst15.datab[2]
+IF_ID_RS[1] => compare_a_equals_b:inst15.datab[1]
+IF_ID_RS[1] => compare_a_equals_b:inst26.datab[1]
 IF_ID_RS[2] => compare_a_equals_b:inst9.datab[2]
-IF_ID_RS[3] => compare_a_equals_b:inst26.datab[3]
-IF_ID_RS[3] => compare_a_equals_b:inst15.datab[3]
+IF_ID_RS[2] => compare_a_equals_b:inst15.datab[2]
+IF_ID_RS[2] => compare_a_equals_b:inst26.datab[2]
 IF_ID_RS[3] => compare_a_equals_b:inst9.datab[3]
-IF_ID_RS[4] => compare_a_equals_b:inst26.datab[4]
-IF_ID_RS[4] => compare_a_equals_b:inst15.datab[4]
+IF_ID_RS[3] => compare_a_equals_b:inst15.datab[3]
+IF_ID_RS[3] => compare_a_equals_b:inst26.datab[3]
 IF_ID_RS[4] => compare_a_equals_b:inst9.datab[4]
-IF_ID_Jump => ~NO_FANOUT~
+IF_ID_RS[4] => compare_a_equals_b:inst15.datab[4]
+IF_ID_RS[4] => compare_a_equals_b:inst26.datab[4]
+ID_EX_Enable <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+EX_MEM_enable <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+MEM_WB_Enable <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+PC_Enable <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst10
+dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
+dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
+dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
+dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
+dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
+datab[0] => lpm_compare:LPM_COMPARE_component.datab[0]
+datab[1] => lpm_compare:LPM_COMPARE_component.datab[1]
+datab[2] => lpm_compare:LPM_COMPARE_component.datab[2]
+datab[3] => lpm_compare:LPM_COMPARE_component.datab[3]
+datab[4] => lpm_compare:LPM_COMPARE_component.datab[4]
+aeb <= lpm_compare:LPM_COMPARE_component.aeb
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component
+dataa[0] => cmpr_slg:auto_generated.dataa[0]
+dataa[1] => cmpr_slg:auto_generated.dataa[1]
+dataa[2] => cmpr_slg:auto_generated.dataa[2]
+dataa[3] => cmpr_slg:auto_generated.dataa[3]
+dataa[4] => cmpr_slg:auto_generated.dataa[4]
+datab[0] => cmpr_slg:auto_generated.datab[0]
+datab[1] => cmpr_slg:auto_generated.datab[1]
+datab[2] => cmpr_slg:auto_generated.datab[2]
+datab[3] => cmpr_slg:auto_generated.datab[3]
+datab[4] => cmpr_slg:auto_generated.datab[4]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= <GND>
+aeb <= cmpr_slg:auto_generated.aeb
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= <GND>
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated
+aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+dataa[3] => data_wire[1].IN0
+dataa[4] => data_wire[2].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
+datab[3] => data_wire[1].IN1
+datab[4] => data_wire[2].IN1
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst9
+dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
+dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
+dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
+dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
+dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
+datab[0] => lpm_compare:LPM_COMPARE_component.datab[0]
+datab[1] => lpm_compare:LPM_COMPARE_component.datab[1]
+datab[2] => lpm_compare:LPM_COMPARE_component.datab[2]
+datab[3] => lpm_compare:LPM_COMPARE_component.datab[3]
+datab[4] => lpm_compare:LPM_COMPARE_component.datab[4]
+aeb <= lpm_compare:LPM_COMPARE_component.aeb
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst9|lpm_compare:LPM_COMPARE_component
+dataa[0] => cmpr_slg:auto_generated.dataa[0]
+dataa[1] => cmpr_slg:auto_generated.dataa[1]
+dataa[2] => cmpr_slg:auto_generated.dataa[2]
+dataa[3] => cmpr_slg:auto_generated.dataa[3]
+dataa[4] => cmpr_slg:auto_generated.dataa[4]
+datab[0] => cmpr_slg:auto_generated.datab[0]
+datab[1] => cmpr_slg:auto_generated.datab[1]
+datab[2] => cmpr_slg:auto_generated.datab[2]
+datab[3] => cmpr_slg:auto_generated.datab[3]
+datab[4] => cmpr_slg:auto_generated.datab[4]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= <GND>
+aeb <= cmpr_slg:auto_generated.aeb
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= <GND>
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst9|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated
+aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+dataa[3] => data_wire[1].IN0
+dataa[4] => data_wire[2].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
+datab[3] => data_wire[1].IN1
+datab[4] => data_wire[2].IN1
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst16
+dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
+dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
+dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
+dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
+dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
+datab[0] => lpm_compare:LPM_COMPARE_component.datab[0]
+datab[1] => lpm_compare:LPM_COMPARE_component.datab[1]
+datab[2] => lpm_compare:LPM_COMPARE_component.datab[2]
+datab[3] => lpm_compare:LPM_COMPARE_component.datab[3]
+datab[4] => lpm_compare:LPM_COMPARE_component.datab[4]
+aeb <= lpm_compare:LPM_COMPARE_component.aeb
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst16|lpm_compare:LPM_COMPARE_component
+dataa[0] => cmpr_slg:auto_generated.dataa[0]
+dataa[1] => cmpr_slg:auto_generated.dataa[1]
+dataa[2] => cmpr_slg:auto_generated.dataa[2]
+dataa[3] => cmpr_slg:auto_generated.dataa[3]
+dataa[4] => cmpr_slg:auto_generated.dataa[4]
+datab[0] => cmpr_slg:auto_generated.datab[0]
+datab[1] => cmpr_slg:auto_generated.datab[1]
+datab[2] => cmpr_slg:auto_generated.datab[2]
+datab[3] => cmpr_slg:auto_generated.datab[3]
+datab[4] => cmpr_slg:auto_generated.datab[4]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= <GND>
+aeb <= cmpr_slg:auto_generated.aeb
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= <GND>
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst16|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated
+aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+dataa[3] => data_wire[1].IN0
+dataa[4] => data_wire[2].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
+datab[3] => data_wire[1].IN1
+datab[4] => data_wire[2].IN1
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst15
+dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
+dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
+dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
+dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
+dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
+datab[0] => lpm_compare:LPM_COMPARE_component.datab[0]
+datab[1] => lpm_compare:LPM_COMPARE_component.datab[1]
+datab[2] => lpm_compare:LPM_COMPARE_component.datab[2]
+datab[3] => lpm_compare:LPM_COMPARE_component.datab[3]
+datab[4] => lpm_compare:LPM_COMPARE_component.datab[4]
+aeb <= lpm_compare:LPM_COMPARE_component.aeb
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst15|lpm_compare:LPM_COMPARE_component
+dataa[0] => cmpr_slg:auto_generated.dataa[0]
+dataa[1] => cmpr_slg:auto_generated.dataa[1]
+dataa[2] => cmpr_slg:auto_generated.dataa[2]
+dataa[3] => cmpr_slg:auto_generated.dataa[3]
+dataa[4] => cmpr_slg:auto_generated.dataa[4]
+datab[0] => cmpr_slg:auto_generated.datab[0]
+datab[1] => cmpr_slg:auto_generated.datab[1]
+datab[2] => cmpr_slg:auto_generated.datab[2]
+datab[3] => cmpr_slg:auto_generated.datab[3]
+datab[4] => cmpr_slg:auto_generated.datab[4]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= <GND>
+aeb <= cmpr_slg:auto_generated.aeb
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= <GND>
+
+
+|oac2|hazard_unit:inst12|compare_a_equals_b:inst15|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated
+aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+dataa[3] => data_wire[1].IN0
+dataa[4] => data_wire[2].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
+datab[3] => data_wire[1].IN1
+datab[4] => data_wire[2].IN1
 
 
 |oac2|hazard_unit:inst12|compare_a_equals_b:inst30
@@ -371,206 +575,6 @@ ageb <= <GND>
 
 
 |oac2|hazard_unit:inst12|compare_a_equals_b:inst26|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => data_wire[0].IN0
-dataa[1] => data_wire[0].IN0
-dataa[2] => data_wire[1].IN0
-dataa[3] => data_wire[1].IN0
-dataa[4] => data_wire[2].IN0
-datab[0] => data_wire[0].IN1
-datab[1] => data_wire[0].IN1
-datab[2] => data_wire[1].IN1
-datab[3] => data_wire[1].IN1
-datab[4] => data_wire[2].IN1
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst10
-dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
-dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
-dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
-dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
-dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
-datab[0] => lpm_compare:LPM_COMPARE_component.datab[0]
-datab[1] => lpm_compare:LPM_COMPARE_component.datab[1]
-datab[2] => lpm_compare:LPM_COMPARE_component.datab[2]
-datab[3] => lpm_compare:LPM_COMPARE_component.datab[3]
-datab[4] => lpm_compare:LPM_COMPARE_component.datab[4]
-aeb <= lpm_compare:LPM_COMPARE_component.aeb
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component
-dataa[0] => cmpr_slg:auto_generated.dataa[0]
-dataa[1] => cmpr_slg:auto_generated.dataa[1]
-dataa[2] => cmpr_slg:auto_generated.dataa[2]
-dataa[3] => cmpr_slg:auto_generated.dataa[3]
-dataa[4] => cmpr_slg:auto_generated.dataa[4]
-datab[0] => cmpr_slg:auto_generated.datab[0]
-datab[1] => cmpr_slg:auto_generated.datab[1]
-datab[2] => cmpr_slg:auto_generated.datab[2]
-datab[3] => cmpr_slg:auto_generated.datab[3]
-datab[4] => cmpr_slg:auto_generated.datab[4]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-alb <= <GND>
-aeb <= cmpr_slg:auto_generated.aeb
-agb <= <GND>
-aleb <= <GND>
-aneb <= <GND>
-ageb <= <GND>
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst10|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => data_wire[0].IN0
-dataa[1] => data_wire[0].IN0
-dataa[2] => data_wire[1].IN0
-dataa[3] => data_wire[1].IN0
-dataa[4] => data_wire[2].IN0
-datab[0] => data_wire[0].IN1
-datab[1] => data_wire[0].IN1
-datab[2] => data_wire[1].IN1
-datab[3] => data_wire[1].IN1
-datab[4] => data_wire[2].IN1
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst15
-dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
-dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
-dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
-dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
-dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
-datab[0] => lpm_compare:LPM_COMPARE_component.datab[0]
-datab[1] => lpm_compare:LPM_COMPARE_component.datab[1]
-datab[2] => lpm_compare:LPM_COMPARE_component.datab[2]
-datab[3] => lpm_compare:LPM_COMPARE_component.datab[3]
-datab[4] => lpm_compare:LPM_COMPARE_component.datab[4]
-aeb <= lpm_compare:LPM_COMPARE_component.aeb
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst15|lpm_compare:LPM_COMPARE_component
-dataa[0] => cmpr_slg:auto_generated.dataa[0]
-dataa[1] => cmpr_slg:auto_generated.dataa[1]
-dataa[2] => cmpr_slg:auto_generated.dataa[2]
-dataa[3] => cmpr_slg:auto_generated.dataa[3]
-dataa[4] => cmpr_slg:auto_generated.dataa[4]
-datab[0] => cmpr_slg:auto_generated.datab[0]
-datab[1] => cmpr_slg:auto_generated.datab[1]
-datab[2] => cmpr_slg:auto_generated.datab[2]
-datab[3] => cmpr_slg:auto_generated.datab[3]
-datab[4] => cmpr_slg:auto_generated.datab[4]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-alb <= <GND>
-aeb <= cmpr_slg:auto_generated.aeb
-agb <= <GND>
-aleb <= <GND>
-aneb <= <GND>
-ageb <= <GND>
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst15|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => data_wire[0].IN0
-dataa[1] => data_wire[0].IN0
-dataa[2] => data_wire[1].IN0
-dataa[3] => data_wire[1].IN0
-dataa[4] => data_wire[2].IN0
-datab[0] => data_wire[0].IN1
-datab[1] => data_wire[0].IN1
-datab[2] => data_wire[1].IN1
-datab[3] => data_wire[1].IN1
-datab[4] => data_wire[2].IN1
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst16
-dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
-dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
-dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
-dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
-dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
-datab[0] => lpm_compare:LPM_COMPARE_component.datab[0]
-datab[1] => lpm_compare:LPM_COMPARE_component.datab[1]
-datab[2] => lpm_compare:LPM_COMPARE_component.datab[2]
-datab[3] => lpm_compare:LPM_COMPARE_component.datab[3]
-datab[4] => lpm_compare:LPM_COMPARE_component.datab[4]
-aeb <= lpm_compare:LPM_COMPARE_component.aeb
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst16|lpm_compare:LPM_COMPARE_component
-dataa[0] => cmpr_slg:auto_generated.dataa[0]
-dataa[1] => cmpr_slg:auto_generated.dataa[1]
-dataa[2] => cmpr_slg:auto_generated.dataa[2]
-dataa[3] => cmpr_slg:auto_generated.dataa[3]
-dataa[4] => cmpr_slg:auto_generated.dataa[4]
-datab[0] => cmpr_slg:auto_generated.datab[0]
-datab[1] => cmpr_slg:auto_generated.datab[1]
-datab[2] => cmpr_slg:auto_generated.datab[2]
-datab[3] => cmpr_slg:auto_generated.datab[3]
-datab[4] => cmpr_slg:auto_generated.datab[4]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-alb <= <GND>
-aeb <= cmpr_slg:auto_generated.aeb
-agb <= <GND>
-aleb <= <GND>
-aneb <= <GND>
-ageb <= <GND>
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst16|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated
-aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
-dataa[0] => data_wire[0].IN0
-dataa[1] => data_wire[0].IN0
-dataa[2] => data_wire[1].IN0
-dataa[3] => data_wire[1].IN0
-dataa[4] => data_wire[2].IN0
-datab[0] => data_wire[0].IN1
-datab[1] => data_wire[0].IN1
-datab[2] => data_wire[1].IN1
-datab[3] => data_wire[1].IN1
-datab[4] => data_wire[2].IN1
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst9
-dataa[0] => lpm_compare:LPM_COMPARE_component.dataa[0]
-dataa[1] => lpm_compare:LPM_COMPARE_component.dataa[1]
-dataa[2] => lpm_compare:LPM_COMPARE_component.dataa[2]
-dataa[3] => lpm_compare:LPM_COMPARE_component.dataa[3]
-dataa[4] => lpm_compare:LPM_COMPARE_component.dataa[4]
-datab[0] => lpm_compare:LPM_COMPARE_component.datab[0]
-datab[1] => lpm_compare:LPM_COMPARE_component.datab[1]
-datab[2] => lpm_compare:LPM_COMPARE_component.datab[2]
-datab[3] => lpm_compare:LPM_COMPARE_component.datab[3]
-datab[4] => lpm_compare:LPM_COMPARE_component.datab[4]
-aeb <= lpm_compare:LPM_COMPARE_component.aeb
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst9|lpm_compare:LPM_COMPARE_component
-dataa[0] => cmpr_slg:auto_generated.dataa[0]
-dataa[1] => cmpr_slg:auto_generated.dataa[1]
-dataa[2] => cmpr_slg:auto_generated.dataa[2]
-dataa[3] => cmpr_slg:auto_generated.dataa[3]
-dataa[4] => cmpr_slg:auto_generated.dataa[4]
-datab[0] => cmpr_slg:auto_generated.datab[0]
-datab[1] => cmpr_slg:auto_generated.datab[1]
-datab[2] => cmpr_slg:auto_generated.datab[2]
-datab[3] => cmpr_slg:auto_generated.datab[3]
-datab[4] => cmpr_slg:auto_generated.datab[4]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-alb <= <GND>
-aeb <= cmpr_slg:auto_generated.aeb
-agb <= <GND>
-aleb <= <GND>
-aneb <= <GND>
-ageb <= <GND>
-
-
-|oac2|hazard_unit:inst12|compare_a_equals_b:inst9|lpm_compare:LPM_COMPARE_component|cmpr_slg:auto_generated
 aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => data_wire[0].IN0
 dataa[1] => data_wire[0].IN0
