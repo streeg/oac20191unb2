@@ -3,75 +3,75 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -16.155
-TNS   : -5602.114
+Slack : -15.753
+TNS   : -5718.714
 
 Type  : Slow 1200mV 85C Model Setup 'DataCLK'
-Slack : -2.794
-TNS   : -641.908
-
-Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.333
-TNS   : 0.000
+Slack : -2.687
+TNS   : -663.123
 
 Type  : Slow 1200mV 85C Model Hold 'DataCLK'
-Slack : 0.457
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.372
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1406.568
+TNS   : -1352.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DataCLK'
 Slack : -3.000
-TNS   : -700.680
+TNS   : -770.248
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -14.382
-TNS   : -4926.451
+Slack : -13.987
+TNS   : -5035.466
 
 Type  : Slow 1200mV 0C Model Setup 'DataCLK'
-Slack : -2.396
-TNS   : -546.601
+Slack : -2.301
+TNS   : -569.881
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.301
+Slack : 0.339
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'DataCLK'
-Slack : 0.434
+Slack : 0.340
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1406.568
+TNS   : -1352.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DataCLK'
 Slack : -3.000
-TNS   : -700.680
+TNS   : -770.248
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -8.658
-TNS   : -2761.605
+Slack : -8.380
+TNS   : -2894.330
 
 Type  : Fast 1200mV 0C Model Setup 'DataCLK'
-Slack : -1.304
-TNS   : -253.204
-
-Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.175
-TNS   : 0.000
+Slack : -1.205
+TNS   : -255.310
 
 Type  : Fast 1200mV 0C Model Hold 'DataCLK'
-Slack : 0.216
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.193
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1446.665
+TNS   : -1428.825
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DataCLK'
 Slack : -3.000
-TNS   : -362.951
+TNS   : -398.325
 
 ------------------------------------------------------------

@@ -1,7 +1,7 @@
 # do oac2.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:24 on Jul 01,2019
+# Start time: 15:33:27 on Jul 01,2019
 # vcom -work work oac2.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -16,20 +16,20 @@
 # -- Loading package altera_primitives_components
 # -- Compiling entity oac2
 # -- Compiling architecture structure of oac2
-# End time: 11:58:26 on Jul 01,2019, Elapsed time: 0:00:02
+# End time: 15:33:28 on Jul 01,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:26 on Jul 01,2019
+# Start time: 15:33:28 on Jul 01,2019
 # vcom -work work oac2.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity oac2_vhd_vec_tst
 # -- Compiling architecture oac2_arch of oac2_vhd_vec_tst
-# End time: 11:58:26 on Jul 01,2019, Elapsed time: 0:00:00
+# End time: 15:33:28 on Jul 01,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -sdfmax oac2_vhd_vec_tst/i1=oac2_vhd.sdo -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.oac2_vhd_vec_tst 
-# Start time: 11:58:26 on Jul 01,2019
+# Start time: 15:33:28 on Jul 01,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -50,13 +50,13 @@
 # Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
 # Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
 # Loading cycloneive.cycloneive_ram_block(block_arch)
 # Loading cycloneive.cycloneive_ram_register(reg_arch)
 # Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
+# Loading altera.dffeas(vital_dffeas)
 # Loading instances from oac2_vhd.sdo
 # Loading timing data from oac2_vhd.sdo
-# ** Warning: Design size of 526152 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 539739 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /oac2_vhd_vec_tst File: oac2.vwf.vht
@@ -67,9 +67,5 @@
 # Simulation time: 0 ps
 # Simulation time: 0 ps
 # Simulation time: 0 ps
-# Simulation time: 0 ps
-# Simulation time: 0 ps
-# Simulation time: 7002913 ps
-# Simulation time: 7002913 ps
-# End time: 11:58:58 on Jul 01,2019, Elapsed time: 0:00:32
+# End time: 15:33:48 on Jul 01,2019, Elapsed time: 0:00:20
 # Errors: 0, Warnings: 1

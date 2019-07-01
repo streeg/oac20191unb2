@@ -7,16 +7,16 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/oac_lab2/oac20191unb2/simulation/qsim
+dC:/oac_lab2/oac20191unb2/simulation/qsim
 Ehard_block
-Z1 w1561993095
-Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 K`kJb<]?z4U5EbkG_:lMO3
-Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z7 DPx10 cycloneive 21 cycloneive_components 0 22 HFZ8mBI5?[8TM9e2YGWCa2
-R0
+Z0 w1562006005
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 K`kJb<]?z4U5EbkG_:lMO3
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z6 DPx10 cycloneive 21 cycloneive_components 0 22 HFZ8mBI5?[8TM9e2YGWCa2
+Z7 dC:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim
 Z8 8oac2.vho
 Z9 Foac2.vho
 l0
@@ -25,21 +25,21 @@ VB]0;STalBkCB1_B4BXQDW2
 !s100 >mXi5[`cD`bFC`UBKA<om3
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1561993104
+Z11 !s110 1562006007
 !i10b 1
-Z12 !s108 1561993104.000000
+Z12 !s108 1562006007.000000
 Z13 !s90 -work|work|oac2.vho|
 Z14 !s107 oac2.vho|
 !i113 1
 Z15 o-work work
 Z16 tExplicit 1 CvgOpt 0
 Astructure
+R1
 R2
 R3
 R4
 R5
 R6
-R7
 DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
 l65
 L51
@@ -56,22 +56,22 @@ R14
 R15
 R16
 Eoac2
-R1
-R3
-R7
+R0
 R2
+R6
+R1
 Z17 DPx6 altera 11 dffeas_pack 0 22 zWCf]NF6heG=Dhmc@B0=T2
+R3
 R4
 R5
-R6
 Z18 DPx6 altera 28 altera_primitives_components 0 22 _Q9E2TD5YB<<@P0[5jYTG0
-R0
+R7
 R8
 R9
 l0
 L80
-V5OV=8ZHUFJlKOm1fIT8Ma3
-!s100 aCUhf3Y<=5:WznTZi62<R3
+VgTK4YQz67M;4^3fZo1Oed0
+!s100 :b<_HCEi8d5]42JS66^982
 R10
 32
 R11
@@ -83,22 +83,22 @@ R14
 R15
 R16
 Astructure
-R3
-R7
 R2
+R6
+R1
 R17
+R3
 R4
 R5
-R6
 R18
-DEx4 work 4 oac2 0 22 5OV=8ZHUFJlKOm1fIT8Ma3
-l4986
-L318
-VB_dKO776V`>X]MGo9A<L`1
-!s100 ?XN4a2>;l2:kgk5mF:zeP3
+DEx4 work 4 oac2 0 22 gTK4YQz67M;4^3fZo1Oed0
+l5200
+L382
+Vin:L^7MFR@EccU<g[QLIS1
+!s100 R8ZfAZ4eE]]dIG[zR[ABF2
 R10
 32
-!s110 1561993105
+Z19 !s110 1562006008
 !i10b 1
 R12
 R13
@@ -107,37 +107,37 @@ R14
 R15
 R16
 Eoac2_vhd_vec_tst
-Z19 w1561993090
+Z20 w1562006001
+R4
 R5
-R6
-R0
-Z20 8oac2.vwf.vht
-Z21 Foac2.vwf.vht
+R7
+Z21 8oac2.vwf.vht
+Z22 Foac2.vwf.vht
 l0
 L32
 VTUV?;_8<CDHR[8oe3WK>93
 !s100 K5IONFb`@S:C<k3Pim8Wm1
 R10
 32
-Z22 !s110 1561993106
+R19
 !i10b 1
-Z23 !s108 1561993106.000000
+Z23 !s108 1562006008.000000
 Z24 !s90 -work|work|oac2.vwf.vht|
 Z25 !s107 oac2.vwf.vht|
 !i113 1
 R15
 R16
 Aoac2_arch
+R4
 R5
-R6
 Z26 DEx4 work 16 oac2_vhd_vec_tst 0 22 TUV?;_8<CDHR[8oe3WK>93
-l95
+l97
 L34
-Z27 V?C8;I1GZ3@z>P8Bne<LP12
-Z28 !s100 zddTzgTGWbceVJVa5ZVS]0
+Z27 VYkmo041`7AmYihi^fbI>G1
+Z28 !s100 SSHJEOd^LfH[Q@eFP`<gF3
 R10
 32
-R22
+R19
 !i10b 1
 R23
 R24

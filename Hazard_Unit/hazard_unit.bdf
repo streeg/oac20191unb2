@@ -22,7 +22,7 @@ agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 408 56 424 232)
+	(rect 408 40 424 216)
 	(text "INPUT" (rect 0 133 10 161)(font "Arial" (font_size 6))(vertical))
 	(text "a_erro_Minstr" (rect 1 4 18 70)(font "Intel Clear" )(vertical))
 	(pt 8 176)
@@ -39,7 +39,7 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 440 56 456 232)
+	(rect 440 48 456 224)
 	(text "INPUT" (rect 0 133 10 161)(font "Arial" (font_size 6))(vertical))
 	(text "a_erro_Mdados" (rect 0 5 17 79)(font "Intel Clear" )(vertical))
 	(pt 8 176)
@@ -1643,6 +1643,14 @@ agreement for further details.
 (connector
 	(pt 1304 344)
 	(pt 1360 344)
+)
+(connector
+	(pt 416 232)
+	(pt 416 216)
+)
+(connector
+	(pt 448 232)
+	(pt 448 224)
 )
 (junction (pt 352 296))
 (junction (pt 448 312))

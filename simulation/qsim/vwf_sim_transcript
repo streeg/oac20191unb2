@@ -7,12 +7,12 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off oac2 -c oac2 --vector_source="C:/oac_lab2/oac20191unb2/oac2.vwf" --testbench_file="C:/oac_lab2/oac20191unb2/simulation/qsim/oac2.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off oac2 -c oac2 --vector_source="C:/Users/Admin/Documents/GitHub/oac20191unb2/oac2.vwf" --testbench_file="C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim/oac2.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.
+    Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and its AMPP partner logic 
     Info: functions, and any output files from any of the foregoing 
@@ -26,24 +26,26 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Mon Jul 01 11:58:09 2019
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off oac2 -c oac2 --vector_source=C:/oac_lab2/oac20191unb2/oac2.vwf --testbench_file=C:/oac_lab2/oac20191unb2/simulation/qsim/oac2.vwf.vht
+    Info: Processing started: Mon Jul 01 15:33:20 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off oac2 -c oac2 --vector_source=C:/Users/Admin/Documents/GitHub/oac20191unb2/oac2.vwf --testbench_file=C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim/oac2.vwf.vht
 Warning (125092): Tcl Script File reg_ra_31.qip not found
     Info (125063): set_global_assignment -name QIP_FILE reg_ra_31.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-[23]" in vector source file when writing test bench files
+ bench files
+
+ pin "DadosRT[22]" in vector source file when writing test bench files
 
 Completed successfully. 
 
 **** Generating the timing simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/oac_lab2/oac20191unb2/simulation/qsim/" oac2 -c oac2
+quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim/" oac2 -c oac2
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.
+    Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and its AMPP partner logic 
     Info: functions, and any output files from any of the foregoing 
@@ -57,30 +59,30 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Mon Jul 01 11:58:11 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=C:/oac_lab2/oac20191unb2/simulation/qsim/ oac2 -c oac2
+    Info: Processing started: Mon Jul 01 15:33:21 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim/ oac2 -c oac2
 Warning (125092): Tcl Script File reg_ra_31.qip not found
     Info (125063): set_global_assignment -name QIP_FILE reg_ra_31.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file oac2_6_1200mv_85c_slow.vho in folder "C:/oac_lab2/oac20191unb2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file oac2_6_1200mv_0c_slow.vho in folder "C:/oac_lab2/oac20191unb2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file oac2_min_1200mv_0c_fast.vho in folder "C:/oac_lab2/oac20191unb2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file oac2.vho in folder "C:/oac_lab2/oac20191unb2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file oac2_6_1200mv_85c_vhd_slow.sdo in folder "C:/oac_lab2/oac20191unb2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file oac2_6_1200mv_0c_vhd_slow.sdo in folder "C:/oac_lab2/oac20191unb2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file oac2_min_1200mv_0c_vhd_fast.sdo in folder "C:/oac_lab2/oac20191unb2/simulation/qsim//" for EDA simulation tool
-Info (204019): Generated file oac2_vhd.sdo in folder "C:/oac_lab2/oac20191unb2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file oac2_6_1200mv_85c_slow.vho in folder "C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file oac2_6_1200mv_0c_slow.vho in folder "C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file oac2_min_1200mv_0c_fast.vho in folder "C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file oac2.vho in folder "C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file oac2_6_1200mv_85c_vhd_slow.sdo in folder "C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file oac2_6_1200mv_0c_vhd_slow.sdo in folder "C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file oac2_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file oac2_vhd.sdo in folder "C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4713 megabytes
-    Info: Processing ended: Mon Jul 01 11:58:22 2019
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4704 megabytes
+    Info: Processing ended: Mon Jul 01 15:33:26 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/oac_lab2/oac20191unb2/simulation/qsim/oac2.do generated.
+C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim/oac2.do generated.
 
 Completed successfully. 
 
@@ -94,14 +96,12 @@ Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
 
 
 # do oac2.do
-
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:24 on Jul 01,2019
+# Start time: 15:33:27 on Jul 01,2019
 # vcom -work work oac2.vho 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -110,29 +110,30 @@ Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
+
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Compiling entity oac2
+
 # -- Compiling architecture structure of oac2
 
-# End time: 11:58:26 on Jul 01,2019, Elapsed time: 0:00:02
+# End time: 15:33:28 on Jul 01,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:58:26 on Jul 01,2019
+# Start time: 15:33:28 on Jul 01,2019
 # vcom -work work oac2.vwf.vht 
 # -- Loading package STANDARD
 
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity oac2_vhd_vec_tst
-
 # -- Compiling architecture oac2_arch of oac2_vhd_vec_tst
-# End time: 11:58:26 on Jul 01,2019, Elapsed time: 0:00:00
+
+# End time: 15:33:28 on Jul 01,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -sdfmax oac2_vhd_vec_tst/i1=oac2_vhd.sdo -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.oac2_vhd_vec_tst 
-# Start time: 11:58:26 on Jul 01,2019
+# Start time: 15:33:28 on Jul 01,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -153,17 +154,16 @@ Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
 # Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
-# Loading altera.dffeas(vital_dffeas)
 # Loading cycloneive.cycloneive_ram_block(block_arch)
 # Loading cycloneive.cycloneive_ram_register(reg_arch)
 # Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
+# Loading altera.dffeas(vital_dffeas)
 # Loading instances from oac2_vhd.sdo
 # Loading timing data from oac2_vhd.sdo
-# ** Warning: Design size of 526152 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 539739 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /oac2_vhd_vec_tst File: oac2.vwf.vht
-
 # after#35
 
 # Simulation time: 0 ps
@@ -178,28 +178,20 @@ Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # Simulation time: 0 ps
 
-# Simulation time: 0 ps
-
-# Simulation time: 0 ps
-
-# Simulation time: 7002913 ps
-
-# Simulation time: 7002913 ps
-
-# End time: 11:58:58 on Jul 01,2019, Elapsed time: 0:00:32
+# End time: 15:33:48 on Jul 01,2019, Elapsed time: 0:00:20
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/oac_lab2/oac20191unb2/oac2.vwf...
+Reading C:/Users/Admin/Documents/GitHub/oac20191unb2/oac2.vwf...
 
-Reading C:/oac_lab2/oac20191unb2/simulation/qsim/oac2.msim.vcd...
+Reading C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim/oac2.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/oac_lab2/oac20191unb2/simulation/qsim/oac2_20190701115858.sim.vwf
+Writing the resulting VWF to C:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim/oac2_20190701153348.sim.vwf
 
 Finished VCD to VWF conversion.
 
