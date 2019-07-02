@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "07/01/2019 16:01:27"
+-- Generated on "07/02/2019 03:02:56"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          oac2
 -- 
@@ -43,6 +43,8 @@ SIGNAL DadosRT : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL DataCLK : STD_LOGIC;
 SIGNAL direction_to_ULA : STD_LOGIC;
 SIGNAL EnableOverflow_to_ULA : STD_LOGIC;
+SIGNAL escolhaRS : STD_LOGIC_VECTOR(4 DOWNTO 0);
+SIGNAL escolhaRT : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL EscreveReg_mem_to_fw : STD_LOGIC;
 SIGNAL EscreveReg_wb_to_fw : STD_LOGIC;
 SIGNAL EX_MEM_Enable : STD_LOGIC;
@@ -62,8 +64,13 @@ SIGNAL PC_Enable : STD_LOGIC;
 SIGNAL Result_ALU_mem : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL result_end_pipe : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL resultALU : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL rt0 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL rt1 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL rt2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL rt3 : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL shift_arith_to_ULA : STD_LOGIC;
 SIGNAL shift_to_ULA : STD_LOGIC;
+SIGNAL Valor_PC : STD_LOGIC_VECTOR(31 DOWNTO 0);
 COMPONENT oac2
 	PORT (
 	ALUcontrol_to_ULA : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -75,6 +82,8 @@ COMPONENT oac2
 	DataCLK : IN STD_LOGIC;
 	direction_to_ULA : OUT STD_LOGIC;
 	EnableOverflow_to_ULA : OUT STD_LOGIC;
+	escolhaRS : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
+	escolhaRT : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
 	EscreveReg_mem_to_fw : OUT STD_LOGIC;
 	EscreveReg_wb_to_fw : OUT STD_LOGIC;
 	EX_MEM_Enable : OUT STD_LOGIC;
@@ -94,8 +103,13 @@ COMPONENT oac2
 	Result_ALU_mem : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	result_end_pipe : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	resultALU : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	rt0 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	rt1 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	rt2 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	rt3 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	shift_arith_to_ULA : OUT STD_LOGIC;
-	shift_to_ULA : OUT STD_LOGIC
+	shift_to_ULA : OUT STD_LOGIC;
+	Valor_PC : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -111,6 +125,8 @@ BEGIN
 	DataCLK => DataCLK,
 	direction_to_ULA => direction_to_ULA,
 	EnableOverflow_to_ULA => EnableOverflow_to_ULA,
+	escolhaRS => escolhaRS,
+	escolhaRT => escolhaRT,
 	EscreveReg_mem_to_fw => EscreveReg_mem_to_fw,
 	EscreveReg_wb_to_fw => EscreveReg_wb_to_fw,
 	EX_MEM_Enable => EX_MEM_Enable,
@@ -130,8 +146,13 @@ BEGIN
 	Result_ALU_mem => Result_ALU_mem,
 	result_end_pipe => result_end_pipe,
 	resultALU => resultALU,
+	rt0 => rt0,
+	rt1 => rt1,
+	rt2 => rt2,
+	rt3 => rt3,
 	shift_arith_to_ULA => shift_arith_to_ULA,
-	shift_to_ULA => shift_to_ULA
+	shift_to_ULA => shift_to_ULA,
+	Valor_PC => Valor_PC
 	);
 
 -- CLK

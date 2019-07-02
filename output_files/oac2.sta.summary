@@ -2,76 +2,76 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -113.010
-TNS   : -13116.575
+Type  : Slow 1000mV 85C Model Setup 'CLK'
+Slack : -208.472
+TNS   : -15279.257
 
-Type  : Slow 1200mV 85C Model Setup 'DataCLK'
-Slack : -2.559
-TNS   : -655.906
+Type  : Slow 1000mV 85C Model Setup 'DataCLK'
+Slack : -6.095
+TNS   : -6416.558
 
-Type  : Slow 1200mV 85C Model Hold 'DataCLK'
-Slack : 0.293
+Type  : Slow 1000mV 85C Model Hold 'DataCLK'
+Slack : 0.674
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.336
+Type  : Slow 1000mV 85C Model Hold 'CLK'
+Slack : 0.690
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'DataCLK'
+Slack : -5.485
+TNS   : -4763.873
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1416.000
+TNS   : -1519.843
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DataCLK'
-Slack : -3.000
-TNS   : -770.248
+Type  : Slow 1000mV 0C Model Setup 'CLK'
+Slack : -203.194
+TNS   : -14954.672
 
-Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -100.776
-TNS   : -11594.996
+Type  : Slow 1000mV 0C Model Setup 'DataCLK'
+Slack : -6.092
+TNS   : -6421.039
 
-Type  : Slow 1200mV 0C Model Setup 'DataCLK'
-Slack : -2.212
-TNS   : -560.079
-
-Type  : Slow 1200mV 0C Model Hold 'DataCLK'
-Slack : 0.277
+Type  : Slow 1000mV 0C Model Hold 'CLK'
+Slack : 0.686
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.303
+Type  : Slow 1000mV 0C Model Hold 'DataCLK'
+Slack : 0.888
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'DataCLK'
+Slack : -5.366
+TNS   : -4817.944
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -1416.000
+TNS   : -1563.466
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DataCLK'
-Slack : -3.000
-TNS   : -770.248
+Type  : Fast 1000mV 0C Model Setup 'CLK'
+Slack : -85.641
+TNS   : -6056.506
 
-Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -63.910
-TNS   : -7151.447
+Type  : Fast 1000mV 0C Model Setup 'DataCLK'
+Slack : -2.027
+TNS   : -1922.435
 
-Type  : Fast 1200mV 0C Model Setup 'DataCLK'
-Slack : -1.144
-TNS   : -252.030
-
-Type  : Fast 1200mV 0C Model Hold 'DataCLK'
-Slack : 0.131
+Type  : Fast 1000mV 0C Model Hold 'CLK'
+Slack : 0.273
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.176
+Type  : Fast 1000mV 0C Model Hold 'DataCLK'
+Slack : 0.289
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -3.000
-TNS   : -1499.561
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'DataCLK'
+Slack : -4.000
+TNS   : -3186.718
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DataCLK'
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -398.446
+TNS   : -956.783
 
 ------------------------------------------------------------
