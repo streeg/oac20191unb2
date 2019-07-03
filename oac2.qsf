@@ -165,4 +165,5 @@ set_global_assignment -name QIP_FILE DecoderIP/DecoderIP2.qip
 set_global_assignment -name QIP_FILE Comparador/comparador.qip
 set_global_assignment -name SOURCE_FILE Comparador/comparador.cmp
 set_global_assignment -name BDF_FILE Xori_Function/Xori_func.bdf
+set_global_assignment -name BDF_FILE numeroexcessao/numeroexcessao.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

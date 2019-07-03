@@ -70,513 +70,513 @@ CHIP  "oac2"  ASSIGNED TO AN: EP4CE40F29C6
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
-rt2[10]                      : A3        : output : 2.5 V             :         : 8         : N              
-DadosRS[16]                  : A4        : output : 2.5 V             :         : 8         : N              
+code[2]                      : A3        : output : 2.5 V             :         : 8         : N              
+resultALU[16]                : A4        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
-rt3[28]                      : A6        : output : 2.5 V             :         : 8         : N              
-rt4[16]                      : A7        : output : 2.5 V             :         : 8         : N              
-rt2[30]                      : A8        : output : 2.5 V             :         : 8         : N              
+instrlidas[10]               : A6        : output : 2.5 V             :         : 8         : N              
+code[15]                     : A7        : output : 2.5 V             :         : 8         : N              
+code[3]                      : A8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
-rt0[19]                      : A10       : output : 2.5 V             :         : 8         : N              
-rt1[1]                       : A11       : output : 2.5 V             :         : 8         : N              
-rt3[24]                      : A12       : output : 2.5 V             :         : 8         : N              
+saidapc[11]                  : A10       : output : 2.5 V             :         : 8         : N              
+saidapc[4]                   : A11       : output : 2.5 V             :         : 8         : N              
+saidapc[1]                   : A12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
 GND+                         : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-result_end_pipe[30]          : A17       : output : 2.5 V             :         : 7         : N              
-DadosRT[18]                  : A18       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[30]           : A19       : output : 2.5 V             :         : 7         : N              
+instrlidas[31]               : A17       : output : 2.5 V             :         : 7         : N              
+DadosRT[0]                   : A18       : output : 2.5 V             :         : 7         : N              
+saidapc[14]                  : A19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
-Result_ALU_mem[5]            : A21       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[17]           : A22       : output : 2.5 V             :         : 7         : N              
-rt1[20]                      : A23       : output : 2.5 V             :         : 7         : N              
+DadosRT[6]                   : A21       : output : 2.5 V             :         : 7         : N              
+resultALU[3]                 : A22       : output : 2.5 V             :         : 7         : N              
+rt2[31]                      : A23       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
-rt3[13]                      : A25       : output : 2.5 V             :         : 7         : N              
-rt1[30]                      : A26       : output : 2.5 V             :         : 7         : N              
+saidapc[23]                  : A25       : output : 2.5 V             :         : 7         : N              
+rt5[7]                       : A26       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
 VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
-rt0[27]                      : AA3       : output : 2.5 V             :         : 2         : N              
-rt5[7]                       : AA4       : output : 2.5 V             :         : 2         : N              
-rt4[15]                      : AA5       : output : 2.5 V             :         : 2         : N              
-DadosRT[8]                   : AA6       : output : 2.5 V             :         : 2         : N              
-result_end_pipe[25]          : AA7       : output : 2.5 V             :         : 2         : N              
-code[19]                     : AA8       : output : 2.5 V             :         : 2         : N              
+rt5[24]                      : AA3       : output : 2.5 V             :         : 2         : N              
+rt3[13]                      : AA4       : output : 2.5 V             :         : 2         : N              
+rt3[20]                      : AA5       : output : 2.5 V             :         : 2         : N              
+resultALU[0]                 : AA6       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :         : 2         :                
 GNDA1                        : AA9       : gnd    :                   :         :           :                
-DadosRT[0]                   : AA10      : output : 2.5 V             :         : 3         : N              
+rt1[18]                      : AA10      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
-rt5[9]                       : AA12      : output : 2.5 V             :         : 3         : N              
-rt6[14]                      : AA13      : output : 2.5 V             :         : 3         : N              
-code[14]                     : AA14      : output : 2.5 V             :         : 3         : N              
-instrlidas[5]                : AA15      : output : 2.5 V             :         : 4         : N              
-instrlidas[21]               : AA16      : output : 2.5 V             :         : 4         : N              
-DadosRS[28]                  : AA17      : output : 2.5 V             :         : 4         : N              
+rt0[17]                      : AA12      : output : 2.5 V             :         : 3         : N              
+rt0[13]                      : AA13      : output : 2.5 V             :         : 3         : N              
+rt2[16]                      : AA14      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[13]           : AA15      : output : 2.5 V             :         : 4         : N              
+DadosRT[15]                  : AA16      : output : 2.5 V             :         : 4         : N              
+rt1[20]                      : AA17      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
-resultALU[8]                 : AA19      : output : 2.5 V             :         : 4         : N              
+rt1[19]                      : AA19      : output : 2.5 V             :         : 4         : N              
 GNDA4                        : AA20      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
-DadosRS[3]                   : AA23      : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA24      :        :                   :         : 5         :                
-instrlidas[17]               : AA25      : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA26      :        :                   :         : 5         :                
+rt2[2]                       : AA21      : output : 2.5 V             :         : 5         : N              
+rt4[4]                       : AA22      : output : 2.5 V             :         : 5         : N              
+rt0[20]                      : AA23      : output : 2.5 V             :         : 5         : N              
+result_end_pipe[23]          : AA24      : output : 2.5 V             :         : 5         : N              
+rt1[0]                       : AA25      : output : 2.5 V             :         : 5         : N              
+rt0[7]                       : AA26      : output : 2.5 V             :         : 5         : N              
 GND                          : AA27      : gnd    :                   :         :           :                
 VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
-result_end_pipe[13]          : AB1       : output : 2.5 V             :         : 2         : N              
-result_end_pipe[12]          : AB2       : output : 2.5 V             :         : 2         : N              
-rt4[20]                      : AB3       : output : 2.5 V             :         : 2         : N              
-rt4[3]                       : AB4       : output : 2.5 V             :         : 2         : N              
-rt4[6]                       : AB5       : output : 2.5 V             :         : 2         : N              
-rt4[10]                      : AB6       : output : 2.5 V             :         : 2         : N              
-rt3[1]                       : AB7       : output : 2.5 V             :         : 2         : N              
-rt0[30]                      : AB8       : output : 2.5 V             :         : 2         : N              
-rt2[28]                      : AB9       : output : 2.5 V             :         : 3         : N              
+rt1[16]                      : AB1       : output : 2.5 V             :         : 2         : N              
+resultALU[20]                : AB2       : output : 2.5 V             :         : 2         : N              
+Result_ALU_mem[3]            : AB3       : output : 2.5 V             :         : 2         : N              
+resultALU[27]                : AB4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 2         :                
+rt3[18]                      : AB7       : output : 2.5 V             :         : 2         : N              
+rt5[12]                      : AB8       : output : 2.5 V             :         : 2         : N              
+Result_ALU_mem[24]           : AB9       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AB10      : power  :                   : 2.5V    : 3         :                
-instrlidas[6]                : AB11      : output : 2.5 V             :         : 3         : N              
-DadosRT[20]                  : AB12      : output : 2.5 V             :         : 3         : N              
-result_end_pipe[3]           : AB13      : output : 2.5 V             :         : 3         : N              
-instrlidas[9]                : AB14      : output : 2.5 V             :         : 3         : N              
-resultALU[20]                : AB15      : output : 2.5 V             :         : 4         : N              
-instrlidas[3]                : AB16      : output : 2.5 V             :         : 4         : N              
-code[4]                      : AB17      : output : 2.5 V             :         : 4         : N              
-instrlidas[26]               : AB18      : output : 2.5 V             :         : 4         : N              
-DadosRS[4]                   : AB19      : output : 2.5 V             :         : 4         : N              
-DadosRT[27]                  : AB20      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
-resultALU[22]                : AB25      : output : 2.5 V             :         : 5         : N              
-DadosRS[7]                   : AB26      : output : 2.5 V             :         : 5         : N              
-resultALU[31]                : AB27      : output : 2.5 V             :         : 5         : N              
-instrlidas[25]               : AB28      : output : 2.5 V             :         : 5         : N              
-rt5[14]                      : AC1       : output : 2.5 V             :         : 2         : N              
-result_end_pipe[28]          : AC2       : output : 2.5 V             :         : 2         : N              
-rt4[25]                      : AC3       : output : 2.5 V             :         : 2         : N              
-rt0[29]                      : AC4       : output : 2.5 V             :         : 2         : N              
-rt1[17]                      : AC5       : output : 2.5 V             :         : 2         : N              
+rt3[12]                      : AB11      : output : 2.5 V             :         : 3         : N              
+rt3[9]                       : AB12      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[16]           : AB13      : output : 2.5 V             :         : 3         : N              
+DadosRT[12]                  : AB14      : output : 2.5 V             :         : 3         : N              
+fw_A_to_mux[1]               : AB15      : output : 2.5 V             :         : 4         : N              
+DadosRT[13]                  : AB16      : output : 2.5 V             :         : 4         : N              
+rt5[25]                      : AB17      : output : 2.5 V             :         : 4         : N              
+rt3[27]                      : AB18      : output : 2.5 V             :         : 4         : N              
+rt3[2]                       : AB19      : output : 2.5 V             :         : 4         : N              
+rt1[6]                       : AB20      : output : 2.5 V             :         : 4         : N              
+result_end_pipe[11]          : AB21      : output : 2.5 V             :         : 4         : N              
+rt1[5]                       : AB22      : output : 2.5 V             :         : 5         : N              
+rt4[25]                      : AB23      : output : 2.5 V             :         : 5         : N              
+rt1[7]                       : AB24      : output : 2.5 V             :         : 5         : N              
+result_end_pipe[18]          : AB25      : output : 2.5 V             :         : 5         : N              
+rt2[15]                      : AB26      : output : 2.5 V             :         : 5         : N              
+result_end_pipe[19]          : AB27      : output : 2.5 V             :         : 5         : N              
+rt0[23]                      : AB28      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC1       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC2       :        :                   :         : 2         :                
+rt0[25]                      : AC3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 2         :                
+rt1[26]                      : AC5       : output : 2.5 V             :         : 2         : N              
 GND                          : AC6       : gnd    :                   :         :           :                
-rt6[17]                      : AC7       : output : 2.5 V             :         : 2         : N              
-code[20]                     : AC8       : output : 2.5 V             :         : 3         : N              
+DadosRS[23]                  : AC7       : output : 2.5 V             :         : 2         : N              
+rt1[17]                      : AC8       : output : 2.5 V             :         : 3         : N              
 GND                          : AC9       : gnd    :                   :         :           :                
-rt5[28]                      : AC10      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC11      :        :                   :         : 3         :                
-rt4[7]                       : AC12      : output : 2.5 V             :         : 3         : N              
+resultALU[7]                 : AC10      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[29]           : AC11      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[26]           : AC12      : output : 2.5 V             :         : 3         : N              
 GND                          : AC13      : gnd    :                   :         :           :                
-DadosRT[22]                  : AC14      : output : 2.5 V             :         : 3         : N              
-Flush                        : AC15      : output : 2.5 V             :         : 4         : N              
+DadosRT[18]                  : AC14      : output : 2.5 V             :         : 3         : N              
+DadosRT[26]                  : AC15      : output : 2.5 V             :         : 4         : N              
 GND                          : AC16      : gnd    :                   :         :           :                
-ID_control[12]               : AC17      : output : 2.5 V             :         : 4         : N              
-DadosRS[12]                  : AC18      : output : 2.5 V             :         : 4         : N              
-Result_ALU_mem[20]           : AC19      : output : 2.5 V             :         : 4         : N              
+rt3[10]                      : AC17      : output : 2.5 V             :         : 4         : N              
+rt4[16]                      : AC18      : output : 2.5 V             :         : 4         : N              
+rt5[21]                      : AC19      : output : 2.5 V             :         : 4         : N              
 GND                          : AC20      : gnd    :                   :         :           :                
-ID_control[9]                : AC21      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4         :                
+rt2[27]                      : AC21      : output : 2.5 V             :         : 4         : N              
+rt5[4]                       : AC22      : output : 2.5 V             :         : 4         : N              
 GND                          : AC23      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC26      :        :                   :         : 5         :                
-resultALU[26]                : AC27      : output : 2.5 V             :         : 5         : N              
-ID_control[2]                : AC28      : output : 2.5 V             :         : 5         : N              
-rt3[27]                      : AD1       : output : 2.5 V             :         : 2         : N              
-DadosRS[17]                  : AD2       : output : 2.5 V             :         : 2         : N              
-instrlidas[22]               : AD3       : output : 2.5 V             :         : 2         : N              
-rt5[11]                      : AD4       : output : 2.5 V             :         : 2         : N              
-rt2[29]                      : AD5       : output : 2.5 V             :         : 2         : N              
+result_end_pipe[13]          : AC24      : output : 2.5 V             :         : 5         : N              
+rt5[20]                      : AC25      : output : 2.5 V             :         : 5         : N              
+DadosRS[7]                   : AC26      : output : 2.5 V             :         : 5         : N              
+rt3[28]                      : AC27      : output : 2.5 V             :         : 5         : N              
+rt2[23]                      : AC28      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD1       :        :                   :         : 2         :                
+DadosRS[10]                  : AD2       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD3       :        :                   :         : 2         :                
+MEM_WB_Enable                : AD4       : output : 2.5 V             :         : 2         : N              
+rt0[14]                      : AD5       : output : 2.5 V             :         : 2         : N              
 VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
-DadosRS[21]                  : AD7       : output : 2.5 V             :         : 3         : N              
-code[8]                      : AD8       : output : 2.5 V             :         : 3         : N              
+rt2[3]                       : AD7       : output : 2.5 V             :         : 3         : N              
+resultALU[13]                : AD8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
-rt4[12]                      : AD10      : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD11      :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD12      :        :                   :         : 3         :                
+rt0[16]                      : AD10      : output : 2.5 V             :         : 3         : N              
+resultALU[4]                 : AD11      : output : 2.5 V             :         : 3         : N              
+rt2[22]                      : AD12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
-ID_control[13]               : AD14      : output : 2.5 V             :         : 3         : N              
-result_end_pipe[24]          : AD15      : output : 2.5 V             :         : 4         : N              
+Result_ALU_mem[15]           : AD14      : output : 2.5 V             :         : 3         : N              
+result_end_pipe[1]           : AD15      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
-code[27]                     : AD17      : output : 2.5 V             :         : 4         : N              
-instrlidas[20]               : AD18      : output : 2.5 V             :         : 4         : N              
-DadosRT[21]                  : AD19      : output : 2.5 V             :         : 4         : N              
+rt3[21]                      : AD17      : output : 2.5 V             :         : 4         : N              
+rt1[14]                      : AD18      : output : 2.5 V             :         : 4         : N              
+rt3[23]                      : AD19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
-DadosRS[9]                   : AD21      : output : 2.5 V             :         : 4         : N              
-EX_MEM_Enable                : AD22      : output : 2.5 V             :         : 4         : N              
+rt2[30]                      : AD21      : output : 2.5 V             :         : 4         : N              
+rt5[23]                      : AD22      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD24      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD25      :        :                   :         : 5         :                
-ID_control[6]                : AD26      : output : 2.5 V             :         : 5         : N              
-code[10]                     : AD27      : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
-DadosRT[12]                  : AE1       : output : 2.5 V             :         : 2         : N              
-rt4[11]                      : AE2       : output : 2.5 V             :         : 2         : N              
-resultALU[28]                : AE3       : output : 2.5 V             :         : 2         : N              
-rt4[24]                      : AE4       : output : 2.5 V             :         : 2         : N              
-code[12]                     : AE5       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE6       :        :                   :         : 3         :                
-DadosRS[15]                  : AE7       : output : 2.5 V             :         : 3         : N              
-DadosRT[11]                  : AE8       : output : 2.5 V             :         : 3         : N              
-DadosRS[27]                  : AE9       : output : 2.5 V             :         : 3         : N              
-instrlidas[23]               : AE10      : output : 2.5 V             :         : 3         : N              
-DadosRS[6]                   : AE11      : output : 2.5 V             :         : 3         : N              
-instrlidas[7]                : AE12      : output : 2.5 V             :         : 3         : N              
-code[25]                     : AE13      : output : 2.5 V             :         : 3         : N              
-Result_ALU_mem[19]           : AE14      : output : 2.5 V             :         : 3         : N              
-result_end_pipe[2]           : AE15      : output : 2.5 V             :         : 4         : N              
-instrlidas[2]                : AE16      : output : 2.5 V             :         : 4         : N              
-instrlidas[27]               : AE17      : output : 2.5 V             :         : 4         : N              
-resultALU[5]                 : AE18      : output : 2.5 V             :         : 4         : N              
-clo_op_to_ULA                : AE19      : output : 2.5 V             :         : 4         : N              
-code[5]                      : AE20      : output : 2.5 V             :         : 4         : N              
-Result_ALU_mem[21]           : AE21      : output : 2.5 V             :         : 4         : N              
-code[11]                     : AE22      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4         :                
-ALUcontrol_to_ULA[3]         : AE24      : output : 2.5 V             :         : 4         : N              
-ID_control[8]                : AE25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE26      :        :                   :         : 5         :                
-code[15]                     : AE27      : output : 2.5 V             :         : 5         : N              
-code[28]                     : AE28      : output : 2.5 V             :         : 5         : N              
+rt0[0]                       : AD24      : output : 2.5 V             :         : 5         : N              
+rt2[1]                       : AD25      : output : 2.5 V             :         : 5         : N              
+rt1[3]                       : AD26      : output : 2.5 V             :         : 5         : N              
+rt1[23]                      : AD27      : output : 2.5 V             :         : 5         : N              
+rt0[30]                      : AD28      : output : 2.5 V             :         : 5         : N              
+ALUcontrol_to_ULA[3]         : AE1       : output : 2.5 V             :         : 2         : N              
+rt1[13]                      : AE2       : output : 2.5 V             :         : 2         : N              
+rt3[15]                      : AE3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 2         :                
+resultALU[15]                : AE5       : output : 2.5 V             :         : 3         : N              
+DadosRT[8]                   : AE6       : output : 2.5 V             :         : 3         : N              
+rt2[9]                       : AE7       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[25]           : AE8       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[10]           : AE9       : output : 2.5 V             :         : 3         : N              
+rt3[19]                      : AE10      : output : 2.5 V             :         : 3         : N              
+rt0[19]                      : AE11      : output : 2.5 V             :         : 3         : N              
+rt0[28]                      : AE12      : output : 2.5 V             :         : 3         : N              
+rt2[12]                      : AE13      : output : 2.5 V             :         : 3         : N              
+DadosRT[19]                  : AE14      : output : 2.5 V             :         : 3         : N              
+rt1[21]                      : AE15      : output : 2.5 V             :         : 4         : N              
+rt2[21]                      : AE16      : output : 2.5 V             :         : 4         : N              
+DadosRS[13]                  : AE17      : output : 2.5 V             :         : 4         : N              
+rt2[13]                      : AE18      : output : 2.5 V             :         : 4         : N              
+rt4[14]                      : AE19      : output : 2.5 V             :         : 4         : N              
+rt3[26]                      : AE20      : output : 2.5 V             :         : 4         : N              
+rt0[5]                       : AE21      : output : 2.5 V             :         : 4         : N              
+rt5[19]                      : AE22      : output : 2.5 V             :         : 4         : N              
+rt1[12]                      : AE23      : output : 2.5 V             :         : 4         : N              
+rt1[8]                       : AE24      : output : 2.5 V             :         : 4         : N              
+rt5[22]                      : AE25      : output : 2.5 V             :         : 4         : N              
+rt2[26]                      : AE26      : output : 2.5 V             :         : 5         : N              
+rt0[26]                      : AE27      : output : 2.5 V             :         : 5         : N              
+rt3[8]                       : AE28      : output : 2.5 V             :         : 5         : N              
 GND                          : AF1       : gnd    :                   :         :           :                
-DadosRS[30]                  : AF2       : output : 2.5 V             :         : 2         : N              
-rt4[9]                       : AF3       : output : 2.5 V             :         : 2         : N              
-DadosRS[18]                  : AF4       : output : 2.5 V             :         : 3         : N              
-rt1[9]                       : AF5       : output : 2.5 V             :         : 3         : N              
-rt5[16]                      : AF6       : output : 2.5 V             :         : 3         : N              
-instrlidas[13]               : AF7       : output : 2.5 V             :         : 3         : N              
-instrlidas[14]               : AF8       : output : 2.5 V             :         : 3         : N              
-instrlidas[12]               : AF9       : output : 2.5 V             :         : 3         : N              
-DadosRS[10]                  : AF10      : output : 2.5 V             :         : 3         : N              
-DadosRS[24]                  : AF11      : output : 2.5 V             :         : 3         : N              
-DadosRS[14]                  : AF12      : output : 2.5 V             :         : 3         : N              
-DadosRT[31]                  : AF13      : output : 2.5 V             :         : 3         : N              
-result_end_pipe[21]          : AF14      : output : 2.5 V             :         : 3         : N              
-code[26]                     : AF15      : output : 2.5 V             :         : 4         : N              
-instrlidas[1]                : AF16      : output : 2.5 V             :         : 4         : N              
-instrlidas[0]                : AF17      : output : 2.5 V             :         : 4         : N              
-ID_control[15]               : AF18      : output : 2.5 V             :         : 4         : N              
-instrlidas[11]               : AF19      : output : 2.5 V             :         : 4         : N              
-ID_control[1]                : AF20      : output : 2.5 V             :         : 4         : N              
-code[2]                      : AF21      : output : 2.5 V             :         : 4         : N              
-code[1]                      : AF22      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF23      :        :                   :         : 4         :                
-instrlidas[10]               : AF24      : output : 2.5 V             :         : 4         : N              
-resultALU[6]                 : AF25      : output : 2.5 V             :         : 4         : N              
-DadosRS[5]                   : AF26      : output : 2.5 V             :         : 4         : N              
-resultALU[0]                 : AF27      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 2         :                
+rt3[6]                       : AF4       : output : 2.5 V             :         : 3         : N              
+resultALU[8]                 : AF5       : output : 2.5 V             :         : 3         : N              
+DadosRT[22]                  : AF6       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[6]            : AF7       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[9]            : AF8       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[5]            : AF9       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[1]            : AF10      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[12]           : AF11      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[2]            : AF12      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[11]           : AF13      : output : 2.5 V             :         : 3         : N              
+result_end_pipe[12]          : AF14      : output : 2.5 V             :         : 3         : N              
+rt3[14]                      : AF15      : output : 2.5 V             :         : 4         : N              
+DadosRT[14]                  : AF16      : output : 2.5 V             :         : 4         : N              
+rt4[13]                      : AF17      : output : 2.5 V             :         : 4         : N              
+rt2[11]                      : AF18      : output : 2.5 V             :         : 4         : N              
+DadosRS[15]                  : AF19      : output : 2.5 V             :         : 4         : N              
+rt5[16]                      : AF20      : output : 2.5 V             :         : 4         : N              
+rt5[8]                       : AF21      : output : 2.5 V             :         : 4         : N              
+rt1[15]                      : AF22      : output : 2.5 V             :         : 4         : N              
+rt3[5]                       : AF23      : output : 2.5 V             :         : 4         : N              
+rt3[22]                      : AF24      : output : 2.5 V             :         : 4         : N              
+rt0[10]                      : AF25      : output : 2.5 V             :         : 4         : N              
+rt5[9]                       : AF26      : output : 2.5 V             :         : 4         : N              
+result_end_pipe[3]           : AF27      : output : 2.5 V             :         : 5         : N              
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
 GND                          : AG2       : gnd    :                   :         :           :                
-code[13]                     : AG3       : output : 2.5 V             :         : 3         : N              
-instrlidas[16]               : AG4       : output : 2.5 V             :         : 3         : N              
+rt1[25]                      : AG3       : output : 2.5 V             :         : 3         : N              
+rt2[20]                      : AG4       : output : 2.5 V             :         : 3         : N              
 GND                          : AG5       : gnd    :                   :         :           :                
-result_end_pipe[8]           : AG6       : output : 2.5 V             :         : 3         : N              
-rt5[6]                       : AG7       : output : 2.5 V             :         : 3         : N              
-rt5[5]                       : AG8       : output : 2.5 V             :         : 3         : N              
+DadosRT[24]                  : AG6       : output : 2.5 V             :         : 3         : N              
+rt2[18]                      : AG7       : output : 2.5 V             :         : 3         : N              
+rt0[18]                      : AG8       : output : 2.5 V             :         : 3         : N              
 GND                          : AG9       : gnd    :                   :         :           :                
-IF_ID_Enable                 : AG10      : output : 2.5 V             :         : 3         : N              
-code[7]                      : AG11      : output : 2.5 V             :         : 3         : N              
-code[6]                      : AG12      : output : 2.5 V             :         : 3         : N              
+rt1[27]                      : AG10      : output : 2.5 V             :         : 3         : N              
+DadosRS[19]                  : AG11      : output : 2.5 V             :         : 3         : N              
+DadosRS[25]                  : AG12      : output : 2.5 V             :         : 3         : N              
 GND                          : AG13      : gnd    :                   :         :           :                
 GND+                         : AG14      :        :                   :         : 3         :                
 GND+                         : AG15      :        :                   :         : 4         :                
 GND                          : AG16      : gnd    :                   :         :           :                
-ID_control[16]               : AG17      : output : 2.5 V             :         : 4         : N              
-instrlidas[28]               : AG18      : output : 2.5 V             :         : 4         : N              
-instrlidas[30]               : AG19      : output : 2.5 V             :         : 4         : N              
+DadosRS[14]                  : AG17      : output : 2.5 V             :         : 4         : N              
+rt2[14]                      : AG18      : output : 2.5 V             :         : 4         : N              
+DadosRS[26]                  : AG19      : output : 2.5 V             :         : 4         : N              
 GND                          : AG20      : gnd    :                   :         :           :                
-ID_EX_Enable                 : AG21      : output : 2.5 V             :         : 4         : N              
-code[31]                     : AG22      : output : 2.5 V             :         : 4         : N              
-code[3]                      : AG23      : output : 2.5 V             :         : 4         : N              
+DadosRS[22]                  : AG21      : output : 2.5 V             :         : 4         : N              
+DadosRS[24]                  : AG22      : output : 2.5 V             :         : 4         : N              
+rt3[29]                      : AG23      : output : 2.5 V             :         : 4         : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-resultALU[29]                : AG25      : output : 2.5 V             :         : 4         : N              
-resultALU[16]                : AG26      : output : 2.5 V             :         : 4         : N              
+rt4[8]                       : AG25      : output : 2.5 V             :         : 4         : N              
+rt0[6]                       : AG26      : output : 2.5 V             :         : 4         : N              
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
-code[9]                      : AH3       : output : 2.5 V             :         : 3         : N              
-rt6[1]                       : AH4       : output : 2.5 V             :         : 3         : N              
+DadosRT[16]                  : AH3       : output : 2.5 V             :         : 3         : N              
+DadosRT[21]                  : AH4       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
-result_end_pipe[29]          : AH6       : output : 2.5 V             :         : 3         : N              
-rt6[5]                       : AH7       : output : 2.5 V             :         : 3         : N              
-DadosRS[31]                  : AH8       : output : 2.5 V             :         : 3         : N              
+resultALU[10]                : AH6       : output : 2.5 V             :         : 3         : N              
+rt1[11]                      : AH7       : output : 2.5 V             :         : 3         : N              
+rt2[10]                      : AH8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
-instrlidas[19]               : AH10      : output : 2.5 V             :         : 3         : N              
-DadosRS[2]                   : AH11      : output : 2.5 V             :         : 3         : N              
-rt0[28]                      : AH12      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[7]            : AH10      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[22]           : AH11      : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[4]            : AH12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
 GND+                         : AH14      :        :                   :         : 3         :                
 GND+                         : AH15      :        :                   :         : 4         :                
 VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
-code[30]                     : AH17      : output : 2.5 V             :         : 4         : N              
-ID_control[10]               : AH18      : output : 2.5 V             :         : 4         : N              
-instrlidas[24]               : AH19      : output : 2.5 V             :         : 4         : N              
+DadosRT[1]                   : AH17      : output : 2.5 V             :         : 4         : N              
+rt3[11]                      : AH18      : output : 2.5 V             :         : 4         : N              
+rt3[25]                      : AH19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
-resultALU[4]                 : AH21      : output : 2.5 V             :         : 4         : N              
-resultALU[18]                : AH22      : output : 2.5 V             :         : 4         : N              
-instrlidas[4]                : AH23      : output : 2.5 V             :         : 4         : N              
+DadosRS[11]                  : AH21      : output : 2.5 V             :         : 4         : N              
+DadosRS[3]                   : AH22      : output : 2.5 V             :         : 4         : N              
+DadosRS[1]                   : AH23      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
-ID_control[0]                : AH25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
+rt3[30]                      : AH25      : output : 2.5 V             :         : 4         : N              
+rt2[29]                      : AH26      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
-result_end_pipe[22]          : B3        : output : 2.5 V             :         : 8         : N              
-rt5[17]                      : B4        : output : 2.5 V             :         : 8         : N              
+DadosRS[21]                  : B3        : output : 2.5 V             :         : 8         : N              
+instrlidas[6]                : B4        : output : 2.5 V             :         : 8         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-rt5[22]                      : B6        : output : 2.5 V             :         : 8         : N              
-rt3[29]                      : B7        : output : 2.5 V             :         : 8         : N              
-rt0[4]                       : B8        : output : 2.5 V             :         : 8         : N              
+saidapc[18]                  : B6        : output : 2.5 V             :         : 8         : N              
+resultALU[30]                : B7        : output : 2.5 V             :         : 8         : N              
+saidapc[5]                   : B8        : output : 2.5 V             :         : 8         : N              
 GND                          : B9        : gnd    :                   :         :           :                
-rt0[11]                      : B10       : output : 2.5 V             :         : 8         : N              
-rt1[8]                       : B11       : output : 2.5 V             :         : 8         : N              
+saidapc[6]                   : B10       : output : 2.5 V             :         : 8         : N              
+saidapc[3]                   : B11       : output : 2.5 V             :         : 8         : N              
 GND                          : B12       : gnd    :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
 GND+                         : B14       :        :                   :         : 8         :                
 GND+                         : B15       :        :                   :         : 7         :                
 GND                          : B16       : gnd    :                   :         :           :                
-result_end_pipe[27]          : B17       : output : 2.5 V             :         : 7         : N              
-fw_B_to_mux[1]               : B18       : output : 2.5 V             :         : 7         : N              
-result_end_pipe[31]          : B19       : output : 2.5 V             :         : 7         : N              
+saidapc[12]                  : B17       : output : 2.5 V             :         : 7         : N              
+code[6]                      : B18       : output : 2.5 V             :         : 7         : N              
+DadosRS[17]                  : B19       : output : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-rt0[17]                      : B21       : output : 2.5 V             :         : 7         : N              
-rt1[21]                      : B22       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[11]           : B23       : output : 2.5 V             :         : 7         : N              
+DadosRS[8]                   : B21       : output : 2.5 V             :         : 7         : N              
+rt3[17]                      : B22       : output : 2.5 V             :         : 7         : N              
+rt5[28]                      : B23       : output : 2.5 V             :         : 7         : N              
 GND                          : B24       : gnd    :                   :         :           :                
-resultALU[3]                 : B25       : output : 2.5 V             :         : 7         : N              
-rt0[8]                       : B26       : output : 2.5 V             :         : 7         : N              
+rt5[27]                      : B25       : output : 2.5 V             :         : 7         : N              
+DadosRT[10]                  : B26       : output : 2.5 V             :         : 7         : N              
 GND                          : B27       : gnd    :                   :         :           :                
 VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
 GND                          : C1        : gnd    :                   :         :           :                
-rt1[26]                      : C2        : output : 2.5 V             :         : 1         : N              
-rt1[0]                       : C3        : output : 2.5 V             :         : 8         : N              
-rt2[3]                       : C4        : output : 2.5 V             :         : 8         : N              
-rt3[14]                      : C5        : output : 2.5 V             :         : 8         : N              
-rt1[31]                      : C6        : output : 2.5 V             :         : 8         : N              
-rt5[27]                      : C7        : output : 2.5 V             :         : 8         : N              
-rt2[1]                       : C8        : output : 2.5 V             :         : 8         : N              
-rt6[15]                      : C9        : output : 2.5 V             :         : 8         : N              
-rt0[21]                      : C10       : output : 2.5 V             :         : 8         : N              
-rt6[8]                       : C11       : output : 2.5 V             :         : 8         : N              
-rt1[22]                      : C12       : output : 2.5 V             :         : 8         : N              
-rt5[29]                      : C13       : output : 2.5 V             :         : 8         : N              
-rt2[22]                      : C14       : output : 2.5 V             :         : 8         : N              
-rt4[21]                      : C15       : output : 2.5 V             :         : 7         : N              
-rt4[13]                      : C16       : output : 2.5 V             :         : 7         : N              
-rt1[19]                      : C17       : output : 2.5 V             :         : 7         : N              
-DadosRT[16]                  : C18       : output : 2.5 V             :         : 7         : N              
-rt2[12]                      : C19       : output : 2.5 V             :         : 7         : N              
-rt2[0]                       : C20       : output : 2.5 V             :         : 7         : N              
-rt3[17]                      : C21       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[6]            : C22       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[9]            : C23       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[2]            : C24       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[13]           : C25       : output : 2.5 V             :         : 7         : N              
-MEM_WB_Enable                : C26       : output : 2.5 V             :         : 6         : N              
-Result_ALU_mem[7]            : C27       : output : 2.5 V             :         : 6         : N              
+code[11]                     : C2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+resultALU[29]                : C4        : output : 2.5 V             :         : 8         : N              
+EscreveReg_mem_to_fw         : C5        : output : 2.5 V             :         : 8         : N              
+DadosRT[17]                  : C6        : output : 2.5 V             :         : 8         : N              
+saidapc[13]                  : C7        : output : 2.5 V             :         : 8         : N              
+code[9]                      : C8        : output : 2.5 V             :         : 8         : N              
+resultALU[14]                : C9        : output : 2.5 V             :         : 8         : N              
+saidapc[9]                   : C10       : output : 2.5 V             :         : 8         : N              
+code[1]                      : C11       : output : 2.5 V             :         : 8         : N              
+code[27]                     : C12       : output : 2.5 V             :         : 8         : N              
+ID_control[3]                : C13       : output : 2.5 V             :         : 8         : N              
+ID_control[11]               : C14       : output : 2.5 V             :         : 8         : N              
+instrlidas[18]               : C15       : output : 2.5 V             :         : 7         : N              
+DadosRS[20]                  : C16       : output : 2.5 V             :         : 7         : N              
+saidapc[24]                  : C17       : output : 2.5 V             :         : 7         : N              
+resultALU[2]                 : C18       : output : 2.5 V             :         : 7         : N              
+DadosRS[5]                   : C19       : output : 2.5 V             :         : 7         : N              
+instrlidas[11]               : C20       : output : 2.5 V             :         : 7         : N              
+DadosRS[16]                  : C21       : output : 2.5 V             :         : 7         : N              
+DadosRT[4]                   : C22       : output : 2.5 V             :         : 7         : N              
+rt4[17]                      : C23       : output : 2.5 V             :         : 7         : N              
+DadosRT[9]                   : C24       : output : 2.5 V             :         : 7         : N              
+rt4[29]                      : C25       : output : 2.5 V             :         : 7         : N              
+Result_ALU_mem[30]           : C26       : output : 2.5 V             :         : 6         : N              
+rt5[13]                      : C27       : output : 2.5 V             :         : 6         : N              
 GND                          : C28       : gnd    :                   :         :           :                
-rt2[25]                      : D1        : output : 2.5 V             :         : 1         : N              
-rt1[29]                      : D2        : output : 2.5 V             :         : 1         : N              
+saidapc[16]                  : D1        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
 GND                          : D3        : gnd    :                   :         :           :                
-rt2[11]                      : D4        : output : 2.5 V             :         : 8         : N              
-rt6[26]                      : D5        : output : 2.5 V             :         : 8         : N              
-rt3[26]                      : D6        : output : 2.5 V             :         : 8         : N              
-rt1[3]                       : D7        : output : 2.5 V             :         : 8         : N              
-rt1[5]                       : D8        : output : 2.5 V             :         : 8         : N              
-rt2[27]                      : D9        : output : 2.5 V             :         : 8         : N              
-rt6[19]                      : D10       : output : 2.5 V             :         : 8         : N              
-rt3[11]                      : D11       : output : 2.5 V             :         : 8         : N              
-rt3[12]                      : D12       : output : 2.5 V             :         : 8         : N              
-DadosRS[26]                  : D13       : output : 2.5 V             :         : 8         : N              
-rt1[25]                      : D14       : output : 2.5 V             :         : 8         : N              
-rt3[16]                      : D15       : output : 2.5 V             :         : 7         : N              
-rt2[17]                      : D16       : output : 2.5 V             :         : 7         : N              
-rt0[13]                      : D17       : output : 2.5 V             :         : 7         : N              
-rt0[23]                      : D18       : output : 2.5 V             :         : 7         : N              
-EscreveReg_mem_to_fw         : D19       : output : 2.5 V             :         : 7         : N              
-rt6[28]                      : D20       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[10]           : D21       : output : 2.5 V             :         : 7         : N              
-EscreveReg_wb_to_fw          : D22       : output : 2.5 V             :         : 7         : N              
-DadosRT[7]                   : D23       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D24       :        :                   :         : 6         :                
-Result_ALU_mem[4]            : D25       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 6         :                
-Result_ALU_mem[8]            : D27       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D28       :        :                   :         : 6         :                
-result_end_pipe[0]           : E1        : output : 2.5 V             :         : 1         : N              
+code[8]                      : D4        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
+code[5]                      : D6        : output : 2.5 V             :         : 8         : N              
+Result_ALU_mem[31]           : D7        : output : 2.5 V             :         : 8         : N              
+saidapc[17]                  : D8        : output : 2.5 V             :         : 8         : N              
+instrlidas[12]               : D9        : output : 2.5 V             :         : 8         : N              
+instrlidas[5]                : D10       : output : 2.5 V             :         : 8         : N              
+saidapc[2]                   : D11       : output : 2.5 V             :         : 8         : N              
+direction_to_ULA             : D12       : output : 2.5 V             :         : 8         : N              
+instrlidas[14]               : D13       : output : 2.5 V             :         : 8         : N              
+resultALU[31]                : D14       : output : 2.5 V             :         : 8         : N              
+instrlidas[28]               : D15       : output : 2.5 V             :         : 7         : N              
+saidapc[15]                  : D16       : output : 2.5 V             :         : 7         : N              
+fw_A_to_mux[0]               : D17       : output : 2.5 V             :         : 7         : N              
+DadosRS[0]                   : D18       : output : 2.5 V             :         : 7         : N              
+rt5[17]                      : D19       : output : 2.5 V             :         : 7         : N              
+Result_ALU_mem[17]           : D20       : output : 2.5 V             :         : 7         : N              
+rt2[17]                      : D21       : output : 2.5 V             :         : 7         : N              
+instrlidas[24]               : D22       : output : 2.5 V             :         : 7         : N              
+rt5[29]                      : D23       : output : 2.5 V             :         : 7         : N              
+rt4[0]                       : D24       : output : 2.5 V             :         : 6         : N              
+rt4[30]                      : D25       : output : 2.5 V             :         : 6         : N              
+rt0[3]                       : D26       : output : 2.5 V             :         : 6         : N              
+rt0[24]                      : D27       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[4]           : D28       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E1        :        :                   :         : 1         :                
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
-rt1[2]                       : E3        : output : 2.5 V             :         : 1         : N              
-rt1[28]                      : E4        : output : 2.5 V             :         : 1         : N              
-rt3[8]                       : E5        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1         :                
+rt4[31]                      : E4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 1         :                
 VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
-rt4[31]                      : E7        : output : 2.5 V             :         : 8         : N              
-rt2[26]                      : E8        : output : 2.5 V             :         : 8         : N              
+instrlidas[26]               : E7        : output : 2.5 V             :         : 8         : N              
+ID_control[10]               : E8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-rt1[4]                       : E10       : output : 2.5 V             :         : 8         : N              
-rt0[3]                       : E11       : output : 2.5 V             :         : 8         : N              
-rt5[2]                       : E12       : output : 2.5 V             :         : 8         : N              
+code[4]                      : E10       : output : 2.5 V             :         : 8         : N              
+instrlidas[21]               : E11       : output : 2.5 V             :         : 8         : N              
+instrlidas[0]                : E12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
-rt2[23]                      : E14       : output : 2.5 V             :         : 8         : N              
-rt5[13]                      : E15       : output : 2.5 V             :         : 7         : N              
+saidapc[0]                   : E14       : output : 2.5 V             :         : 8         : N              
+code[28]                     : E15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
-rt4[30]                      : E17       : output : 2.5 V             :         : 7         : N              
-rt3[6]                       : E18       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[12]           : E19       : output : 2.5 V             :         : 7         : N              
+DadosRS[28]                  : E17       : output : 2.5 V             :         : 7         : N              
+saidapc[22]                  : E18       : output : 2.5 V             :         : 7         : N              
+rt4[10]                      : E19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
-Result_ALU_mem[0]            : E21       : output : 2.5 V             :         : 7         : N              
-rt4[27]                      : E22       : output : 2.5 V             :         : 7         : N              
+rt3[31]                      : E21       : output : 2.5 V             :         : 7         : N              
+saidapc[27]                  : E22       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E24       :        :                   :         : 6         :                
-rt5[30]                      : E25       : output : 2.5 V             :         : 6         : N              
-rt3[31]                      : E26       : output : 2.5 V             :         : 6         : N              
-DadosRT[30]                  : E27       : output : 2.5 V             :         : 6         : N              
-rt1[10]                      : E28       : output : 2.5 V             :         : 6         : N              
-rt0[0]                       : F1        : output : 2.5 V             :         : 1         : N              
-rt3[4]                       : F2        : output : 2.5 V             :         : 1         : N              
-DadosRT[3]                   : F3        : output : 2.5 V             :         : 1         : N              
+rt2[0]                       : E24       : output : 2.5 V             :         : 6         : N              
+rt0[29]                      : E25       : output : 2.5 V             :         : 6         : N              
+DadosRT[25]                  : E26       : output : 2.5 V             :         : 6         : N              
+rt5[11]                      : E27       : output : 2.5 V             :         : 6         : N              
+rt1[4]                       : E28       : output : 2.5 V             :         : 6         : N              
+code[10]                     : F1        : output : 2.5 V             :         : 1         : N              
+code[12]                     : F2        : output : 2.5 V             :         : 1         : N              
+resultALU[19]                : F3        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
-rt3[5]                       : F5        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
 GND                          : F6        : gnd    :                   :         :           :                
-rt4[28]                      : F7        : output : 2.5 V             :         : 8         : N              
-rt6[11]                      : F8        : output : 2.5 V             :         : 8         : N              
+exceptGERAL                  : F7        : output : 2.5 V             :         : 8         : N              
+instrlidas[16]               : F8        : output : 2.5 V             :         : 8         : N              
 GND                          : F9        : gnd    :                   :         :           :                
-rt3[19]                      : F10       : output : 2.5 V             :         : 8         : N              
-rt2[19]                      : F11       : output : 2.5 V             :         : 8         : N              
-rt6[30]                      : F12       : output : 2.5 V             :         : 8         : N              
+PC_Enable                    : F10       : output : 2.5 V             :         : 8         : N              
+instrlidas[13]               : F11       : output : 2.5 V             :         : 8         : N              
+saidapc[8]                   : F12       : output : 2.5 V             :         : 8         : N              
 GND                          : F13       : gnd    :                   :         :           :                
-rt0[15]                      : F14       : output : 2.5 V             :         : 8         : N              
-rt0[18]                      : F15       : output : 2.5 V             :         : 7         : N              
+IF_ID_Enable                 : F14       : output : 2.5 V             :         : 8         : N              
+instrlidas[22]               : F15       : output : 2.5 V             :         : 7         : N              
 GND                          : F16       : gnd    :                   :         :           :                
-rt1[14]                      : F17       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[1]            : F18       : output : 2.5 V             :         : 7         : N              
-Result_ALU_mem[3]            : F19       : output : 2.5 V             :         : 7         : N              
+ID_control[4]                : F17       : output : 2.5 V             :         : 7         : N              
+DadosRS[2]                   : F18       : output : 2.5 V             :         : 7         : N              
+rt4[11]                      : F19       : output : 2.5 V             :         : 7         : N              
 GND                          : F20       : gnd    :                   :         :           :                
-DadosRS[25]                  : F21       : output : 2.5 V             :         : 7         : N              
-rt4[18]                      : F22       : output : 2.5 V             :         : 7         : N              
+DadosRT[27]                  : F21       : output : 2.5 V             :         : 7         : N              
+rt2[24]                      : F22       : output : 2.5 V             :         : 7         : N              
 GND                          : F23       : gnd    :                   :         :           :                
-rt2[13]                      : F24       : output : 2.5 V             :         : 6         : N              
-DadosRT[5]                   : F25       : output : 2.5 V             :         : 6         : N              
-rt0[14]                      : F26       : output : 2.5 V             :         : 6         : N              
-rt2[8]                       : F27       : output : 2.5 V             :         : 6         : N              
-rt2[7]                       : F28       : output : 2.5 V             :         : 6         : N              
-rt6[7]                       : G1        : output : 2.5 V             :         : 1         : N              
-rt1[23]                      : G2        : output : 2.5 V             :         : 1         : N              
-rt0[7]                       : G3        : output : 2.5 V             :         : 1         : N              
-rt3[15]                      : G4        : output : 2.5 V             :         : 1         : N              
-rt3[10]                      : G5        : output : 2.5 V             :         : 1         : N              
-rt6[31]                      : G6        : output : 2.5 V             :         : 1         : N              
-rt6[10]                      : G7        : output : 2.5 V             :         : 1         : N              
-rt5[25]                      : G8        : output : 2.5 V             :         : 8         : N              
-rt6[2]                       : G9        : output : 2.5 V             :         : 8         : N              
-rt3[30]                      : G10       : output : 2.5 V             :         : 8         : N              
-rt6[13]                      : G11       : output : 2.5 V             :         : 8         : N              
-rt4[8]                       : G12       : output : 2.5 V             :         : 8         : N              
-rt0[5]                       : G13       : output : 2.5 V             :         : 8         : N              
-rt2[9]                       : G14       : output : 2.5 V             :         : 8         : N              
-rt4[29]                      : G15       : output : 2.5 V             :         : 7         : N              
-DadosRT[19]                  : G16       : output : 2.5 V             :         : 7         : N              
-rt3[0]                       : G17       : output : 2.5 V             :         : 7         : N              
-resultALU[11]                : G18       : output : 2.5 V             :         : 7         : N              
-DadosRS[11]                  : G19       : output : 2.5 V             :         : 7         : N              
-rt4[23]                      : G20       : output : 2.5 V             :         : 7         : N              
-rt2[31]                      : G21       : output : 2.5 V             :         : 7         : N              
-rt6[21]                      : G22       : output : 2.5 V             :         : 6         : N              
-rt1[24]                      : G23       : output : 2.5 V             :         : 6         : N              
-DadosRT[10]                  : G24       : output : 2.5 V             :         : 6         : N              
-rt0[12]                      : G25       : output : 2.5 V             :         : 6         : N              
-rt0[6]                       : G26       : output : 2.5 V             :         : 6         : N              
-rt0[25]                      : G27       : output : 2.5 V             :         : 6         : N              
-rt0[22]                      : G28       : output : 2.5 V             :         : 6         : N              
+DadosRS[31]                  : F24       : output : 2.5 V             :         : 6         : N              
+rt0[31]                      : F25       : output : 2.5 V             :         : 6         : N              
+rt4[6]                       : F26       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[2]           : F27       : output : 2.5 V             :         : 6         : N              
+rt0[15]                      : F28       : output : 2.5 V             :         : 6         : N              
+ID_control[1]                : G1        : output : 2.5 V             :         : 1         : N              
+resultALU[28]                : G2        : output : 2.5 V             :         : 1         : N              
+ID_control[7]                : G3        : output : 2.5 V             :         : 1         : N              
+EX_MEM_Enable                : G4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 1         :                
+ID_control[8]                : G8        : output : 2.5 V             :         : 8         : N              
+ID_control[9]                : G9        : output : 2.5 V             :         : 8         : N              
+instrlidas[9]                : G10       : output : 2.5 V             :         : 8         : N              
+DadosRS[6]                   : G11       : output : 2.5 V             :         : 8         : N              
+DadosRT[29]                  : G12       : output : 2.5 V             :         : 8         : N              
+instrlidas[7]                : G13       : output : 2.5 V             :         : 8         : N              
+saidapc[10]                  : G14       : output : 2.5 V             :         : 8         : N              
+DadosRT[3]                   : G15       : output : 2.5 V             :         : 7         : N              
+saidapc[31]                  : G16       : output : 2.5 V             :         : 7         : N              
+saidapc[30]                  : G17       : output : 2.5 V             :         : 7         : N              
+instrlidas[19]               : G18       : output : 2.5 V             :         : 7         : N              
+rt2[25]                      : G19       : output : 2.5 V             :         : 7         : N              
+rt5[2]                       : G20       : output : 2.5 V             :         : 7         : N              
+result_end_pipe[30]          : G21       : output : 2.5 V             :         : 7         : N              
+DadosRT[5]                   : G22       : output : 2.5 V             :         : 6         : N              
+rt1[10]                      : G23       : output : 2.5 V             :         : 6         : N              
+rt2[5]                       : G24       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[8]           : G25       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[22]          : G26       : output : 2.5 V             :         : 6         : N              
+rt5[6]                       : G27       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[7]           : G28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
 GND                          : H2        : gnd    :                   :         :           :                
-rt0[16]                      : H3        : output : 2.5 V             :         : 1         : N              
-rt6[0]                       : H4        : output : 2.5 V             :         : 1         : N              
-rt6[4]                       : H5        : output : 2.5 V             :         : 1         : N              
-rt0[26]                      : H6        : output : 2.5 V             :         : 1         : N              
-rt3[18]                      : H7        : output : 2.5 V             :         : 1         : N              
-rt1[18]                      : H8        : output : 2.5 V             :         : 8         : N              
+DadosRT[30]                  : H3        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H4        :        :                   :         : 1         :                
+resultALU[5]                 : H5        : output : 2.5 V             :         : 1         : N              
+instrlidas[1]                : H6        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
+saidapc[20]                  : H8        : output : 2.5 V             :         : 8         : N              
 GNDA3                        : H9        : gnd    :                   :         :           :                
-rt4[2]                       : H10       : output : 2.5 V             :         : 8         : N              
+resultALU[23]                : H10       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
-rt3[3]                       : H12       : output : 2.5 V             :         : 8         : N              
-rt1[15]                      : H13       : output : 2.5 V             :         : 8         : N              
-rt2[16]                      : H14       : output : 2.5 V             :         : 7         : N              
-rt2[15]                      : H15       : output : 2.5 V             :         : 7         : N              
-rt5[23]                      : H16       : output : 2.5 V             :         : 7         : N              
-rt3[9]                       : H17       : output : 2.5 V             :         : 7         : N              
+saidapc[7]                   : H12       : output : 2.5 V             :         : 8         : N              
+code[26]                     : H13       : output : 2.5 V             :         : 8         : N              
+saidapc[19]                  : H14       : output : 2.5 V             :         : 7         : N              
+DadosRT[20]                  : H15       : output : 2.5 V             :         : 7         : N              
+DadosRT[31]                  : H16       : output : 2.5 V             :         : 7         : N              
+saidapc[29]                  : H17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
-DadosRT[25]                  : H19       : output : 2.5 V             :         : 7         : N              
+rt4[28]                      : H19       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : H20       : gnd    :                   :         :           :                
-rt0[24]                      : H21       : output : 2.5 V             :         : 6         : N              
-DadosRT[23]                  : H22       : output : 2.5 V             :         : 6         : N              
-DadosRT[17]                  : H23       : output : 2.5 V             :         : 6         : N              
-rt3[22]                      : H24       : output : 2.5 V             :         : 6         : N              
-rt3[25]                      : H25       : output : 2.5 V             :         : 6         : N              
-DadosRT[29]                  : H26       : output : 2.5 V             :         : 6         : N              
+rt4[12]                      : H21       : output : 2.5 V             :         : 6         : N              
+rt4[7]                       : H22       : output : 2.5 V             :         : 6         : N              
+code[25]                     : H23       : output : 2.5 V             :         : 6         : N              
+DadosRT[2]                   : H24       : output : 2.5 V             :         : 6         : N              
+rt4[20]                      : H25       : output : 2.5 V             :         : 6         : N              
+rt4[1]                       : H26       : output : 2.5 V             :         : 6         : N              
 GND                          : H27       : gnd    :                   :         :           :                
 VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
 DataCLK                      : J1        : input  : 2.5 V             :         : 1         : N              
 GND                          : J2        : gnd    :                   :         :           :                
-rt0[1]                       : J3        : output : 2.5 V             :         : 1         : N              
-rt0[2]                       : J4        : output : 2.5 V             :         : 1         : N              
-rt6[23]                      : J5        : output : 2.5 V             :         : 1         : N              
-rt2[18]                      : J6        : output : 2.5 V             :         : 1         : N              
-rt6[16]                      : J7        : output : 2.5 V             :         : 1         : N              
+ID_control[6]                : J3        : output : 2.5 V             :         : 1         : N              
+instrlidas[17]               : J4        : output : 2.5 V             :         : 1         : N              
+resultALU[18]                : J5        : output : 2.5 V             :         : 1         : N              
+Result_ALU_mem[20]           : J6        : output : 2.5 V             :         : 1         : N              
+DadosRS[29]                  : J7        : output : 2.5 V             :         : 1         : N              
 VCCA3                        : J8        : power  :                   : 2.5V    :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
-rt6[9]                       : J10       : output : 2.5 V             :         : 8         : N              
+instrlidas[15]               : J10       : output : 2.5 V             :         : 8         : N              
 GND                          : J11       : gnd    :                   :         :           :                
-rt0[20]                      : J12       : output : 2.5 V             :         : 8         : N              
+ID_control[13]               : J12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
-result_end_pipe[20]          : J14       : output : 2.5 V             :         : 7         : N              
+instrlidas[25]               : J14       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : J15       : power  :                   : 2.5V    : 7         :                
-Result_ALU_mem[25]           : J16       : output : 2.5 V             :         : 7         : N              
-rt4[19]                      : J17       : output : 2.5 V             :         : 7         : N              
+DadosRT[28]                  : J16       : output : 2.5 V             :         : 7         : N              
+instrlidas[23]               : J17       : output : 2.5 V             :         : 7         : N              
 GND                          : J18       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J19       :        :                   :         : 7         :                
+saidapc[26]                  : J19       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
 VCCA2                        : J21       : power  :                   : 2.5V    :           :                
-rt2[21]                      : J22       : output : 2.5 V             :         : 6         : N              
-DadosRT[28]                  : J23       : output : 2.5 V             :         : 6         : N              
-rt2[24]                      : J24       : output : 2.5 V             :         : 6         : N              
-rt0[9]                       : J25       : output : 2.5 V             :         : 6         : N              
-DadosRS[8]                   : J26       : output : 2.5 V             :         : 6         : N              
+DadosRS[30]                  : J22       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[15]          : J23       : output : 2.5 V             :         : 6         : N              
+rt2[8]                       : J24       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[31]          : J25       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[0]           : J26       : output : 2.5 V             :         : 6         : N              
 GND+                         : J27       :        :                   :         : 6         :                
 GND+                         : J28       :        :                   :         : 6         :                
-rt6[22]                      : K1        : output : 2.5 V             :         : 1         : N              
-result_end_pipe[7]           : K2        : output : 2.5 V             :         : 1         : N              
-rt0[10]                      : K3        : output : 2.5 V             :         : 1         : N              
-DadosRT[15]                  : K4        : output : 2.5 V             :         : 1         : N              
+instrlidas[27]               : K1        : output : 2.5 V             :         : 1         : N              
+instrlidas[8]                : K2        : output : 2.5 V             :         : 1         : N              
+instrlidas[29]               : K3        : output : 2.5 V             :         : 1         : N              
+resultALU[9]                 : K4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
 GND                          : K6        : gnd    :                   :         :           :                
-rt6[18]                      : K7        : output : 2.5 V             :         : 1         : N              
+code[0]                      : K7        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : K8        : power  :                   : 2.5V    : 1         :                
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
 VCCINT                       : K11       : power  :                   : 1.2V    :           :                
 GND                          : K12       : gnd    :                   :         :           :                
-rt1[7]                       : K13       : output : 2.5 V             :         : 8         : N              
+resultALU[17]                : K13       : output : 2.5 V             :         : 8         : N              
 GND                          : K14       : gnd    :                   :         :           :                
-rt1[13]                      : K15       : output : 2.5 V             :         : 7         : N              
+instrlidas[20]               : K15       : output : 2.5 V             :         : 7         : N              
 GND                          : K16       : gnd    :                   :         :           :                
 VCCINT                       : K17       : power  :                   : 1.2V    :           :                
 GND                          : K18       : gnd    :                   :         :           :                
 VCCINT                       : K19       : power  :                   : 1.2V    :           :                
 GND                          : K20       : gnd    :                   :         :           :                
-Result_ALU_mem[28]           : K21       : output : 2.5 V             :         : 6         : N              
-rt2[6]                       : K22       : output : 2.5 V             :         : 6         : N              
+rt0[4]                       : K21       : output : 2.5 V             :         : 6         : N              
+code[23]                     : K22       : output : 2.5 V             :         : 6         : N              
 GND                          : K23       : gnd    :                   :         :           :                
 VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
-resultALU[1]                 : K25       : output : 2.5 V             :         : 6         : N              
-rt1[16]                      : K26       : output : 2.5 V             :         : 6         : N              
-rt2[14]                      : K27       : output : 2.5 V             :         : 6         : N              
-rt1[12]                      : K28       : output : 2.5 V             :         : 6         : N              
-rt4[22]                      : L1        : output : 2.5 V             :         : 1         : N              
-rt3[2]                       : L2        : output : 2.5 V             :         : 1         : N              
-rt5[31]                      : L3        : output : 2.5 V             :         : 1         : N              
-rt1[27]                      : L4        : output : 2.5 V             :         : 1         : N              
-rt1[6]                       : L5        : output : 2.5 V             :         : 1         : N              
-rt1[11]                      : L6        : output : 2.5 V             :         : 1         : N              
-rt0[31]                      : L7        : output : 2.5 V             :         : 1         : N              
-rt3[21]                      : L8        : output : 2.5 V             :         : 1         : N              
+rt3[4]                       : K25       : output : 2.5 V             :         : 6         : N              
+DadosRS[4]                   : K26       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[26]          : K27       : output : 2.5 V             :         : 6         : N              
+rt5[5]                       : K28       : output : 2.5 V             :         : 6         : N              
+Result_ALU_mem[28]           : L1        : output : 2.5 V             :         : 1         : N              
+code[7]                      : L2        : output : 2.5 V             :         : 1         : N              
+resultALU[6]                 : L3        : output : 2.5 V             :         : 1         : N              
+code[14]                     : L4        : output : 2.5 V             :         : 1         : N              
+instrlidas[30]               : L5        : output : 2.5 V             :         : 1         : N              
+ID_control[12]               : L6        : output : 2.5 V             :         : 1         : N              
+ID_EX_Enable                 : L7        : output : 2.5 V             :         : 1         : N              
+code[29]                     : L8        : output : 2.5 V             :         : 1         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -588,24 +588,24 @@ VCCINT                       : L16       : power  :                   : 1.2V    
 GND                          : L17       : gnd    :                   :         :           :                
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
 GND                          : L19       : gnd    :                   :         :           :                
-rt3[7]                       : L20       : output : 2.5 V             :         : 6         : N              
+code[17]                     : L20       : output : 2.5 V             :         : 6         : N              
 VCCIO6                       : L21       : power  :                   : 2.5V    : 6         :                
-DadosRT[6]                   : L22       : output : 2.5 V             :         : 6         : N              
-resultALU[15]                : L23       : output : 2.5 V             :         : 6         : N              
-DadosRT[9]                   : L24       : output : 2.5 V             :         : 6         : N              
-resultALU[25]                : L25       : output : 2.5 V             :         : 6         : N              
-rt3[23]                      : L26       : output : 2.5 V             :         : 6         : N              
-Result_ALU_mem[26]           : L27       : output : 2.5 V             :         : 6         : N              
-DadosRT[1]                   : L28       : output : 2.5 V             :         : 6         : N              
-result_end_pipe[6]           : M1        : output : 2.5 V             :         : 1         : N              
-rt5[20]                      : M2        : output : 2.5 V             :         : 1         : N              
-rt2[4]                       : M3        : output : 2.5 V             :         : 1         : N              
-result_end_pipe[9]           : M4        : output : 2.5 V             :         : 1         : N              
-rt4[26]                      : M5        : output : 2.5 V             :         : 1         : N              
+DadosRS[9]                   : L22       : output : 2.5 V             :         : 6         : N              
+code[18]                     : L23       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[17]          : L24       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[10]          : L25       : output : 2.5 V             :         : 6         : N              
+code[20]                     : L26       : output : 2.5 V             :         : 6         : N              
+code[21]                     : L27       : output : 2.5 V             :         : 6         : N              
+rt5[3]                       : L28       : output : 2.5 V             :         : 6         : N              
+clo_op_to_ULA                : M1        : output : 2.5 V             :         : 1         : N              
+ID_control[15]               : M2        : output : 2.5 V             :         : 1         : N              
+instrlidas[3]                : M3        : output : 2.5 V             :         : 1         : N              
+code[30]                     : M4        : output : 2.5 V             :         : 1         : N              
+saidapc[21]                  : M5        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : M6        :        :                   :         : 1         :                
-rt2[2]                       : M7        : output : 2.5 V             :         : 1         : N              
-rt2[5]                       : M8        : output : 2.5 V             :         : 1         : N              
-rt4[17]                      : M9        : output : 2.5 V             :         : 1         : N              
+rt4[2]                       : M7        : output : 2.5 V             :         : 1         : N              
+code[31]                     : M8        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M9        :        :                   :         : 1         :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
 GND                          : M12       : gnd    :                   :         :           :                
@@ -617,22 +617,22 @@ VCCINT                       : M17       : power  :                   : 1.2V    
 GND                          : M18       : gnd    :                   :         :           :                
 VCCINT                       : M19       : power  :                   : 1.2V    :           :                
 GND                          : M20       : gnd    :                   :         :           :                
-rt5[21]                      : M21       : output : 2.5 V             :         : 6         : N              
+rt5[31]                      : M21       : output : 2.5 V             :         : 6         : N              
 MSEL2                        : M22       :        :                   :         : 6         :                
-DadosRT[13]                  : M23       : output : 2.5 V             :         : 6         : N              
-DadosRS[0]                   : M24       : output : 2.5 V             :         : 6         : N              
-resultALU[27]                : M25       : output : 2.5 V             :         : 6         : N              
-ID_control[4]                : M26       : output : 2.5 V             :         : 6         : N              
-fw_B_to_mux[0]               : M27       : output : 2.5 V             :         : 6         : N              
-rt5[19]                      : M28       : output : 2.5 V             :         : 6         : N              
+code[19]                     : M23       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[5]           : M24       : output : 2.5 V             :         : 6         : N              
+rt1[31]                      : M25       : output : 2.5 V             :         : 6         : N              
+code[24]                     : M26       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[29]          : M27       : output : 2.5 V             :         : 6         : N              
+code[16]                     : M28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
 GND                          : N2        : gnd    :                   :         :           :                
-result_end_pipe[14]          : N3        : output : 2.5 V             :         : 1         : N              
-rt2[20]                      : N4        : output : 2.5 V             :         : 1         : N              
+Flush                        : N3        : output : 2.5 V             :         : 1         : N              
+ID_control[0]                : N4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
 GND                          : N6        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
-rt3[20]                      : N8        : output : 2.5 V             :         : 1         : N              
+ID_control[16]               : N8        : output : 2.5 V             :         : 1         : N              
 GND                          : N9        : gnd    :                   :         :           :                
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
@@ -645,16 +645,16 @@ GND                          : N17       : gnd    :                   :         
 VCCINT                       : N18       : power  :                   : 1.2V    :           :                
 GND                          : N19       : gnd    :                   :         :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-resultALU[14]                : N21       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[14]          : N21       : output : 2.5 V             :         : 6         : N              
 MSEL0                        : N22       :        :                   :         : 6         :                
 GND                          : N23       : gnd    :                   :         :           :                
 VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
-resultALU[24]                : N25       : output : 2.5 V             :         : 6         : N              
-rt5[18]                      : N26       : output : 2.5 V             :         : 6         : N              
+code[22]                     : N25       : output : 2.5 V             :         : 6         : N              
+result_end_pipe[6]           : N26       : output : 2.5 V             :         : 6         : N              
 GND                          : N27       : gnd    :                   :         :           :                
 VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
-rt6[6]                       : P1        : output : 2.5 V             :         : 1         : N              
-rt5[12]                      : P2        : output : 2.5 V             :         : 1         : N              
+instrlidas[2]                : P1        : output : 2.5 V             :         : 1         : N              
+saidapc[28]                  : P2        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
 nCONFIG                      : P4        :        :                   :         : 1         :                
 TCK                          : P5        : input  :                   :         : 1         :                
@@ -673,21 +673,21 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-ALUcontrol_to_ULA[0]         : P21       : output : 2.5 V             :         : 5         : N              
+rt3[7]                       : P21       : output : 2.5 V             :         : 5         : N              
 MSEL3                        : P22       :        :                   :         : 6         :                
 MSEL1                        : P23       :        :                   :         : 6         :                
 CONF_DONE                    : P24       :        :                   :         : 6         :                
-DadosRT[26]                  : P25       : output : 2.5 V             :         : 6         : N              
-DadosRT[24]                  : P26       : output : 2.5 V             :         : 6         : N              
-Result_ALU_mem[15]           : P27       : output : 2.5 V             :         : 6         : N              
+rt5[1]                       : P25       : output : 2.5 V             :         : 6         : N              
+rt5[0]                       : P26       : output : 2.5 V             :         : 6         : N              
+rt3[24]                      : P27       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
-rt4[1]                       : R1        : output : 2.5 V             :         : 2         : N              
-rt5[8]                       : R2        : output : 2.5 V             :         : 2         : N              
-rt6[24]                      : R3        : output : 2.5 V             :         : 2         : N              
-result_end_pipe[17]          : R4        : output : 2.5 V             :         : 2         : N              
-rt4[5]                       : R5        : output : 2.5 V             :         : 2         : N              
-result_end_pipe[23]          : R6        : output : 2.5 V             :         : 2         : N              
-result_end_pipe[11]          : R7        : output : 2.5 V             :         : 2         : N              
+resultALU[21]                : R1        : output : 2.5 V             :         : 2         : N              
+ALUcontrol_to_ULA[0]         : R2        : output : 2.5 V             :         : 2         : N              
+DadosRT[11]                  : R3        : output : 2.5 V             :         : 2         : N              
+ALUcontrol_to_ULA[2]         : R4        : output : 2.5 V             :         : 2         : N              
+resultALU[22]                : R5        : output : 2.5 V             :         : 2         : N              
+resultALU[12]                : R6        : output : 2.5 V             :         : 2         : N              
+resultALU[11]                : R7        : output : 2.5 V             :         : 2         : N              
 nCE                          : R8        :        :                   :         : 1         :                
 GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -701,23 +701,23 @@ GND                          : R17       : gnd    :                   :         
 VCCINT                       : R18       : power  :                   : 1.2V    :           :                
 GND                          : R19       : gnd    :                   :         :           :                
 VCCINT                       : R20       : power  :                   : 1.2V    :           :                
-Result_ALU_mem[14]           : R21       : output : 2.5 V             :         : 5         : N              
-xor_op_to_ULA                : R22       : output : 2.5 V             :         : 5         : N              
-ALUcontrol_to_ULA[2]         : R23       : output : 2.5 V             :         : 5         : N              
-resultALU[19]                : R24       : output : 2.5 V             :         : 5         : N              
-resultALU[17]                : R25       : output : 2.5 V             :         : 5         : N              
-resultALU[7]                 : R26       : output : 2.5 V             :         : 5         : N              
-ALUcontrol_to_ULA[1]         : R27       : output : 2.5 V             :         : 5         : N              
-Result_ALU_mem[23]           : R28       : output : 2.5 V             :         : 5         : N              
+rt1[29]                      : R21       : output : 2.5 V             :         : 5         : N              
+rt1[22]                      : R22       : output : 2.5 V             :         : 5         : N              
+rt4[5]                       : R23       : output : 2.5 V             :         : 5         : N              
+rt4[9]                       : R24       : output : 2.5 V             :         : 5         : N              
+rt1[30]                      : R25       : output : 2.5 V             :         : 5         : N              
+rt3[1]                       : R26       : output : 2.5 V             :         : 5         : N              
+result_end_pipe[24]          : R27       : output : 2.5 V             :         : 5         : N              
+rt5[18]                      : R28       : output : 2.5 V             :         : 5         : N              
 VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
 GND                          : T2        : gnd    :                   :         :           :                
-result_end_pipe[16]          : T3        : output : 2.5 V             :         : 2         : N              
-result_end_pipe[15]          : T4        : output : 2.5 V             :         : 2         : N              
+resultALU[25]                : T3        : output : 2.5 V             :         : 2         : N              
+Result_ALU_mem[27]           : T4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
 GND                          : T6        : gnd    :                   :         :           :                
-code[23]                     : T7        : output : 2.5 V             :         : 2         : N              
-result_end_pipe[1]           : T8        : output : 2.5 V             :         : 2         : N              
-code[16]                     : T9        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 2         :                
+resultALU[26]                : T8        : output : 2.5 V             :         : 2         : N              
+rt3[3]                       : T9        : output : 2.5 V             :         : 2         : N              
 GND                          : T10       : gnd    :                   :         :           :                
 VCCINT                       : T11       : power  :                   : 1.2V    :           :                
 GND                          : T12       : gnd    :                   :         :           :                
@@ -729,22 +729,22 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-Result_ALU_mem[24]           : T21       : output : 2.5 V             :         : 5         : N              
-Result_ALU_mem[22]           : T22       : output : 2.5 V             :         : 5         : N              
+rt1[1]                       : T21       : output : 2.5 V             :         : 5         : N              
+rt0[2]                       : T22       : output : 2.5 V             :         : 5         : N              
 GND                          : T23       : gnd    :                   :         :           :                
 VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
-resultALU[13]                : T25       : output : 2.5 V             :         : 5         : N              
-resultALU[30]                : T26       : output : 2.5 V             :         : 5         : N              
+rt0[9]                       : T25       : output : 2.5 V             :         : 5         : N              
+result_end_pipe[27]          : T26       : output : 2.5 V             :         : 5         : N              
 GND                          : T27       : gnd    :                   :         :           :                
 VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
-rt4[0]                       : U1        : output : 2.5 V             :         : 2         : N              
-rt5[1]                       : U2        : output : 2.5 V             :         : 2         : N              
-result_end_pipe[10]          : U3        : output : 2.5 V             :         : 2         : N              
-result_end_pipe[5]           : U4        : output : 2.5 V             :         : 2         : N              
-DadosRS[19]                  : U5        : output : 2.5 V             :         : 2         : N              
-rt5[0]                       : U6        : output : 2.5 V             :         : 2         : N              
-rt5[3]                       : U7        : output : 2.5 V             :         : 2         : N              
-rt4[4]                       : U8        : output : 2.5 V             :         : 2         : N              
+code[13]                     : U1        : output : 2.5 V             :         : 2         : N              
+xor_op_to_ULA                : U2        : output : 2.5 V             :         : 2         : N              
+ALUcontrol_to_ULA[1]         : U3        : output : 2.5 V             :         : 2         : N              
+instrlidas[4]                : U4        : output : 2.5 V             :         : 2         : N              
+resultALU[24]                : U5        : output : 2.5 V             :         : 2         : N              
+Result_ALU_mem[23]           : U6        : output : 2.5 V             :         : 2         : N              
+DadosRT[7]                   : U7        : output : 2.5 V             :         : 2         : N              
+rt5[14]                      : U8        : output : 2.5 V             :         : 2         : N              
 GND                          : U9        : gnd    :                   :         :           :                
 VCCINT                       : U10       : power  :                   : 1.2V    :           :                
 GND                          : U11       : gnd    :                   :         :           :                
@@ -756,24 +756,24 @@ VCCINT                       : U16       : power  :                   : 1.2V    
 GND                          : U17       : gnd    :                   :         :           :                
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND                          : U19       : gnd    :                   :         :           :                
-instrlidas[15]               : U20       : output : 2.5 V             :         : 5         : N              
+rt4[23]                      : U20       : output : 2.5 V             :         : 5         : N              
 VCCIO5                       : U21       : power  :                   : 2.5V    : 5         :                
-resultALU[23]                : U22       : output : 2.5 V             :         : 5         : N              
-DadosRS[29]                  : U23       : output : 2.5 V             :         : 5         : N              
-ID_control[3]                : U24       : output : 2.5 V             :         : 5         : N              
-direction_to_ULA             : U25       : output : 2.5 V             :         : 5         : N              
-Result_ALU_mem[16]           : U26       : output : 2.5 V             :         : 5         : N              
-Result_ALU_mem[29]           : U27       : output : 2.5 V             :         : 5         : N              
-fw_A_to_mux[1]               : U28       : output : 2.5 V             :         : 5         : N              
-code[17]                     : V1        : output : 2.5 V             :         : 2         : N              
-rt6[3]                       : V2        : output : 2.5 V             :         : 2         : N              
-result_end_pipe[18]          : V3        : output : 2.5 V             :         : 2         : N              
-rt5[4]                       : V4        : output : 2.5 V             :         : 2         : N              
-rt6[29]                      : V5        : output : 2.5 V             :         : 2         : N              
-rt6[27]                      : V6        : output : 2.5 V             :         : 2         : N              
-code[22]                     : V7        : output : 2.5 V             :         : 2         : N              
-instrlidas[18]               : V8        : output : 2.5 V             :         : 2         : N              
-rt6[20]                      : V9        : output : 2.5 V             :         : 2         : N              
+rt4[3]                       : U22       : output : 2.5 V             :         : 5         : N              
+result_end_pipe[25]          : U23       : output : 2.5 V             :         : 5         : N              
+rt4[24]                      : U24       : output : 2.5 V             :         : 5         : N              
+rt4[18]                      : U25       : output : 2.5 V             :         : 5         : N              
+rt5[26]                      : U26       : output : 2.5 V             :         : 5         : N              
+rt0[22]                      : U27       : output : 2.5 V             :         : 5         : N              
+result_end_pipe[9]           : U28       : output : 2.5 V             :         : 5         : N              
+Result_ALU_mem[18]           : V1        : output : 2.5 V             :         : 2         : N              
+fw_B_to_mux[0]               : V2        : output : 2.5 V             :         : 2         : N              
+fw_B_to_mux[1]               : V3        : output : 2.5 V             :         : 2         : N              
+EscreveReg_wb_to_fw          : V4        : output : 2.5 V             :         : 2         : N              
+DadosRT[23]                  : V5        : output : 2.5 V             :         : 2         : N              
+saidapc[25]                  : V6        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 2         :                
+rt3[0]                       : V8        : output : 2.5 V             :         : 2         : N              
+rt4[22]                      : V9        : output : 2.5 V             :         : 2         : N              
 GND                          : V10       : gnd    :                   :         :           :                
 VCCINT                       : V11       : power  :                   : 1.2V    :           :                
 GND                          : V12       : gnd    :                   :         :           :                
@@ -784,68 +784,68 @@ GND                          : V16       : gnd    :                   :         
 VCCINT                       : V17       : power  :                   : 1.2V    :           :                
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
-DadosRT[14]                  : V20       : output : 2.5 V             :         : 5         : N              
-fw_A_to_mux[0]               : V21       : output : 2.5 V             :         : 5         : N              
-instrlidas[31]               : V22       : output : 2.5 V             :         : 5         : N              
-DadosRT[2]                   : V23       : output : 2.5 V             :         : 5         : N              
-resultALU[10]                : V24       : output : 2.5 V             :         : 5         : N              
-Result_ALU_mem[27]           : V25       : output : 2.5 V             :         : 5         : N              
-instrlidas[29]               : V26       : output : 2.5 V             :         : 5         : N              
-DadosRS[23]                  : V27       : output : 2.5 V             :         : 5         : N              
-DadosRT[4]                   : V28       : output : 2.5 V             :         : 5         : N              
-result_end_pipe[26]          : W1        : output : 2.5 V             :         : 2         : N              
-DadosRS[13]                  : W2        : output : 2.5 V             :         : 2         : N              
-rt5[26]                      : W3        : output : 2.5 V             :         : 2         : N              
-rt5[24]                      : W4        : output : 2.5 V             :         : 2         : N              
+rt1[9]                       : V20       : output : 2.5 V             :         : 5         : N              
+result_end_pipe[20]          : V21       : output : 2.5 V             :         : 5         : N              
+rt0[12]                      : V22       : output : 2.5 V             :         : 5         : N              
+rt5[15]                      : V23       : output : 2.5 V             :         : 5         : N              
+result_end_pipe[21]          : V24       : output : 2.5 V             :         : 5         : N              
+rt4[26]                      : V25       : output : 2.5 V             :         : 5         : N              
+rt4[27]                      : V26       : output : 2.5 V             :         : 5         : N              
+rt1[24]                      : V27       : output : 2.5 V             :         : 5         : N              
+rt2[4]                       : V28       : output : 2.5 V             :         : 5         : N              
+ID_control[14]               : W1        : output : 2.5 V             :         : 2         : N              
+rt2[19]                      : W2        : output : 2.5 V             :         : 2         : N              
+resultALU[1]                 : W3        : output : 2.5 V             :         : 2         : N              
+DadosRS[27]                  : W4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
 GND                          : W6        : gnd    :                   :         :           :                
 VCCIO2                       : W7        : power  :                   : 2.5V    : 2         :                
-rt6[12]                      : W8        : output : 2.5 V             :         : 2         : N              
-rt5[10]                      : W9        : output : 2.5 V             :         : 2         : N              
-Result_ALU_mem[31]           : W10       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W8        :        :                   :         : 2         :                
+rt2[6]                       : W9        : output : 2.5 V             :         : 2         : N              
+Result_ALU_mem[21]           : W10       : output : 2.5 V             :         : 3         : N              
 GND                          : W11       : gnd    :                   :         :           :                
 VCCINT                       : W12       : power  :                   : 1.2V    :           :                
 GND                          : W13       : gnd    :                   :         :           :                
 VCCINT                       : W14       : power  :                   : 1.2V    :           :                
 GND                          : W15       : gnd    :                   :         :           :                
-PC_Enable                    : W16       : output : 2.5 V             :         : 4         : N              
+rt0[21]                      : W16       : output : 2.5 V             :         : 4         : N              
 GND                          : W17       : gnd    :                   :         :           :                
 VCCINT                       : W18       : power  :                   : 1.2V    :           :                
 GND                          : W19       : gnd    :                   :         :           :                
-resultALU[12]                : W20       : output : 2.5 V             :         : 5         : N              
-ID_control[11]               : W21       : output : 2.5 V             :         : 5         : N              
-ID_control[5]                : W22       : output : 2.5 V             :         : 5         : N              
+result_end_pipe[28]          : W20       : output : 2.5 V             :         : 5         : N              
+result_end_pipe[16]          : W21       : output : 2.5 V             :         : 5         : N              
+rt2[28]                      : W22       : output : 2.5 V             :         : 5         : N              
 GND                          : W23       : gnd    :                   :         :           :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
-resultALU[2]                 : W25       : output : 2.5 V             :         : 5         : N              
-resultALU[21]                : W26       : output : 2.5 V             :         : 5         : N              
-DadosRS[22]                  : W27       : output : 2.5 V             :         : 5         : N              
-resultALU[9]                 : W28       : output : 2.5 V             :         : 5         : N              
+rt4[21]                      : W25       : output : 2.5 V             :         : 5         : N              
+rt1[2]                       : W26       : output : 2.5 V             :         : 5         : N              
+rt4[15]                      : W27       : output : 2.5 V             :         : 5         : N              
+rt2[7]                       : W28       : output : 2.5 V             :         : 5         : N              
 GND+                         : Y1        :        :                   :         : 2         :                
 CLK                          : Y2        : input  : 2.5 V             :         : 2         : N              
-rt6[25]                      : Y3        : output : 2.5 V             :         : 2         : N              
-code[18]                     : Y4        : output : 2.5 V             :         : 2         : N              
-code[21]                     : Y5        : output : 2.5 V             :         : 2         : N              
-result_end_pipe[19]          : Y6        : output : 2.5 V             :         : 2         : N              
-code[24]                     : Y7        : output : 2.5 V             :         : 2         : N              
+rt0[11]                      : Y3        : output : 2.5 V             :         : 2         : N              
+rt1[28]                      : Y4        : output : 2.5 V             :         : 2         : N              
+ID_control[2]                : Y5        : output : 2.5 V             :         : 2         : N              
+ID_control[5]                : Y6        : output : 2.5 V             :         : 2         : N              
+rt3[16]                      : Y7        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
 VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
-rt5[15]                      : Y10       : output : 2.5 V             :         : 3         : N              
+rt5[30]                      : Y10       : output : 2.5 V             :         : 3         : N              
 GND                          : Y11       : gnd    :                   :         :           :                
-DadosRS[1]                   : Y12       : output : 2.5 V             :         : 3         : N              
-result_end_pipe[4]           : Y13       : output : 2.5 V             :         : 3         : N              
-instrlidas[8]                : Y14       : output : 2.5 V             :         : 3         : N              
-rt4[14]                      : Y15       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[14]           : Y12       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[19]           : Y13       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[8]            : Y14       : output : 2.5 V             :         : 3         : N              
+Result_ALU_mem[0]            : Y15       : output : 2.5 V             :         : 3         : N              
 VCCIO4                       : Y16       : power  :                   : 2.5V    : 4         :                
-ID_control[14]               : Y17       : output : 2.5 V             :         : 4         : N              
+DadosRS[12]                  : Y17       : output : 2.5 V             :         : 4         : N              
 GND                          : Y18       : gnd    :                   :         :           :                
-ID_control[7]                : Y19       : output : 2.5 V             :         : 4         : N              
+DadosRS[18]                  : Y19       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
-code[0]                      : Y22       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5         :                
-code[29]                     : Y24       : output : 2.5 V             :         : 5         : N              
-DadosRS[20]                  : Y25       : output : 2.5 V             :         : 5         : N              
-Result_ALU_mem[18]           : Y26       : output : 2.5 V             :         : 5         : N              
+rt5[10]                      : Y22       : output : 2.5 V             :         : 5         : N              
+rt0[1]                       : Y23       : output : 2.5 V             :         : 5         : N              
+rt0[27]                      : Y24       : output : 2.5 V             :         : 5         : N              
+rt0[8]                       : Y25       : output : 2.5 V             :         : 5         : N              
+rt4[19]                      : Y26       : output : 2.5 V             :         : 5         : N              
 GND+                         : Y27       :        :                   :         : 5         :                
 GND+                         : Y28       :        :                   :         : 5         :                
