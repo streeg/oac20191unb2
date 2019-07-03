@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2016  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -97,37 +97,30 @@ agreement for further details.
 	(port
 		(pt 0 192)
 		(input)
-		(text "xor_op" (rect 0 0 40 19)(font "Intel Clear" (font_size 8)))
-		(text "xor_op" (rect 21 187 61 206)(font "Intel Clear" (font_size 8)))
+		(text "EnableOverflow" (rect 0 0 93 19)(font "Intel Clear" (font_size 8)))
+		(text "EnableOverflow" (rect 21 187 114 206)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 192)(pt 16 192))
 	)
 	(port
 		(pt 0 208)
 		(input)
-		(text "EnableOverflow" (rect 0 0 93 19)(font "Intel Clear" (font_size 8)))
-		(text "EnableOverflow" (rect 21 203 114 222)(font "Intel Clear" (font_size 8)))
+		(text "mult_or_div" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
+		(text "mult_or_div" (rect 21 203 92 222)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 208)(pt 16 208))
 	)
 	(port
 		(pt 0 224)
 		(input)
-		(text "mult_or_div" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
-		(text "mult_or_div" (rect 21 219 92 238)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 224)(pt 16 224))
+		(text "shamt[4..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "shamt[4..0]" (rect 21 219 88 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
 	)
 	(port
 		(pt 0 240)
 		(input)
-		(text "shamt[4..0]" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
-		(text "shamt[4..0]" (rect 21 235 88 254)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 240)(pt 16 240)(line_width 3))
-	)
-	(port
-		(pt 0 256)
-		(input)
 		(text "direction" (rect 0 0 51 19)(font "Intel Clear" (font_size 8)))
-		(text "direction" (rect 21 251 72 270)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 256)(pt 16 256))
+		(text "direction" (rect 21 235 72 254)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
 	)
 	(port
 		(pt 240 32)

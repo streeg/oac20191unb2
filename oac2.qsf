@@ -46,13 +46,6 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name BDF_FILE clo_intruction/Adder32Bits.bdf
-set_global_assignment -name BDF_FILE clo_intruction/CLO.bdf
-set_global_assignment -name BDF_FILE Xor_instruction/xor_instruction.bdf
-set_global_assignment -name VERILOG_FILE ConstantControl/constcontrol.v
 set_global_assignment -name BSF_FILE Um/um.bsf
 set_global_assignment -name BDF_FILE Um/um.bdf
 set_global_assignment -name VHDL_FILE Mux41_lpm/mux41_lpm.vhd
@@ -158,11 +151,9 @@ set_global_assignment -name QIP_FILE reg_ra_31.qip
 set_global_assignment -name QIP_FILE Ra_reg_31/Ra_reg_31.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE oac2.vwf
 set_global_assignment -name BDF_FILE Clo_id/clo_id.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE ConstantControl/ConstControl.qip
 set_global_assignment -name QIP_FILE "Mux21_17bits-Control/mux21_17bits_control.qip"
-set_global_assignment -name QIP_FILE mux41_foward.qip
-set_global_assignment -name QIP_FILE DecoderIP/DecoderIP.qip
-set_global_assignment -name QIP_FILE DecoderIP/DecoderIP2.qip
-set_global_assignment -name QIP_FILE Comparador/comparador.qip
-set_global_assignment -name SOURCE_FILE Comparador/comparador.cmp
-set_global_assignment -name BDF_FILE Xori_Function/Xori_func.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -9,14 +9,14 @@ z2
 cModel Technology
 dC:/oac_lab2/oac20191unb2/simulation/qsim
 Ehard_block
-Z0 w1562078941
+Z0 w1562007691
 Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 K`kJb<]?z4U5EbkG_:lMO3
 Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z6 DPx10 cycloneive 21 cycloneive_components 0 22 HFZ8mBI5?[8TM9e2YGWCa2
-Z7 d/home/guileb/Faculdade/Organizacao_E_Arquitetura_De_Computadores/Trab2OAC20191/oac20191unb2/simulation/qsim
+Z7 dC:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim
 Z8 8oac2.vho
 Z9 Foac2.vho
 l0
@@ -25,9 +25,9 @@ VB]0;STalBkCB1_B4BXQDW2
 !s100 >mXi5[`cD`bFC`UBKA<om3
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1562078944
+Z11 !s110 1562007694
 !i10b 1
-Z12 !s108 1562078944.000000
+Z12 !s108 1562007694.000000
 Z13 !s90 -work|work|oac2.vho|
 Z14 !s107 oac2.vho|
 !i113 1
@@ -70,8 +70,8 @@ R8
 R9
 l0
 L80
-V>mZTUmNXGXPJZ`WJi7]@83
-!s100 2V[_Z<R1eI2Cn2m6E`i6j1
+Vzj2d@3J`EeHNZ;e4>:TI92
+!s100 AI=ga_`a`WS;j5gkMd0e83
 R10
 32
 R11
@@ -91,11 +91,11 @@ R3
 R4
 R5
 R18
-DEx4 work 4 oac2 0 22 >mZTUmNXGXPJZ`WJi7]@83
-l5932
-L605
-Va``BA@32_j=1kV`^5jW7X0
-!s100 h[KlMeU@Ga_0]C3VzIYf=0
+DEx4 work 4 oac2 0 22 zj2d@3J`EeHNZ;e4>:TI92
+l7493
+L448
+V3a<9_;@JZD_9[7dZn?<`:0
+!s100 an[3IW8K]JSE[;d6A3l>K1
 R10
 32
 R11
@@ -107,7 +107,7 @@ R14
 R15
 R16
 Eoac2_vhd_vec_tst
-Z19 w1562078937
+Z19 w1562007687
 R4
 R5
 R7
@@ -119,9 +119,9 @@ VTUV?;_8<CDHR[8oe3WK>93
 !s100 K5IONFb`@S:C<k3Pim8Wm1
 R10
 32
-Z22 !s110 1562078945
+Z22 !s110 1562007695
 !i10b 1
-Z23 !s108 1562078945.000000
+Z23 !s108 1562007695.000000
 Z24 !s90 -work|work|oac2.vwf.vht|
 Z25 !s107 oac2.vwf.vht|
 !i113 1
@@ -131,10 +131,10 @@ Aoac2_arch
 R4
 R5
 Z26 DEx4 work 16 oac2_vhd_vec_tst 0 22 TUV?;_8<CDHR[8oe3WK>93
-l103
+l101
 L34
-Z27 V6VY<?[UhHRcV>3;`mjVI33
-Z28 !s100 mO`C?6zK_2PTJA96k=[a=0
+Z27 Vi7?HbOKlRT]zVEXgBGn7S0
+Z28 !s100 KUT3MU0O8F_MDT4mZaClT2
 R10
 32
 R22
