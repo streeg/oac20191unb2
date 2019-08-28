@@ -9,14 +9,14 @@ z2
 cModel Technology
 dC:/oac_lab2/oac20191unb2/simulation/qsim
 Ehard_block
-Z0 w1562183447
+Z0 w1562249454
 Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 K`kJb<]?z4U5EbkG_:lMO3
 Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z6 DPx10 cycloneive 21 cycloneive_components 0 22 HFZ8mBI5?[8TM9e2YGWCa2
-Z7 dC:/Users/Admin/Documents/GitHub/oac20191unb2/simulation/qsim
+Z7 d/home/guileb/Faculdade/Organizacao_E_Arquitetura_De_Computadores/Trab2OAC20191/oac20191unb2/simulation/qsim
 Z8 8oac2.vho
 Z9 Foac2.vho
 l0
@@ -25,9 +25,9 @@ VB]0;STalBkCB1_B4BXQDW2
 !s100 >mXi5[`cD`bFC`UBKA<om3
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1562183450
+Z11 !s110 1562249459
 !i10b 1
-Z12 !s108 1562183450.000000
+Z12 !s108 1562249459.000000
 Z13 !s90 -work|work|oac2.vho|
 Z14 !s107 oac2.vho|
 !i113 1
@@ -70,8 +70,8 @@ R8
 R9
 l0
 L80
-VO4mNm=cdMl_EiUg2=?aO<2
-!s100 6VQazMoU@^eMl[@g7J3HG3
+V1[PA5M`DZG2D^Go:]Ml4N3
+!s100 N0M09HUSQh7OJaLHZc@K40
 R10
 32
 R11
@@ -91,14 +91,14 @@ R3
 R4
 R5
 R18
-DEx4 work 4 oac2 0 22 O4mNm=cdMl_EiUg2=?aO<2
-l9108
-L607
-VcOk0ed7M_UBSE3AE>;cLW1
-!s100 C?C6>^[G7z0d9f;>U3C2<1
+DEx4 work 4 oac2 0 22 1[PA5M`DZG2D^Go:]Ml4N3
+l8927
+L597
+V9CzXNYdLazGbF4cRoPSOH0
+!s100 SXXM[;5:8?3<NVhe6f><50
 R10
 32
-!s110 1562183451
+!s110 1562249460
 !i10b 1
 R12
 R13
@@ -107,7 +107,7 @@ R14
 R15
 R16
 Eoac2_vhd_vec_tst
-Z19 w1562183442
+Z19 w1562249447
 R4
 R5
 R7
@@ -119,9 +119,9 @@ VTUV?;_8<CDHR[8oe3WK>93
 !s100 K5IONFb`@S:C<k3Pim8Wm1
 R10
 32
-Z22 !s110 1562183452
+Z22 !s110 1562249461
 !i10b 1
-Z23 !s108 1562183452.000000
+Z23 !s108 1562249461.000000
 Z24 !s90 -work|work|oac2.vwf.vht|
 Z25 !s107 oac2.vwf.vht|
 !i113 1
@@ -131,10 +131,10 @@ Aoac2_arch
 R4
 R5
 Z26 DEx4 work 16 oac2_vhd_vec_tst 0 22 TUV?;_8<CDHR[8oe3WK>93
-l105
+l95
 L34
-Z27 V8bHamcgfj`]K;kKfkJ2jc3
-Z28 !s100 h`:1Z3<7FI14NkG;4jj;>1
+Vf_:7gi7@fMQQ`I]>kUlJd1
+!s100 ikL;`YS0II_0l[L_Az9o=0
 R10
 32
 R22
